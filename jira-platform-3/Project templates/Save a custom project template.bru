@@ -1,0 +1,27 @@
+meta {
+  name: Save a custom project template
+  type: http
+  seq: 5
+}
+
+post {
+  url: {{baseUrl}}/rest/api/3/project-template/save-template
+  body: json
+  auth: inherit
+}
+
+
+body:json {
+  {
+    "templateDescription": "",
+    "templateFromProjectRequest": {
+      "projectId": 0,
+      "templateGenerationOptions": {
+        "enableScreenDelegatedAdminSupport": false,
+        "enableWorkflowDelegatedAdminSupport": false
+      },
+      "templateType": ""
+    },
+    "templateName": ""
+  }
+}

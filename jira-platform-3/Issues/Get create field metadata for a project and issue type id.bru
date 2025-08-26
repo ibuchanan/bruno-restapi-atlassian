@@ -1,0 +1,21 @@
+meta {
+  name: Get create field metadata for a project and issue type id
+  type: http
+  seq: 10
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/issue/createmeta/:projectIdOrKey/issuetypes/:issueTypeId
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~startAt:
+  ~maxResults:
+}
+
+params:path {
+  projectIdOrKey:
+  issueTypeId:
+}

@@ -1,0 +1,24 @@
+meta {
+  name: Set actors for project role
+  type: http
+  seq: 3
+}
+
+put {
+  url: {{baseUrl}}/rest/api/3/project/:projectIdOrKey/role/:id
+  body: json
+  auth: inherit
+}
+
+params:path {
+  projectIdOrKey:
+  id:
+}
+
+
+body:json {
+  {
+    "categorisedActors": {},
+    "id": 0
+  }
+}

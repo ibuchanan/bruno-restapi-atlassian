@@ -1,0 +1,19 @@
+meta {
+  name: Get create issue metadata
+  type: http
+  seq: 8
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/issue/createmeta
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~projectIds:
+  ~projectKeys:
+  ~issuetypeIds:
+  ~issuetypeNames:
+  ~expand:
+}

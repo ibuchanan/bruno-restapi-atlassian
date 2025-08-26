@@ -1,0 +1,21 @@
+meta {
+  name: Create issue type
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/rest/api/3/issuetype
+  body: json
+  auth: inherit
+}
+
+
+body:json {
+  {
+    "description": "",
+    "hierarchyLevel": 0,
+    "name": "",
+    "type": ""
+  }
+}

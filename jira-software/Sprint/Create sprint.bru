@@ -1,0 +1,21 @@
+meta {
+  name: Create sprint
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/rest/agile/1.0/sprint
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "endDate": "",
+    "goal": "",
+    "name": "",
+    "originBoardId": 0,
+    "startDate": ""
+  }
+}

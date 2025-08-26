@@ -1,0 +1,15 @@
+meta {
+  name: Get redaction status
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/redact/status/:jobId
+  body: none
+  auth: inherit
+}
+
+params:path {
+  jobId:
+}

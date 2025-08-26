@@ -1,0 +1,25 @@
+meta {
+  name: Create issue type screen scheme
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/rest/api/3/issuetypescreenscheme
+  body: json
+  auth: inherit
+}
+
+
+body:json {
+  {
+    "description": "",
+    "issueTypeMappings": [
+      {
+        "issueTypeId": "",
+        "screenSchemeId": ""
+      }
+    ],
+    "name": ""
+  }
+}

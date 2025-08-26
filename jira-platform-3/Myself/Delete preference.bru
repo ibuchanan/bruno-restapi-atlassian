@@ -1,0 +1,15 @@
+meta {
+  name: Delete preference
+  type: http
+  seq: 1
+}
+
+delete {
+  url: {{baseUrl}}/rest/api/3/mypreferences
+  body: none
+  auth: inherit
+}
+
+params:query {
+  key:
+}

@@ -1,0 +1,15 @@
+meta {
+  name: Delete issue type screen scheme
+  type: http
+  seq: 6
+}
+
+delete {
+  url: {{baseUrl}}/rest/api/3/issuetypescreenscheme/:issueTypeScreenSchemeId
+  body: none
+  auth: inherit
+}
+
+params:path {
+  issueTypeScreenSchemeId:
+}

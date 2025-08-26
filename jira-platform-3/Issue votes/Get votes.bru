@@ -1,0 +1,15 @@
+meta {
+  name: Get votes
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/issue/:issueIdOrKey/votes
+  body: none
+  auth: inherit
+}
+
+params:path {
+  issueIdOrKey:
+}

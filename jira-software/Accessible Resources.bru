@@ -1,0 +1,20 @@
+meta {
+  name: Accessible Resources copy
+  type: http
+  seq: 1
+}
+
+get {
+  url: https://api.atlassian.com/oauth/token/accessible-resources
+  body: none
+  auth: inherit
+}
+
+script:post-response {
+  bru.setVar("cloudid", res.getBody().filter(site => site.name === bru.interpolate('{{process.env.SITE_NAME}}'))[0].id);
+  console.log(`${bru.interpolate('{{process.env.SITE_NAME}}')}: ${bru.interpolate('{{cloudid}}')}`)
+}
+
+settings {
+  encodeUrl: true
+}

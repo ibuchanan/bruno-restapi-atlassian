@@ -1,0 +1,152 @@
+meta {
+  name: Store development information
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/rest/devinfo/0.10/bulk
+  body: json
+  auth: inherit
+}
+
+headers {
+  Authorization:
+}
+
+body:json {
+  {
+    "repositories": [
+      {
+        "name": "",
+        "description": "",
+        "forkOf": "",
+        "url": "",
+        "commits": [
+          {
+            "id": "",
+            "issueKeys": [],
+            "associations": [
+              {
+                "associationType": "",
+                "values": []
+              }
+            ],
+            "updateSequenceId": 0,
+            "hash": "",
+            "flags": [],
+            "message": "",
+            "author": {
+              "name": "",
+              "email": "",
+              "username": "",
+              "url": "",
+              "avatar": ""
+            },
+            "fileCount": 0,
+            "url": "",
+            "files": [
+              {
+                "path": "",
+                "url": "",
+                "changeType": "",
+                "linesAdded": 0,
+                "linesRemoved": 0
+              }
+            ],
+            "authorTimestamp": "",
+            "displayId": ""
+          }
+        ],
+        "branches": [
+          {
+            "id": "",
+            "issueKeys": [],
+            "associations": [
+              {}
+            ],
+            "updateSequenceId": 0,
+            "name": "",
+            "lastCommit": {
+              "id": "",
+              "issueKeys": [],
+              "updateSequenceId": 0,
+              "hash": "",
+              "flags": [],
+              "message": "",
+              "author": {
+                "name": "",
+                "email": "",
+                "username": "",
+                "url": "",
+                "avatar": ""
+              },
+              "fileCount": 0,
+              "url": "",
+              "files": [
+                {
+                  "path": "",
+                  "url": "",
+                  "changeType": "",
+                  "linesAdded": 0,
+                  "linesRemoved": 0
+                }
+              ],
+              "authorTimestamp": "",
+              "displayId": ""
+            },
+            "createPullRequestUrl": "",
+            "url": ""
+          }
+        ],
+        "pullRequests": [
+          {
+            "id": "",
+            "issueKeys": [],
+            "associations": [
+              {}
+            ],
+            "updateSequenceId": 0,
+            "status": "",
+            "title": "",
+            "author": {
+              "name": "",
+              "email": "",
+              "username": "",
+              "url": "",
+              "avatar": ""
+            },
+            "commentCount": 0,
+            "sourceBranch": "",
+            "sourceBranchUrl": "",
+            "lastUpdate": "",
+            "destinationBranch": "",
+            "destinationBranchUrl": "",
+            "reviewers": [
+              {
+                "name": "",
+                "approvalStatus": "",
+                "url": "",
+                "avatar": "",
+                "email": "",
+                "accountId": ""
+              }
+            ],
+            "url": "",
+            "displayId": ""
+          }
+        ],
+        "avatar": "",
+        "avatarDescription": "",
+        "id": "",
+        "updateSequenceId": 0
+      }
+    ],
+    "preventTransitions": false,
+    "operationType": "",
+    "properties": {},
+    "providerMetadata": {
+      "product": ""
+    }
+  }
+}

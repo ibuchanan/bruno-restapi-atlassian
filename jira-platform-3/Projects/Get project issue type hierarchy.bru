@@ -1,0 +1,15 @@
+meta {
+  name: Get project issue type hierarchy
+  type: http
+  seq: 12
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/project/:projectId/hierarchy
+  body: none
+  auth: inherit
+}
+
+params:path {
+  projectId:
+}

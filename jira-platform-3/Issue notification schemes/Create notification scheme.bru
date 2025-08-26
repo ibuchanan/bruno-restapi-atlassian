@@ -1,0 +1,30 @@
+meta {
+  name: Create notification scheme
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/rest/api/3/notificationscheme
+  body: json
+  auth: inherit
+}
+
+
+body:json {
+  {
+    "description": "",
+    "name": "",
+    "notificationSchemeEvents": [
+      {
+        "event": "",
+        "notifications": [
+          {
+            "notificationType": "",
+            "parameter": ""
+          }
+        ]
+      }
+    ]
+  }
+}

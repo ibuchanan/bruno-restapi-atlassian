@@ -1,0 +1,11 @@
+meta {
+  name: Submit Incident or Review data
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{baseUrl}}/rest/operations/1.0/bulk
+  body: json
+  auth: inherit
+}

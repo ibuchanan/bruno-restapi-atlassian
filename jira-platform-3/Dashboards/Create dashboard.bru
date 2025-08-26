@@ -1,0 +1,36 @@
+meta {
+  name: Create dashboard
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/rest/api/3/dashboard
+  body: json
+  auth: inherit
+}
+
+params:query {
+  ~extendAdminPermissions:
+}
+
+
+body:json {
+  {
+    "description": "",
+    "editPermissions": [
+      {
+        "group": "",
+        "id": 0,
+        "project": "",
+        "role": "",
+        "type": "",
+        "user": ""
+      }
+    ],
+    "name": "",
+    "sharePermissions": [
+      {}
+    ]
+  }
+}

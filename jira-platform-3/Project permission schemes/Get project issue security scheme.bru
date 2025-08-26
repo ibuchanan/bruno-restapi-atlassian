@@ -1,0 +1,15 @@
+meta {
+  name: Get project issue security scheme
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/project/:projectKeyOrId/issuesecuritylevelscheme
+  body: none
+  auth: inherit
+}
+
+params:path {
+  projectKeyOrId:
+}

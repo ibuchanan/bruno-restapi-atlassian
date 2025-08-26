@@ -1,0 +1,16 @@
+meta {
+  name: Update plan-only team
+  type: http
+  seq: 9
+}
+
+put {
+  url: {{baseUrl}}/rest/api/3/plans/plan/:planId/team/planonly/:planOnlyTeamId
+  body: none
+  auth: inherit
+}
+
+params:path {
+  planId:
+  planOnlyTeamId:
+}

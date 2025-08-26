@@ -1,0 +1,23 @@
+meta {
+  name: Get transitions
+  type: http
+  seq: 21
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/issue/:issueIdOrKey/transitions
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~expand:
+  ~transitionId:
+  ~skipRemoteOnlyCondition:
+  ~includeUnavailableTransitions:
+  ~sortByOpsBarAndStatus:
+}
+
+params:path {
+  issueIdOrKey:
+}

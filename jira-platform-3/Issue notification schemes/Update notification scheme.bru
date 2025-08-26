@@ -1,0 +1,23 @@
+meta {
+  name: Update notification scheme
+  type: http
+  seq: 5
+}
+
+put {
+  url: {{baseUrl}}/rest/api/3/notificationscheme/:id
+  body: json
+  auth: inherit
+}
+
+params:path {
+  id:
+}
+
+
+body:json {
+  {
+    "description": "",
+    "name": ""
+  }
+}

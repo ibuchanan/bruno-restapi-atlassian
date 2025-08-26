@@ -1,0 +1,17 @@
+meta {
+  name: Get application property
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/application-properties
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~key:
+  ~permissionLevel:
+  ~keyFilter:
+}

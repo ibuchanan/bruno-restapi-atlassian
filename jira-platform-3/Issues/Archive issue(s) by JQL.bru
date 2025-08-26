@@ -1,0 +1,18 @@
+meta {
+  name: Archive issue(s) by JQL
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{baseUrl}}/rest/api/3/issue/archive
+  body: json
+  auth: inherit
+}
+
+
+body:json {
+  {
+    "jql": ""
+  }
+}

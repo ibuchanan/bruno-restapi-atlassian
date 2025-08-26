@@ -1,0 +1,18 @@
+meta {
+  name: Set default priority
+  type: http
+  seq: 3
+}
+
+put {
+  url: {{baseUrl}}/rest/api/3/priority/default
+  body: json
+  auth: inherit
+}
+
+
+body:json {
+  {
+    "id": ""
+  }
+}

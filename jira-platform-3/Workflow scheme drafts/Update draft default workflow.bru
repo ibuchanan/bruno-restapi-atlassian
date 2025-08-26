@@ -1,0 +1,23 @@
+meta {
+  name: Update draft default workflow
+  type: http
+  seq: 7
+}
+
+put {
+  url: {{baseUrl}}/rest/api/3/workflowscheme/:id/draft/default
+  body: json
+  auth: inherit
+}
+
+params:path {
+  id:
+}
+
+
+body:json {
+  {
+    "updateDraftIfNeeded": false,
+    "workflow": ""
+  }
+}

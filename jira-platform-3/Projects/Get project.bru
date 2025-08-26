@@ -1,0 +1,20 @@
+meta {
+  name: Get project
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/project/:projectIdOrKey
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~expand:
+  ~properties:
+}
+
+params:path {
+  projectIdOrKey:
+}

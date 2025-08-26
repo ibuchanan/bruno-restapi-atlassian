@@ -1,0 +1,15 @@
+meta {
+  name: Get all workflows
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/workflow
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~workflowName:
+}

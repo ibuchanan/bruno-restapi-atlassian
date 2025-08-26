@@ -1,0 +1,16 @@
+meta {
+  name: Remove gadget from dashboard
+  type: http
+  seq: 8
+}
+
+delete {
+  url: {{baseUrl}}/rest/api/3/dashboard/:dashboardId/gadget/:gadgetId
+  body: none
+  auth: inherit
+}
+
+params:path {
+  dashboardId:
+  gadgetId:
+}

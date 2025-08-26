@@ -1,0 +1,15 @@
+meta {
+  name: Get status category
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/statuscategory/:idOrKey
+  body: none
+  auth: inherit
+}
+
+params:path {
+  idOrKey:
+}

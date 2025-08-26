@@ -1,0 +1,17 @@
+meta {
+  name: Move screen tab
+  type: http
+  seq: 6
+}
+
+post {
+  url: {{baseUrl}}/rest/api/3/screens/:screenId/tabs/:tabId/move/:pos
+  body: none
+  auth: inherit
+}
+
+params:path {
+  screenId:
+  tabId:
+  pos:
+}

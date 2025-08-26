@@ -1,0 +1,16 @@
+meta {
+  name: Delete issue field option
+  type: http
+  seq: 5
+}
+
+delete {
+  url: {{baseUrl}}/rest/api/3/field/:fieldKey/option/:optionId
+  body: none
+  auth: inherit
+}
+
+params:path {
+  fieldKey:
+  optionId:
+}

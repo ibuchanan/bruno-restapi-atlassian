@@ -1,0 +1,17 @@
+meta {
+  name: Delete custom field options (context)
+  type: http
+  seq: 6
+}
+
+delete {
+  url: {{baseUrl}}/rest/api/3/field/:fieldId/context/:contextId/option/:optionId
+  body: none
+  auth: inherit
+}
+
+params:path {
+  fieldId:
+  contextId:
+  optionId:
+}

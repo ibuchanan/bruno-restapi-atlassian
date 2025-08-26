@@ -1,0 +1,20 @@
+meta {
+  name: Get issues without epic
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/rest/agile/1.0/epic/none/issue
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~startAt:
+  ~maxResults:
+  ~jql:
+  ~validateQuery:
+  ~fields:
+  ~expand:
+}

@@ -1,0 +1,15 @@
+meta {
+  name: Get workflow scheme project associations
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/workflowscheme/project
+  body: none
+  auth: inherit
+}
+
+params:query {
+  projectId:
+}

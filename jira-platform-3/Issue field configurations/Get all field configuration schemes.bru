@@ -1,0 +1,17 @@
+meta {
+  name: Get all field configuration schemes
+  type: http
+  seq: 7
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/fieldconfigurationscheme
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~startAt:
+  ~maxResults:
+  ~id:
+}

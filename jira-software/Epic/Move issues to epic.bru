@@ -1,0 +1,21 @@
+meta {
+  name: Move issues to epic
+  type: http
+  seq: 6
+}
+
+post {
+  url: {{baseUrl}}/rest/agile/1.0/epic/:epicIdOrKey/issue
+  body: json
+  auth: inherit
+}
+
+params:path {
+  epicIdOrKey:
+}
+
+body:json {
+  {
+    "issues": []
+  }
+}

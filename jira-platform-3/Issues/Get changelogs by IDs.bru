@@ -1,0 +1,22 @@
+meta {
+  name: Get changelogs by IDs
+  type: http
+  seq: 18
+}
+
+post {
+  url: {{baseUrl}}/rest/api/3/issue/:issueIdOrKey/changelog/list
+  body: json
+  auth: inherit
+}
+
+params:path {
+  issueIdOrKey:
+}
+
+
+body:json {
+  {
+    "changelogIds": []
+  }
+}

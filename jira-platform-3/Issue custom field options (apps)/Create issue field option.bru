@@ -1,0 +1,27 @@
+meta {
+  name: Create issue field option
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/rest/api/3/field/:fieldKey/option
+  body: json
+  auth: inherit
+}
+
+params:path {
+  fieldKey:
+}
+
+
+body:json {
+  {
+    "config": {
+      "attributes": [],
+      "scope": ""
+    },
+    "properties": {},
+    "value": ""
+  }
+}

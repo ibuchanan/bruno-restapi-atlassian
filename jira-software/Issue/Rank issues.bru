@@ -1,0 +1,20 @@
+meta {
+  name: Rank issues
+  type: http
+  seq: 1
+}
+
+put {
+  url: {{baseUrl}}/rest/agile/1.0/issue/rank
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "issues": [],
+    "rankAfterIssue": "",
+    "rankBeforeIssue": "",
+    "rankCustomFieldId": 0
+  }
+}

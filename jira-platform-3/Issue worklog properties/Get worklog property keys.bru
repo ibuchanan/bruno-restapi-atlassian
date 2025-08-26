@@ -1,0 +1,16 @@
+meta {
+  name: Get worklog property keys
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/issue/:issueIdOrKey/worklog/:worklogId/properties
+  body: none
+  auth: inherit
+}
+
+params:path {
+  issueIdOrKey:
+  worklogId:
+}

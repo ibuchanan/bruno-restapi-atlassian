@@ -1,0 +1,22 @@
+meta {
+  name: Get attachment thumbnail
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/attachment/thumbnail/:id
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~redirect:
+  ~fallbackToDefault:
+  ~width:
+  ~height:
+}
+
+params:path {
+  id:
+}

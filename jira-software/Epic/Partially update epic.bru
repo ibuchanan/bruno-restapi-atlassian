@@ -1,0 +1,26 @@
+meta {
+  name: Partially update epic
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{baseUrl}}/rest/agile/1.0/epic/:epicIdOrKey
+  body: json
+  auth: inherit
+}
+
+params:path {
+  epicIdOrKey:
+}
+
+body:json {
+  {
+    "color": {
+      "key": ""
+    },
+    "done": false,
+    "name": "",
+    "summary": ""
+  }
+}

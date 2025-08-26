@@ -1,0 +1,15 @@
+meta {
+  name: Delete a Component by ID
+  type: http
+  seq: 4
+}
+
+delete {
+  url: {{baseUrl}}/rest/devopscomponents/1.0/devopscomponents/:componentId
+  body: none
+  auth: inherit
+}
+
+params:path {
+  componentId:
+}

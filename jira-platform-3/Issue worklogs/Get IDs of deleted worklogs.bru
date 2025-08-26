@@ -1,0 +1,15 @@
+meta {
+  name: Get IDs of deleted worklogs
+  type: http
+  seq: 8
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/worklog/deleted
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~since:
+}

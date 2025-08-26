@@ -1,0 +1,20 @@
+meta {
+  name: Get edit issue metadata
+  type: http
+  seq: 19
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/issue/:issueIdOrKey/editmeta
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~overrideScreenSecurity:
+  ~overrideEditableFlag:
+}
+
+params:path {
+  issueIdOrKey:
+}

@@ -1,0 +1,32 @@
+meta {
+  name: Bulk update custom field value
+  type: http
+  seq: 1
+}
+
+put {
+  url: {{baseUrl}}/rest/atlassian-connect/1/migration/field
+  body: json
+  auth: inherit
+}
+
+headers {
+  Atlassian-Transfer-Id:
+}
+
+body:json {
+  {
+    "updateValueList": [
+      {
+        "_type": "",
+        "fieldID": 0,
+        "issueID": 0,
+        "number": "",
+        "optionID": "",
+        "richText": "",
+        "string": "",
+        "text": ""
+      }
+    ]
+  }
+}

@@ -1,0 +1,42 @@
+meta {
+  name: Add comment
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{baseUrl}}/rest/api/3/issue/:issueIdOrKey/comment
+  body: json
+  auth: inherit
+}
+
+params:query {
+  ~expand:
+}
+
+params:path {
+  issueIdOrKey:
+}
+
+
+body:json {
+  {
+    "author": "",
+    "body": "",
+    "created": "",
+    "id": "",
+    "jsdAuthorCanSeeRequest": false,
+    "jsdPublic": false,
+    "properties": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "renderedBody": "",
+    "self": "",
+    "updateAuthor": "",
+    "updated": "",
+    "visibility": ""
+  }
+}

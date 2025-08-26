@@ -1,0 +1,34 @@
+meta {
+  name: Add issue security levels
+  type: http
+  seq: 12
+}
+
+put {
+  url: {{baseUrl}}/rest/api/3/issuesecurityschemes/:schemeId/level
+  body: json
+  auth: inherit
+}
+
+params:path {
+  schemeId:
+}
+
+
+body:json {
+  {
+    "levels": [
+      {
+        "description": "",
+        "isDefault": false,
+        "members": [
+          {
+            "parameter": "",
+            "type": ""
+          }
+        ],
+        "name": ""
+      }
+    ]
+  }
+}

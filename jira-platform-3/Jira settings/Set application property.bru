@@ -1,0 +1,23 @@
+meta {
+  name: Set application property
+  type: http
+  seq: 3
+}
+
+put {
+  url: {{baseUrl}}/rest/api/3/application-properties/:id
+  body: json
+  auth: inherit
+}
+
+params:path {
+  id:
+}
+
+
+body:json {
+  {
+    "id": "",
+    "value": ""
+  }
+}

@@ -1,0 +1,21 @@
+meta {
+  name: Get user property
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/user/properties/:propertyKey
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~accountId:
+  ~userKey:
+  ~username:
+}
+
+params:path {
+  propertyKey:
+}

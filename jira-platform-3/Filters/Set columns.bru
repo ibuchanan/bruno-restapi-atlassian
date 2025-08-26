@@ -1,0 +1,15 @@
+meta {
+  name: Set columns
+  type: http
+  seq: 10
+}
+
+put {
+  url: {{baseUrl}}/rest/api/3/filter/:id/columns
+  body: none
+  auth: inherit
+}
+
+params:path {
+  id:
+}

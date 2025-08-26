@@ -1,0 +1,21 @@
+meta {
+  name: Get all versions
+  type: http
+  seq: 26
+}
+
+get {
+  url: {{baseUrl}}/rest/agile/1.0/board/:boardId/version
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~startAt:
+  ~maxResults:
+  ~released:
+}
+
+params:path {
+  boardId:
+}

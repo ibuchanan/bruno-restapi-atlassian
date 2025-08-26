@@ -1,0 +1,11 @@
+meta {
+  name: Submit DevOps Components
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/rest/devopscomponents/1.0/bulk
+  body: json
+  auth: inherit
+}

@@ -1,0 +1,28 @@
+meta {
+  name: Set project avatar
+  type: http
+  seq: 1
+}
+
+put {
+  url: {{baseUrl}}/rest/api/3/project/:projectIdOrKey/avatar
+  body: json
+  auth: inherit
+}
+
+params:path {
+  projectIdOrKey:
+}
+
+
+body:json {
+  {
+    "fileName": "",
+    "id": "",
+    "isDeletable": false,
+    "isSelected": false,
+    "isSystemAvatar": false,
+    "owner": "",
+    "urls": {}
+  }
+}

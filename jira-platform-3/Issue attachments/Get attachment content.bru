@@ -1,0 +1,19 @@
+meta {
+  name: Get attachment content
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/attachment/content/:id
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~redirect:
+}
+
+params:path {
+  id:
+}

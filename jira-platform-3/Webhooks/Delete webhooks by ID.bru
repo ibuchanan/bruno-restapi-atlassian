@@ -1,0 +1,18 @@
+meta {
+  name: Delete webhooks by ID
+  type: http
+  seq: 1
+}
+
+delete {
+  url: {{baseUrl}}/rest/api/3/webhook
+  body: json
+  auth: inherit
+}
+
+
+body:json {
+  {
+    "webhookIds": []
+  }
+}

@@ -1,0 +1,22 @@
+meta {
+  name: Duplicate plan
+  type: http
+  seq: 6
+}
+
+post {
+  url: {{baseUrl}}/rest/api/3/plans/plan/:planId/duplicate
+  body: json
+  auth: inherit
+}
+
+params:path {
+  planId:
+}
+
+
+body:json {
+  {
+    "name": ""
+  }
+}

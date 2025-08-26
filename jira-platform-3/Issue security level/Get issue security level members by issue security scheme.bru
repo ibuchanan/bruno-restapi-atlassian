@@ -1,0 +1,22 @@
+meta {
+  name: Get issue security level members by issue security scheme
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/issuesecurityschemes/:issueSecuritySchemeId/members
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~startAt:
+  ~maxResults:
+  ~issueSecurityLevelId:
+  ~expand:
+}
+
+params:path {
+  issueSecuritySchemeId:
+}

@@ -1,0 +1,24 @@
+meta {
+  name: Move issues to sprint and rank
+  type: http
+  seq: 7
+}
+
+post {
+  url: {{baseUrl}}/rest/agile/1.0/sprint/:sprintId/issue
+  body: json
+  auth: inherit
+}
+
+params:path {
+  sprintId:
+}
+
+body:json {
+  {
+    "issues": [],
+    "rankAfterIssue": "",
+    "rankBeforeIssue": "",
+    "rankCustomFieldId": 0
+  }
+}

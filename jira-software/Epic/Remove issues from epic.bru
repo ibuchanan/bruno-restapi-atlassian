@@ -1,0 +1,17 @@
+meta {
+  name: Remove issues from epic
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/rest/agile/1.0/epic/none/issue
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "issues": []
+  }
+}

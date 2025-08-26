@@ -1,0 +1,11 @@
+meta {
+  name: Get license
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/instance/license
+  body: none
+  auth: inherit
+}

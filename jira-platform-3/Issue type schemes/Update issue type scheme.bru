@@ -1,0 +1,24 @@
+meta {
+  name: Update issue type scheme
+  type: http
+  seq: 7
+}
+
+put {
+  url: {{baseUrl}}/rest/api/3/issuetypescheme/:issueTypeSchemeId
+  body: json
+  auth: inherit
+}
+
+params:path {
+  issueTypeSchemeId:
+}
+
+
+body:json {
+  {
+    "defaultIssueTypeId": "",
+    "description": "",
+    "name": ""
+  }
+}

@@ -1,0 +1,15 @@
+meta {
+  name: Get dashboard
+  type: http
+  seq: 15
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/dashboard/:id
+  body: none
+  auth: inherit
+}
+
+params:path {
+  id:
+}

@@ -1,0 +1,25 @@
+meta {
+  name: Search for dashboards
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/dashboard/search
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~dashboardName:
+  ~accountId:
+  ~owner:
+  ~groupname:
+  ~groupId:
+  ~projectId:
+  ~orderBy:
+  ~startAt:
+  ~maxResults:
+  ~status:
+  ~expand:
+}

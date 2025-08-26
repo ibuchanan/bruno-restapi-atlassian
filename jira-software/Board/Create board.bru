@@ -1,0 +1,23 @@
+meta {
+  name: Create board
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/rest/agile/1.0/board
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "filterId": 0,
+    "location": {
+      "projectKeyOrId": "",
+      "type": ""
+    },
+    "name": "",
+    "type": ""
+  }
+}

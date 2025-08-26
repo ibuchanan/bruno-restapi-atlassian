@@ -1,0 +1,19 @@
+meta {
+  name: Delete remote issue link by global ID
+  type: http
+  seq: 1
+}
+
+delete {
+  url: {{baseUrl}}/rest/api/3/issue/:issueIdOrKey/remotelink
+  body: none
+  auth: inherit
+}
+
+params:query {
+  globalId:
+}
+
+params:path {
+  issueIdOrKey:
+}

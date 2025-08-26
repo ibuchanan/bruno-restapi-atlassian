@@ -1,0 +1,32 @@
+meta {
+  name: Publish draft workflow scheme
+  type: http
+  seq: 11
+}
+
+post {
+  url: {{baseUrl}}/rest/api/3/workflowscheme/:id/draft/publish
+  body: json
+  auth: inherit
+}
+
+params:query {
+  ~validateOnly:
+}
+
+params:path {
+  id:
+}
+
+
+body:json {
+  {
+    "statusMappings": [
+      {
+        "issueTypeId": "",
+        "newStatusId": "",
+        "statusId": ""
+      }
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+meta {
+  name: Get quick filter
+  type: http
+  seq: 22
+}
+
+get {
+  url: {{baseUrl}}/rest/agile/1.0/board/:boardId/quickfilter/:quickFilterId
+  body: none
+  auth: inherit
+}
+
+params:path {
+  boardId:
+  quickFilterId:
+}

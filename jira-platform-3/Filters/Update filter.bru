@@ -1,0 +1,52 @@
+meta {
+  name: Update filter
+  type: http
+  seq: 7
+}
+
+put {
+  url: {{baseUrl}}/rest/api/3/filter/:id
+  body: json
+  auth: inherit
+}
+
+params:query {
+  ~expand:
+  ~overrideSharePermissions:
+}
+
+params:path {
+  id:
+}
+
+
+body:json {
+  {
+    "approximateLastUsed": "",
+    "description": "",
+    "editPermissions": [
+      {
+        "group": "",
+        "id": 0,
+        "project": "",
+        "role": "",
+        "type": "",
+        "user": ""
+      }
+    ],
+    "favourite": false,
+    "favouritedCount": 0,
+    "id": "",
+    "jql": "",
+    "name": "",
+    "owner": "",
+    "searchUrl": "",
+    "self": "",
+    "sharePermissions": [
+      {}
+    ],
+    "sharedUsers": "",
+    "subscriptions": "",
+    "viewUrl": ""
+  }
+}

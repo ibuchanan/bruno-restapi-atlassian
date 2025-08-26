@@ -1,0 +1,16 @@
+meta {
+  name: Delete custom field context
+  type: http
+  seq: 8
+}
+
+delete {
+  url: {{baseUrl}}/rest/api/3/field/:fieldId/context/:contextId
+  body: none
+  auth: inherit
+}
+
+params:path {
+  fieldId:
+  contextId:
+}

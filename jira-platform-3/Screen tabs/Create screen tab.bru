@@ -1,0 +1,23 @@
+meta {
+  name: Create screen tab
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{baseUrl}}/rest/api/3/screens/:screenId/tabs
+  body: json
+  auth: inherit
+}
+
+params:path {
+  screenId:
+}
+
+
+body:json {
+  {
+    "id": 0,
+    "name": ""
+  }
+}

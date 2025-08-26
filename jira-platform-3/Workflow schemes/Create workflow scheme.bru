@@ -1,0 +1,30 @@
+meta {
+  name: Create workflow scheme
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/rest/api/3/workflowscheme
+  body: json
+  auth: inherit
+}
+
+
+body:json {
+  {
+    "defaultWorkflow": "",
+    "description": "",
+    "draft": false,
+    "id": 0,
+    "issueTypeMappings": {},
+    "issueTypes": {},
+    "lastModified": "",
+    "lastModifiedUser": "",
+    "name": "",
+    "originalDefaultWorkflow": "",
+    "originalIssueTypeMappings": {},
+    "self": "",
+    "updateDraftIfNeeded": false
+  }
+}

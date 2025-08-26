@@ -1,0 +1,17 @@
+meta {
+  name: Remove member from issue security level
+  type: http
+  seq: 16
+}
+
+delete {
+  url: {{baseUrl}}/rest/api/3/issuesecurityschemes/:schemeId/level/:levelId/member/:memberId
+  body: none
+  auth: inherit
+}
+
+params:path {
+  schemeId:
+  levelId:
+  memberId:
+}

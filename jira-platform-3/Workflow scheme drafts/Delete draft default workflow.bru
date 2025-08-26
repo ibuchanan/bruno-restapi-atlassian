@@ -1,0 +1,15 @@
+meta {
+  name: Delete draft default workflow
+  type: http
+  seq: 5
+}
+
+delete {
+  url: {{baseUrl}}/rest/api/3/workflowscheme/:id/draft/default
+  body: none
+  auth: inherit
+}
+
+params:path {
+  id:
+}

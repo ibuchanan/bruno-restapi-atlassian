@@ -1,0 +1,6 @@
+{
+  "version": "1",
+  "name": "Jira Cloud Platform REST API",
+  "type": "collection",
+  "ignore": ["node_modules", ".git"]
+}

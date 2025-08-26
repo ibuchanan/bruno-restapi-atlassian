@@ -1,0 +1,15 @@
+meta {
+  name: Get a Feature Flag by ID
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{baseUrl}}/rest/featureflags/0.1/flag/:featureFlagId
+  body: none
+  auth: inherit
+}
+
+params:path {
+  featureFlagId:
+}

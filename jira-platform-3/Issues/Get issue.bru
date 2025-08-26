@@ -1,0 +1,24 @@
+meta {
+  name: Get issue
+  type: http
+  seq: 14
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/issue/:issueIdOrKey
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~fields:
+  ~fieldsByKeys:
+  ~expand:
+  ~properties:
+  ~updateHistory:
+  ~failFast:
+}
+
+params:path {
+  issueIdOrKey:
+}

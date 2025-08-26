@@ -1,0 +1,23 @@
+meta {
+  name: Currently being removed. Evaluate Jira expression
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/rest/api/3/expression/eval
+  body: json
+  auth: inherit
+}
+
+params:query {
+  ~expand:
+}
+
+
+body:json {
+  {
+    "context": "",
+    "expression": ""
+  }
+}

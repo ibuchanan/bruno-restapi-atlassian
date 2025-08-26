@@ -1,0 +1,31 @@
+meta {
+  name: Update custom field value
+  type: http
+  seq: 2
+}
+
+put {
+  url: {{baseUrl}}/rest/api/3/app/field/:fieldIdOrKey/value
+  body: json
+  auth: inherit
+}
+
+params:query {
+  ~generateChangelog:
+}
+
+params:path {
+  fieldIdOrKey:
+}
+
+
+body:json {
+  {
+    "updates": [
+      {
+        "issueIds": [],
+        "value": ""
+      }
+    ]
+  }
+}

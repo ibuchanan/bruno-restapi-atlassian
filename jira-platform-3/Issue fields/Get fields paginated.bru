@@ -1,0 +1,22 @@
+meta {
+  name: Get fields paginated
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/field/search
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~startAt:
+  ~maxResults:
+  ~type:
+  ~id:
+  ~query:
+  ~orderBy:
+  ~expand:
+  ~projectIds:
+}

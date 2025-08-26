@@ -1,0 +1,21 @@
+meta {
+  name: Swap sprint
+  type: http
+  seq: 12
+}
+
+post {
+  url: {{baseUrl}}/rest/agile/1.0/sprint/:sprintId/swap
+  body: json
+  auth: inherit
+}
+
+params:path {
+  sprintId:
+}
+
+body:json {
+  {
+    "sprintToSwapWith": 0
+  }
+}

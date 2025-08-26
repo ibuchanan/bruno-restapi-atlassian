@@ -1,0 +1,15 @@
+meta {
+  name: Delete project category
+  type: http
+  seq: 3
+}
+
+delete {
+  url: {{baseUrl}}/rest/api/3/projectCategory/:id
+  body: none
+  auth: inherit
+}
+
+params:path {
+  id:
+}

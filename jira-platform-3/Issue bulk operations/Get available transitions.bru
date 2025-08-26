@@ -1,0 +1,17 @@
+meta {
+  name: Get available transitions
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/bulk/issues/transition
+  body: none
+  auth: inherit
+}
+
+params:query {
+  issueIdsOrKeys:
+  ~endingBefore:
+  ~startingAfter:
+}

@@ -1,0 +1,16 @@
+meta {
+  name: Get all workflow schemes
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/workflowscheme
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~startAt:
+  ~maxResults:
+}

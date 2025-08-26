@@ -1,0 +1,11 @@
+meta {
+  name: Get all project roles
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/role
+  body: none
+  auth: inherit
+}

@@ -1,0 +1,25 @@
+meta {
+  name: Export archived issue(s)
+  type: http
+  seq: 23
+}
+
+put {
+  url: {{baseUrl}}/rest/api/3/issues/archive/export
+  body: json
+  auth: inherit
+}
+
+
+body:json {
+  {
+    "archivedBy": [],
+    "archivedDateRange": {
+      "dateAfter": "",
+      "dateBefore": ""
+    },
+    "issueTypes": [],
+    "projects": [],
+    "reporters": []
+  }
+}

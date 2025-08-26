@@ -1,0 +1,22 @@
+meta {
+  name: Get precomputations by ID (apps)
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{baseUrl}}/rest/api/3/jql/function/computation/search
+  body: json
+  auth: inherit
+}
+
+params:query {
+  ~orderBy:
+}
+
+
+body:json {
+  {
+    "precomputationIDs": []
+  }
+}

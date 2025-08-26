@@ -1,0 +1,17 @@
+meta {
+  name: Get dashboard item property
+  type: http
+  seq: 12
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/dashboard/:dashboardId/items/:itemId/properties/:propertyKey
+  body: none
+  auth: inherit
+}
+
+params:path {
+  dashboardId:
+  itemId:
+  propertyKey:
+}

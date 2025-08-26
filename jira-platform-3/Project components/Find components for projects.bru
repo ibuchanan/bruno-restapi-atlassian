@@ -1,0 +1,19 @@
+meta {
+  name: Find components for projects
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/component
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~projectIdsOrKeys:
+  ~startAt:
+  ~maxResults:
+  ~orderBy:
+  ~query:
+}

@@ -1,0 +1,20 @@
+meta {
+  name: Delete version
+  type: http
+  seq: 4
+}
+
+delete {
+  url: {{baseUrl}}/rest/api/3/version/:id
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~moveFixIssuesTo:
+  ~moveAffectedIssuesTo:
+}
+
+params:path {
+  id:
+}

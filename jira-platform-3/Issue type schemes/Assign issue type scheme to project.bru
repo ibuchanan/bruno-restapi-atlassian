@@ -1,0 +1,19 @@
+meta {
+  name: Assign issue type scheme to project
+  type: http
+  seq: 5
+}
+
+put {
+  url: {{baseUrl}}/rest/api/3/issuetypescheme/project
+  body: json
+  auth: inherit
+}
+
+
+body:json {
+  {
+    "issueTypeSchemeId": "",
+    "projectId": ""
+  }
+}

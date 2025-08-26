@@ -1,0 +1,57 @@
+meta {
+  name: Update version
+  type: http
+  seq: 6
+}
+
+put {
+  url: {{baseUrl}}/rest/api/3/version/:id
+  body: json
+  auth: inherit
+}
+
+params:path {
+  id:
+}
+
+
+body:json {
+  {
+    "approvers": [
+      {
+        "accountId": "",
+        "declineReason": "",
+        "description": "",
+        "status": ""
+      }
+    ],
+    "archived": false,
+    "description": "",
+    "driver": "",
+    "expand": "",
+    "id": "",
+    "issuesStatusForFixVersion": "",
+    "moveUnfixedIssuesTo": "",
+    "name": "",
+    "operations": [
+      {
+        "href": "",
+        "iconClass": "",
+        "id": "",
+        "label": "",
+        "styleClass": "",
+        "title": "",
+        "weight": 0
+      }
+    ],
+    "overdue": false,
+    "project": "",
+    "projectId": 0,
+    "releaseDate": "",
+    "released": false,
+    "self": "",
+    "startDate": "",
+    "userReleaseDate": "",
+    "userStartDate": ""
+  }
+}

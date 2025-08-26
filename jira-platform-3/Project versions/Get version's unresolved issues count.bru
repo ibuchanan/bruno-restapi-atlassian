@@ -1,0 +1,15 @@
+meta {
+  name: Get version's unresolved issues count
+  type: http
+  seq: 14
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/version/:id/unresolvedIssueCount
+  body: none
+  auth: inherit
+}
+
+params:path {
+  id:
+}

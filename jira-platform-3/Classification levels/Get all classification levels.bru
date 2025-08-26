@@ -1,0 +1,16 @@
+meta {
+  name: Get all classification levels
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/classification-levels
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~status:
+  ~orderBy:
+}

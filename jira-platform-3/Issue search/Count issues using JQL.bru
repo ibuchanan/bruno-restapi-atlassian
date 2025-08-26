@@ -1,0 +1,18 @@
+meta {
+  name: Count issues using JQL
+  type: http
+  seq: 5
+}
+
+post {
+  url: {{baseUrl}}/rest/api/3/search/approximate-count
+  body: json
+  auth: inherit
+}
+
+
+body:json {
+  {
+    "jql": ""
+  }
+}

@@ -1,0 +1,19 @@
+meta {
+  name: Remove filter as favorite
+  type: http
+  seq: 11
+}
+
+delete {
+  url: {{baseUrl}}/rest/api/3/filter/:id/favourite
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~expand:
+}
+
+params:path {
+  id:
+}

@@ -1,0 +1,18 @@
+meta {
+  name: Unarchive issue(s) by issue keys/ID
+  type: http
+  seq: 12
+}
+
+put {
+  url: {{baseUrl}}/rest/api/3/issue/unarchive
+  body: json
+  auth: inherit
+}
+
+
+body:json {
+  {
+    "issueIdsOrKeys": []
+  }
+}

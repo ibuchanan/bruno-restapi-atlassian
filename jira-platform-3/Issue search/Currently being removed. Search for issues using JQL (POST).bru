@@ -1,0 +1,25 @@
+meta {
+  name: Currently being removed. Search for issues using JQL (POST)
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{baseUrl}}/rest/api/3/search
+  body: json
+  auth: inherit
+}
+
+
+body:json {
+  {
+    "expand": [],
+    "fields": [],
+    "fieldsByKeys": false,
+    "jql": "",
+    "maxResults": 0,
+    "properties": [],
+    "startAt": 0,
+    "validateQuery": ""
+  }
+}

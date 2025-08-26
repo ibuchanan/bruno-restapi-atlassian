@@ -1,0 +1,15 @@
+meta {
+  name: Get projects full
+  type: http
+  seq: 16
+}
+
+get {
+  url: {{baseUrl}}/rest/agile/1.0/board/:boardId/project/full
+  body: none
+  auth: inherit
+}
+
+params:path {
+  boardId:
+}

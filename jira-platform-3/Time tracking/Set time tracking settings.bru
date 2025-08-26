@@ -1,0 +1,21 @@
+meta {
+  name: Set time tracking settings
+  type: http
+  seq: 5
+}
+
+put {
+  url: {{baseUrl}}/rest/api/3/configuration/timetracking/options
+  body: json
+  auth: inherit
+}
+
+
+body:json {
+  {
+    "defaultUnit": "",
+    "timeFormat": "",
+    "workingDaysPerWeek": "",
+    "workingHoursPerDay": ""
+  }
+}

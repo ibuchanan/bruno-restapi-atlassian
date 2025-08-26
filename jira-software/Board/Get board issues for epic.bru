@@ -1,0 +1,25 @@
+meta {
+  name: Get board issues for epic
+  type: http
+  seq: 10
+}
+
+get {
+  url: {{baseUrl}}/rest/agile/1.0/board/:boardId/epic/:epicId/issue
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~startAt:
+  ~maxResults:
+  ~jql:
+  ~validateQuery:
+  ~fields:
+  ~expand:
+}
+
+params:path {
+  boardId:
+  epicId:
+}

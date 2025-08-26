@@ -1,0 +1,25 @@
+meta {
+  name: Associate security scheme to project
+  type: http
+  seq: 7
+}
+
+put {
+  url: {{baseUrl}}/rest/api/3/issuesecurityschemes/project
+  body: json
+  auth: inherit
+}
+
+
+body:json {
+  {
+    "oldToNewSecurityLevelMappings": [
+      {
+        "newLevelId": "",
+        "oldLevelId": ""
+      }
+    ],
+    "projectId": "",
+    "schemeId": ""
+  }
+}

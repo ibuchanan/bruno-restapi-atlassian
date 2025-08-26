@@ -1,0 +1,11 @@
+meta {
+  name: Delete linked Security Workspaces
+  type: http
+  seq: 2
+}
+
+delete {
+  url: {{baseUrl}}/rest/security/1.0/linkedWorkspaces/bulk
+  body: none
+  auth: inherit
+}

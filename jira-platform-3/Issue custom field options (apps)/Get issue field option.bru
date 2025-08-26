@@ -1,0 +1,16 @@
+meta {
+  name: Get issue field option
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/field/:fieldKey/option/:optionId
+  body: none
+  auth: inherit
+}
+
+params:path {
+  fieldKey:
+  optionId:
+}

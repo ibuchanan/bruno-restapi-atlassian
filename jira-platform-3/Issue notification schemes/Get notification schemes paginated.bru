@@ -1,0 +1,20 @@
+meta {
+  name: Get notification schemes paginated
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/notificationscheme
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~startAt:
+  ~maxResults:
+  ~id:
+  ~projectId:
+  ~onlyDefault:
+  ~expand:
+}

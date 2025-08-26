@@ -1,0 +1,18 @@
+meta {
+  name: Bulk watch issues
+  type: http
+  seq: 8
+}
+
+post {
+  url: {{baseUrl}}/rest/api/3/bulk/issues/watch
+  body: json
+  auth: inherit
+}
+
+
+body:json {
+  {
+    "selectedIssueIdsOrKeys": []
+  }
+}

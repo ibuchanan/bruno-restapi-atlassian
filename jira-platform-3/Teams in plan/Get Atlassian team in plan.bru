@@ -1,0 +1,16 @@
+meta {
+  name: Get Atlassian team in plan
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/plans/plan/:planId/team/atlassian/:atlassianTeamId
+  body: none
+  auth: inherit
+}
+
+params:path {
+  planId:
+  atlassianTeamId:
+}

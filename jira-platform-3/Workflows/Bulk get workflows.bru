@@ -1,0 +1,29 @@
+meta {
+  name: Bulk get workflows
+  type: http
+  seq: 8
+}
+
+post {
+  url: {{baseUrl}}/rest/api/3/workflows
+  body: json
+  auth: inherit
+}
+
+params:query {
+  ~useApprovalConfiguration:
+}
+
+
+body:json {
+  {
+    "projectAndIssueTypes": [
+      {
+        "issueTypeId": "",
+        "projectId": ""
+      }
+    ],
+    "workflowIds": [],
+    "workflowNames": []
+  }
+}

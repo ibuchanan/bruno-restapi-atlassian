@@ -1,0 +1,16 @@
+meta {
+  name: Get user default columns
+  type: http
+  seq: 7
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/user/columns
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~accountId:
+  ~username:
+}

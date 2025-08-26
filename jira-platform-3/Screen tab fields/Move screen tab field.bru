@@ -1,0 +1,25 @@
+meta {
+  name: Move screen tab field
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{baseUrl}}/rest/api/3/screens/:screenId/tabs/:tabId/fields/:id/move
+  body: json
+  auth: inherit
+}
+
+params:path {
+  screenId:
+  tabId:
+  id:
+}
+
+
+body:json {
+  {
+    "after": "",
+    "position": ""
+  }
+}

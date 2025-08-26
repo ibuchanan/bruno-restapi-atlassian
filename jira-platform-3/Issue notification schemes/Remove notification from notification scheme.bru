@@ -1,0 +1,16 @@
+meta {
+  name: Remove notification from notification scheme
+  type: http
+  seq: 8
+}
+
+delete {
+  url: {{baseUrl}}/rest/api/3/notificationscheme/:notificationSchemeId/notification/:notificationId
+  body: none
+  auth: inherit
+}
+
+params:path {
+  notificationSchemeId:
+  notificationId:
+}

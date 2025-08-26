@@ -1,0 +1,21 @@
+meta {
+  name: Get gadgets
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/dashboard/:dashboardId/gadget
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~moduleKey:
+  ~uri:
+  ~gadgetId:
+}
+
+params:path {
+  dashboardId:
+}

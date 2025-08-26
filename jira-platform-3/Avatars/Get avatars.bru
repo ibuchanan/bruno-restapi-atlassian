@@ -1,0 +1,16 @@
+meta {
+  name: Get avatars
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/universal_avatar/type/:type/owner/:entityId
+  body: none
+  auth: inherit
+}
+
+params:path {
+  type:
+  entityId:
+}

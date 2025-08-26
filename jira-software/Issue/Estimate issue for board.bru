@@ -1,0 +1,25 @@
+meta {
+  name: Estimate issue for board
+  type: http
+  seq: 4
+}
+
+put {
+  url: {{baseUrl}}/rest/agile/1.0/issue/:issueIdOrKey/estimation
+  body: json
+  auth: inherit
+}
+
+params:query {
+  ~boardId:
+}
+
+params:path {
+  issueIdOrKey:
+}
+
+body:json {
+  {
+    "value": ""
+  }
+}

@@ -1,0 +1,24 @@
+meta {
+  name: Get issues for backlog
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{baseUrl}}/rest/agile/1.0/board/:boardId/backlog
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~startAt:
+  ~maxResults:
+  ~jql:
+  ~validateQuery:
+  ~fields:
+  ~expand:
+}
+
+params:path {
+  boardId:
+}

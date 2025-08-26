@@ -1,0 +1,21 @@
+meta {
+  name: Get visible issue field options
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/field/:fieldKey/option/suggestions/search
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~startAt:
+  ~maxResults:
+  ~projectId:
+}
+
+params:path {
+  fieldKey:
+}

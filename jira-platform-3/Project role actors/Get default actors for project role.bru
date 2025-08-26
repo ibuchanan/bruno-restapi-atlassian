@@ -1,0 +1,15 @@
+meta {
+  name: Get default actors for project role
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/role/:id/actors
+  body: none
+  auth: inherit
+}
+
+params:path {
+  id:
+}

@@ -1,0 +1,23 @@
+meta {
+  name: Set default issue security levels
+  type: http
+  seq: 4
+}
+
+put {
+  url: {{baseUrl}}/rest/api/3/issuesecurityschemes/level/default
+  body: json
+  auth: inherit
+}
+
+
+body:json {
+  {
+    "defaultValues": [
+      {
+        "defaultLevelId": "",
+        "issueSecuritySchemeId": ""
+      }
+    ]
+  }
+}

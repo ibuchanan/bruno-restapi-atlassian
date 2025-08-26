@@ -1,0 +1,16 @@
+meta {
+  name: Get board property
+  type: http
+  seq: 19
+}
+
+get {
+  url: {{baseUrl}}/rest/agile/1.0/board/:boardId/properties/:propertyKey
+  body: none
+  auth: inherit
+}
+
+params:path {
+  boardId:
+  propertyKey:
+}

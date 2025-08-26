@@ -1,0 +1,17 @@
+meta {
+  name: Find users by query
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/user/search/query
+  body: none
+  auth: inherit
+}
+
+params:query {
+  query:
+  ~startAt:
+  ~maxResults:
+}

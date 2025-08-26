@@ -1,0 +1,15 @@
+meta {
+  name: Delete board
+  type: http
+  seq: 4
+}
+
+delete {
+  url: {{baseUrl}}/rest/agile/1.0/board/:boardId
+  body: none
+  auth: inherit
+}
+
+params:path {
+  boardId:
+}

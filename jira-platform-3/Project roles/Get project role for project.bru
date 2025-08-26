@@ -1,0 +1,20 @@
+meta {
+  name: Get project role for project
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/project/:projectIdOrKey/role/:id
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~excludeInactiveUsers:
+}
+
+params:path {
+  projectIdOrKey:
+  id:
+}

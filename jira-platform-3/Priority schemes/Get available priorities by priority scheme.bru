@@ -1,0 +1,19 @@
+meta {
+  name: Get available priorities by priority scheme
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/priorityscheme/priorities/available
+  body: none
+  auth: inherit
+}
+
+params:query {
+  schemeId:
+  ~startAt:
+  ~maxResults:
+  ~query:
+  ~exclude:
+}

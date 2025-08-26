@@ -1,0 +1,16 @@
+meta {
+  name: Get issue types for project
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/issuetype/project
+  body: none
+  auth: inherit
+}
+
+params:query {
+  projectId:
+  ~level:
+}

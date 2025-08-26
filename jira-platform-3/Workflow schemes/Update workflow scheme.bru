@@ -1,0 +1,51 @@
+meta {
+  name: Update workflow scheme
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{baseUrl}}/rest/api/3/workflowscheme/update
+  body: json
+  auth: inherit
+}
+
+
+body:json {
+  {
+    "defaultWorkflowId": "",
+    "description": "",
+    "id": "",
+    "name": "",
+    "statusMappingsByIssueTypeOverride": [
+      {
+        "issueTypeId": "",
+        "statusMappings": [
+          {
+            "newStatusId": "",
+            "oldStatusId": ""
+          }
+        ]
+      }
+    ],
+    "statusMappingsByWorkflows": [
+      {
+        "newWorkflowId": "",
+        "oldWorkflowId": "",
+        "statusMappings": [
+          {}
+        ]
+      }
+    ],
+    "version": {
+      "id": "",
+      "versionNumber": 0
+    },
+    "workflowsForIssueTypes": [
+      {
+        "issueTypeIds": [],
+        "workflowId": ""
+      }
+    ]
+  }
+}

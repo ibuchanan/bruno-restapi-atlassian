@@ -1,0 +1,23 @@
+meta {
+  name: Update screen
+  type: http
+  seq: 6
+}
+
+put {
+  url: {{baseUrl}}/rest/api/3/screens/:screenId
+  body: json
+  auth: inherit
+}
+
+params:path {
+  screenId:
+}
+
+
+body:json {
+  {
+    "description": "",
+    "name": ""
+  }
+}

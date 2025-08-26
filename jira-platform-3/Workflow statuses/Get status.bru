@@ -1,0 +1,15 @@
+meta {
+  name: Get status
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/status/:idOrName
+  body: none
+  auth: inherit
+}
+
+params:path {
+  idOrName:
+}

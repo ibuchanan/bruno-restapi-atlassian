@@ -1,0 +1,28 @@
+meta {
+  name: Bulk get custom field configurations
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/rest/api/3/app/field/context/configuration/list
+  body: json
+  auth: inherit
+}
+
+params:query {
+  ~id:
+  ~fieldContextId:
+  ~issueId:
+  ~projectKeyOrId:
+  ~issueTypeId:
+  ~startAt:
+  ~maxResults:
+}
+
+
+body:json {
+  {
+    "fieldIdsOrKeys": []
+  }
+}

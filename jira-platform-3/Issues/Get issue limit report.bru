@@ -1,0 +1,15 @@
+meta {
+  name: Get issue limit report
+  type: http
+  seq: 11
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/issue/limit/report
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~isReturningKeys:
+}

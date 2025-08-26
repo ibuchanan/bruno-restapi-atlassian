@@ -1,0 +1,21 @@
+meta {
+  name: Bulk edit issues
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{baseUrl}}/rest/api/3/bulk/issues/fields
+  body: json
+  auth: inherit
+}
+
+
+body:json {
+  {
+    "editedFieldsInput": "",
+    "selectedActions": [],
+    "selectedIssueIdsOrKeys": [],
+    "sendBulkNotification": false
+  }
+}

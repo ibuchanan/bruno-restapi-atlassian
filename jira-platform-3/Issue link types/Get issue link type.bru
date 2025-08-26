@@ -1,0 +1,15 @@
+meta {
+  name: Get issue link type
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/issueLinkType/:issueLinkTypeId
+  body: none
+  auth: inherit
+}
+
+params:path {
+  issueLinkTypeId:
+}

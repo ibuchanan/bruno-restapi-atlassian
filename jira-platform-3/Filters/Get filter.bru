@@ -1,0 +1,20 @@
+meta {
+  name: Get filter
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/filter/:id
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~expand:
+  ~overrideSharePermissions:
+}
+
+params:path {
+  id:
+}

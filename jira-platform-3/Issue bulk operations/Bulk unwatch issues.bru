@@ -1,0 +1,18 @@
+meta {
+  name: Bulk unwatch issues
+  type: http
+  seq: 7
+}
+
+post {
+  url: {{baseUrl}}/rest/api/3/bulk/issues/unwatch
+  body: json
+  auth: inherit
+}
+
+
+body:json {
+  {
+    "selectedIssueIdsOrKeys": []
+  }
+}

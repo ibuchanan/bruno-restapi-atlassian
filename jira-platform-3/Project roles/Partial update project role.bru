@@ -1,0 +1,23 @@
+meta {
+  name: Partial update project role
+  type: http
+  seq: 8
+}
+
+post {
+  url: {{baseUrl}}/rest/api/3/role/:id
+  body: json
+  auth: inherit
+}
+
+params:path {
+  id:
+}
+
+
+body:json {
+  {
+    "description": "",
+    "name": ""
+  }
+}

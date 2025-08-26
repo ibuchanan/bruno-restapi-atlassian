@@ -1,0 +1,31 @@
+meta {
+  name: Transition issue
+  type: http
+  seq: 22
+}
+
+post {
+  url: {{baseUrl}}/rest/api/3/issue/:issueIdOrKey/transitions
+  body: json
+  auth: inherit
+}
+
+params:path {
+  issueIdOrKey:
+}
+
+
+body:json {
+  {
+    "fields": {},
+    "historyMetadata": "",
+    "properties": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "transition": "",
+    "update": {}
+  }
+}

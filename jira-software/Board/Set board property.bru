@@ -1,0 +1,16 @@
+meta {
+  name: Set board property
+  type: http
+  seq: 20
+}
+
+put {
+  url: {{baseUrl}}/rest/agile/1.0/board/:boardId/properties/:propertyKey
+  body: json
+  auth: inherit
+}
+
+params:path {
+  boardId:
+  propertyKey:
+}

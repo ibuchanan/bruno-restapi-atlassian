@@ -1,0 +1,15 @@
+meta {
+  name: Archive plan
+  type: http
+  seq: 5
+}
+
+put {
+  url: {{baseUrl}}/rest/api/3/plans/plan/:planId/archive
+  body: none
+  auth: inherit
+}
+
+params:path {
+  planId:
+}

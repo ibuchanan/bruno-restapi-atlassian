@@ -1,0 +1,19 @@
+meta {
+  name: Create project role
+  type: http
+  seq: 5
+}
+
+post {
+  url: {{baseUrl}}/rest/api/3/role
+  body: json
+  auth: inherit
+}
+
+
+body:json {
+  {
+    "description": "",
+    "name": ""
+  }
+}

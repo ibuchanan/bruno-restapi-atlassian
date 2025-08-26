@@ -1,0 +1,26 @@
+meta {
+  name: Update issue link type
+  type: http
+  seq: 5
+}
+
+put {
+  url: {{baseUrl}}/rest/api/3/issueLinkType/:issueLinkTypeId
+  body: json
+  auth: inherit
+}
+
+params:path {
+  issueLinkTypeId:
+}
+
+
+body:json {
+  {
+    "id": "",
+    "inward": "",
+    "name": "",
+    "outward": "",
+    "self": ""
+  }
+}

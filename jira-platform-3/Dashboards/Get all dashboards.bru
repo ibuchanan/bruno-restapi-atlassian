@@ -1,0 +1,17 @@
+meta {
+  name: Get all dashboards
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/dashboard
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~filter:
+  ~startAt:
+  ~maxResults:
+}

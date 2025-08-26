@@ -1,0 +1,11 @@
+meta {
+  name: Get Jira attachment settings
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/attachment/meta
+  body: none
+  auth: inherit
+}

@@ -1,0 +1,24 @@
+meta {
+  name: Update screen scheme
+  type: http
+  seq: 4
+}
+
+put {
+  url: {{baseUrl}}/rest/api/3/screenscheme/:screenSchemeId
+  body: json
+  auth: inherit
+}
+
+params:path {
+  screenSchemeId:
+}
+
+
+body:json {
+  {
+    "description": "",
+    "name": "",
+    "screens": ""
+  }
+}

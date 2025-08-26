@@ -1,0 +1,21 @@
+meta {
+  name: Find users with browse permission
+  type: http
+  seq: 8
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/user/viewissue/search
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~query:
+  ~username:
+  ~accountId:
+  ~issueKey:
+  ~projectKey:
+  ~startAt:
+  ~maxResults:
+}

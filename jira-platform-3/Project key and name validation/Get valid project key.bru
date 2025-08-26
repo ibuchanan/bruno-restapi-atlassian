@@ -1,0 +1,15 @@
+meta {
+  name: Get valid project key
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/projectvalidate/validProjectKey
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~key:
+}

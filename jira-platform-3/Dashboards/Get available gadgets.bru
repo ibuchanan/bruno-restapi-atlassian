@@ -1,0 +1,11 @@
+meta {
+  name: Get available gadgets
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/dashboard/gadgets
+  body: none
+  auth: inherit
+}

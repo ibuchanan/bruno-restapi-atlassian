@@ -1,0 +1,17 @@
+meta {
+  name: Find user keys by query
+  type: http
+  seq: 7
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/user/search/query/key
+  body: none
+  auth: inherit
+}
+
+params:query {
+  query:
+  ~startAt:
+  ~maxResult:
+}

@@ -1,0 +1,11 @@
+meta {
+  name: Get all project types
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/project/type
+  body: none
+  auth: inherit
+}

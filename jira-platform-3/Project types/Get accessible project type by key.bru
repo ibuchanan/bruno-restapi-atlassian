@@ -1,0 +1,15 @@
+meta {
+  name: Get accessible project type by key
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/project/type/:projectTypeKey/accessible
+  body: none
+  auth: inherit
+}
+
+params:path {
+  projectTypeKey:
+}

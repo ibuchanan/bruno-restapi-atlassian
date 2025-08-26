@@ -1,0 +1,19 @@
+meta {
+  name: Create screen
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{baseUrl}}/rest/api/3/screens
+  body: json
+  auth: inherit
+}
+
+
+body:json {
+  {
+    "description": "",
+    "name": ""
+  }
+}

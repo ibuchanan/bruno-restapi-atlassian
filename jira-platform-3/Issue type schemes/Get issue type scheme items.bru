@@ -1,0 +1,17 @@
+meta {
+  name: Get issue type scheme items
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/issuetypescheme/mapping
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~startAt:
+  ~maxResults:
+  ~issueTypeSchemeId:
+}

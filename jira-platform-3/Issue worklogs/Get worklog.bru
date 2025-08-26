@@ -1,0 +1,20 @@
+meta {
+  name: Get worklog
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/issue/:issueIdOrKey/worklog/:id
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~expand:
+}
+
+params:path {
+  issueIdOrKey:
+  id:
+}

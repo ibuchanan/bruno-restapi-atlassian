@@ -1,0 +1,23 @@
+meta {
+  name: Rank epics
+  type: http
+  seq: 7
+}
+
+put {
+  url: {{baseUrl}}/rest/agile/1.0/epic/:epicIdOrKey/rank
+  body: json
+  auth: inherit
+}
+
+params:path {
+  epicIdOrKey:
+}
+
+body:json {
+  {
+    "rankAfterEpic": "",
+    "rankBeforeEpic": "",
+    "rankCustomFieldId": 0
+  }
+}

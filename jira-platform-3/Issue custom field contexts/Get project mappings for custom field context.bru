@@ -1,0 +1,21 @@
+meta {
+  name: Get project mappings for custom field context
+  type: http
+  seq: 7
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/field/:fieldId/context/projectmapping
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~contextId:
+  ~startAt:
+  ~maxResults:
+}
+
+params:path {
+  fieldId:
+}

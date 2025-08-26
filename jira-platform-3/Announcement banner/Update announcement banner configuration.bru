@@ -1,0 +1,21 @@
+meta {
+  name: Update announcement banner configuration
+  type: http
+  seq: 2
+}
+
+put {
+  url: {{baseUrl}}/rest/api/3/announcementBanner
+  body: json
+  auth: inherit
+}
+
+
+body:json {
+  {
+    "isDismissible": false,
+    "isEnabled": false,
+    "message": "",
+    "visibility": ""
+  }
+}

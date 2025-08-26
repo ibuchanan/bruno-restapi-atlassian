@@ -1,0 +1,23 @@
+meta {
+  name: Update issue type screen scheme
+  type: http
+  seq: 7
+}
+
+put {
+  url: {{baseUrl}}/rest/api/3/issuetypescreenscheme/:issueTypeScreenSchemeId
+  body: json
+  auth: inherit
+}
+
+params:path {
+  issueTypeScreenSchemeId:
+}
+
+
+body:json {
+  {
+    "description": "",
+    "name": ""
+  }
+}

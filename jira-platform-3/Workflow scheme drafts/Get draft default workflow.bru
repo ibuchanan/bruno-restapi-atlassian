@@ -1,0 +1,15 @@
+meta {
+  name: Get draft default workflow
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/workflowscheme/:id/draft/default
+  body: none
+  auth: inherit
+}
+
+params:path {
+  id:
+}

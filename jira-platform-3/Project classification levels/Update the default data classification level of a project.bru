@@ -1,0 +1,22 @@
+meta {
+  name: Update the default data classification level of a project
+  type: http
+  seq: 3
+}
+
+put {
+  url: {{baseUrl}}/rest/api/3/project/:projectIdOrKey/classification-level/default
+  body: json
+  auth: inherit
+}
+
+params:path {
+  projectIdOrKey:
+}
+
+
+body:json {
+  {
+    "id": ""
+  }
+}

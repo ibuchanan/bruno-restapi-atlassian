@@ -1,0 +1,19 @@
+meta {
+  name: Delete issue
+  type: http
+  seq: 13
+}
+
+delete {
+  url: {{baseUrl}}/rest/api/3/issue/:issueIdOrKey
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~deleteSubtasks:
+}
+
+params:path {
+  issueIdOrKey:
+}

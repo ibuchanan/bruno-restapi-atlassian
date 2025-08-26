@@ -1,0 +1,21 @@
+meta {
+  name: Get screens for a field
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/field/:fieldId/screens
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~startAt:
+  ~maxResults:
+  ~expand:
+}
+
+params:path {
+  fieldId:
+}

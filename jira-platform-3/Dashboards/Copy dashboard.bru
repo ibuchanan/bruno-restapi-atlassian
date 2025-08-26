@@ -1,0 +1,40 @@
+meta {
+  name: Copy dashboard
+  type: http
+  seq: 17
+}
+
+post {
+  url: {{baseUrl}}/rest/api/3/dashboard/:id/copy
+  body: json
+  auth: inherit
+}
+
+params:query {
+  ~extendAdminPermissions:
+}
+
+params:path {
+  id:
+}
+
+
+body:json {
+  {
+    "description": "",
+    "editPermissions": [
+      {
+        "group": "",
+        "id": 0,
+        "project": "",
+        "role": "",
+        "type": "",
+        "user": ""
+      }
+    ],
+    "name": "",
+    "sharePermissions": [
+      {}
+    ]
+  }
+}

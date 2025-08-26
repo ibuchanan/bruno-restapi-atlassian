@@ -1,0 +1,23 @@
+meta {
+  name: Move version
+  type: http
+  seq: 8
+}
+
+post {
+  url: {{baseUrl}}/rest/api/3/version/:id/move
+  body: json
+  auth: inherit
+}
+
+params:path {
+  id:
+}
+
+
+body:json {
+  {
+    "after": "",
+    "position": ""
+  }
+}

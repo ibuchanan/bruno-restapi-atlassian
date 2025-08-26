@@ -1,0 +1,11 @@
+meta {
+  name: Get all Operations Workspace IDs or a specific Operations Workspace by ID
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{baseUrl}}/rest/operations/1.0/linkedWorkspaces
+  body: none
+  auth: inherit
+}

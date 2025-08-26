@@ -1,0 +1,11 @@
+meta {
+  name: Get time tracking settings
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/configuration/timetracking/options
+  body: none
+  auth: inherit
+}

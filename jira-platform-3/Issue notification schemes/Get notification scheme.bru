@@ -1,0 +1,19 @@
+meta {
+  name: Get notification scheme
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/notificationscheme/:id
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~expand:
+}
+
+params:path {
+  id:
+}

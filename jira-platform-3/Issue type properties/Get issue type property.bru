@@ -1,0 +1,16 @@
+meta {
+  name: Get issue type property
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/issuetype/:issueTypeId/properties/:propertyKey
+  body: none
+  auth: inherit
+}
+
+params:path {
+  issueTypeId:
+  propertyKey:
+}

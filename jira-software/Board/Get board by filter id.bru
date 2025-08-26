@@ -1,0 +1,20 @@
+meta {
+  name: Get board by filter id
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{baseUrl}}/rest/agile/1.0/board/filter/:filterId
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~startAt:
+  ~maxResults:
+}
+
+params:path {
+  filterId:
+}

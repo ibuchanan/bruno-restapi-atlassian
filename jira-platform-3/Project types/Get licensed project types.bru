@@ -1,0 +1,11 @@
+meta {
+  name: Get licensed project types
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/project/type/accessible
+  body: none
+  auth: inherit
+}

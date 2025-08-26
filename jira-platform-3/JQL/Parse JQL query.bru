@@ -1,0 +1,22 @@
+meta {
+  name: Parse JQL query
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{baseUrl}}/rest/api/3/jql/parse
+  body: json
+  auth: inherit
+}
+
+params:query {
+  validation:
+}
+
+
+body:json {
+  {
+    "queries": []
+  }
+}

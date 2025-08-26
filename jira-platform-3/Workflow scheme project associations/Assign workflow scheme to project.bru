@@ -1,0 +1,19 @@
+meta {
+  name: Assign workflow scheme to project
+  type: http
+  seq: 2
+}
+
+put {
+  url: {{baseUrl}}/rest/api/3/workflowscheme/project
+  body: json
+  auth: inherit
+}
+
+
+body:json {
+  {
+    "projectId": "",
+    "workflowSchemeId": ""
+  }
+}

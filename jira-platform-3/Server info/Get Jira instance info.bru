@@ -1,0 +1,11 @@
+meta {
+  name: Get Jira instance info
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/serverInfo
+  body: none
+  auth: inherit
+}

@@ -1,0 +1,22 @@
+meta {
+  name: Create priority
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/rest/api/3/priority
+  body: json
+  auth: inherit
+}
+
+
+body:json {
+  {
+    "avatarId": 0,
+    "description": "",
+    "iconUrl": "",
+    "name": "",
+    "statusColor": ""
+  }
+}

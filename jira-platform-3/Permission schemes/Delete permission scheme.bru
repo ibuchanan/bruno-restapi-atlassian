@@ -1,0 +1,15 @@
+meta {
+  name: Delete permission scheme
+  type: http
+  seq: 3
+}
+
+delete {
+  url: {{baseUrl}}/rest/api/3/permissionscheme/:schemeId
+  body: none
+  auth: inherit
+}
+
+params:path {
+  schemeId:
+}

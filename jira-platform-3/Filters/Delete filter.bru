@@ -1,0 +1,15 @@
+meta {
+  name: Delete filter
+  type: http
+  seq: 5
+}
+
+delete {
+  url: {{baseUrl}}/rest/api/3/filter/:id
+  body: none
+  auth: inherit
+}
+
+params:path {
+  id:
+}

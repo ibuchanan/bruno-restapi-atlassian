@@ -1,0 +1,27 @@
+meta {
+  name: Get all boards
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/rest/agile/1.0/board
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~startAt:
+  ~maxResults:
+  ~type:
+  ~name:
+  ~projectKeyOrId:
+  ~accountIdLocation:
+  ~projectLocation:
+  ~includePrivate:
+  ~negateLocationFiltering:
+  ~orderBy:
+  ~expand:
+  ~projectTypeLocation:
+  ~filterId:
+}

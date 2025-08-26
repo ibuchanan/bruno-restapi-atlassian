@@ -1,0 +1,20 @@
+meta {
+  name: Get screen schemes
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/screenscheme
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~startAt:
+  ~maxResults:
+  ~id:
+  ~expand:
+  ~queryString:
+  ~orderBy:
+}

@@ -1,0 +1,26 @@
+meta {
+  name: Create related work
+  type: http
+  seq: 11
+}
+
+post {
+  url: {{baseUrl}}/rest/api/3/version/:id/relatedwork
+  body: json
+  auth: inherit
+}
+
+params:path {
+  id:
+}
+
+
+body:json {
+  {
+    "category": "",
+    "issueId": 0,
+    "relatedWorkId": "",
+    "title": "",
+    "url": ""
+  }
+}

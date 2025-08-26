@@ -1,0 +1,19 @@
+meta {
+  name: Get assigned permission scheme
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/project/:projectKeyOrId/permissionscheme
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~expand:
+}
+
+params:path {
+  projectKeyOrId:
+}

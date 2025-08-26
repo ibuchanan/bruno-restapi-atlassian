@@ -1,0 +1,16 @@
+meta {
+  name: Delete share permission
+  type: http
+  seq: 5
+}
+
+delete {
+  url: {{baseUrl}}/rest/api/3/filter/:id/permission/:permissionId
+  body: none
+  auth: inherit
+}
+
+params:path {
+  id:
+  permissionId:
+}

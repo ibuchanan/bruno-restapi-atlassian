@@ -1,0 +1,15 @@
+meta {
+  name: Remove the default data classification level from a project
+  type: http
+  seq: 1
+}
+
+delete {
+  url: {{baseUrl}}/rest/api/3/project/:projectIdOrKey/classification-level/default
+  body: none
+  auth: inherit
+}
+
+params:path {
+  projectIdOrKey:
+}

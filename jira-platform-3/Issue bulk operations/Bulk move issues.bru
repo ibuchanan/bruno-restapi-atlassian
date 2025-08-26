@@ -1,0 +1,19 @@
+meta {
+  name: Bulk move issues
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{baseUrl}}/rest/api/3/bulk/issues/move
+  body: json
+  auth: inherit
+}
+
+
+body:json {
+  {
+    "sendBulkNotification": false,
+    "targetToSourcesMapping": {}
+  }
+}

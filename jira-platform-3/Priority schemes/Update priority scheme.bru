@@ -1,0 +1,27 @@
+meta {
+  name: Update priority scheme
+  type: http
+  seq: 6
+}
+
+put {
+  url: {{baseUrl}}/rest/api/3/priorityscheme/:schemeId
+  body: json
+  auth: inherit
+}
+
+params:path {
+  schemeId:
+}
+
+
+body:json {
+  {
+    "defaultPriorityId": 0,
+    "description": "",
+    "mappings": "",
+    "name": "",
+    "priorities": "",
+    "projects": ""
+  }
+}

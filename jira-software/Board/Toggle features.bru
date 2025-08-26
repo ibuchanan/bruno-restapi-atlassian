@@ -1,0 +1,23 @@
+meta {
+  name: Toggle features
+  type: http
+  seq: 12
+}
+
+put {
+  url: {{baseUrl}}/rest/agile/1.0/board/:boardId/features
+  body: json
+  auth: inherit
+}
+
+params:path {
+  boardId:
+}
+
+body:json {
+  {
+    "boardId": 0,
+    "enabling": false,
+    "feature": ""
+  }
+}

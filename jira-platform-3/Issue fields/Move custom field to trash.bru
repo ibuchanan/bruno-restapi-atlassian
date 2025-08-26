@@ -1,0 +1,15 @@
+meta {
+  name: Move custom field to trash
+  type: http
+  seq: 9
+}
+
+post {
+  url: {{baseUrl}}/rest/api/3/field/:id/trash
+  body: none
+  auth: inherit
+}
+
+params:path {
+  id:
+}

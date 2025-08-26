@@ -1,0 +1,21 @@
+meta {
+  name: Find users for picker
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/user/picker
+  body: none
+  auth: inherit
+}
+
+params:query {
+  query:
+  ~maxResults:
+  ~showAvatar:
+  ~exclude:
+  ~excludeAccountIds:
+  ~avatarSize:
+  ~excludeConnectUsers:
+}

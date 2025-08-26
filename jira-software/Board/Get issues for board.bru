@@ -1,0 +1,24 @@
+meta {
+  name: Get issues for board
+  type: http
+  seq: 13
+}
+
+get {
+  url: {{baseUrl}}/rest/agile/1.0/board/:boardId/issue
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~startAt:
+  ~maxResults:
+  ~jql:
+  ~validateQuery:
+  ~fields:
+  ~expand:
+}
+
+params:path {
+  boardId:
+}

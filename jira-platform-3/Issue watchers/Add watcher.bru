@@ -1,0 +1,15 @@
+meta {
+  name: Add watcher
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{baseUrl}}/rest/api/3/issue/:issueIdOrKey/watchers
+  body: json
+  auth: inherit
+}
+
+params:path {
+  issueIdOrKey:
+}

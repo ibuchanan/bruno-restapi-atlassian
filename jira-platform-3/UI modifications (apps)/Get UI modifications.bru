@@ -1,0 +1,17 @@
+meta {
+  name: Get UI modifications
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/uiModifications
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~startAt:
+  ~maxResults:
+  ~expand:
+}

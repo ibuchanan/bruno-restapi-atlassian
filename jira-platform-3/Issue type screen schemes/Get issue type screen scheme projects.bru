@@ -1,0 +1,21 @@
+meta {
+  name: Get issue type screen scheme projects
+  type: http
+  seq: 11
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/issuetypescreenscheme/:issueTypeScreenSchemeId/project
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~startAt:
+  ~maxResults:
+  ~query:
+}
+
+params:path {
+  issueTypeScreenSchemeId:
+}

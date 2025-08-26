@@ -1,0 +1,21 @@
+meta {
+  name: Create issue type scheme
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/rest/api/3/issuetypescheme
+  body: json
+  auth: inherit
+}
+
+
+body:json {
+  {
+    "defaultIssueTypeId": "",
+    "description": "",
+    "issueTypeIds": [],
+    "name": ""
+  }
+}

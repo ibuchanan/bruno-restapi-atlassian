@@ -1,0 +1,22 @@
+meta {
+  name: Get projects by priority scheme
+  type: http
+  seq: 8
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/priorityscheme/:schemeId/projects
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~startAt:
+  ~maxResults:
+  ~projectId:
+  ~query:
+}
+
+params:path {
+  schemeId:
+}

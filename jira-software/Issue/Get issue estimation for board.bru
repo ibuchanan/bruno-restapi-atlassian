@@ -1,0 +1,19 @@
+meta {
+  name: Get issue estimation for board
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{baseUrl}}/rest/agile/1.0/issue/:issueIdOrKey/estimation?boardId=2
+  body: none
+  auth: inherit
+}
+
+params:query {
+  boardId: 2
+}
+
+params:path {
+  issueIdOrKey: 10180
+}

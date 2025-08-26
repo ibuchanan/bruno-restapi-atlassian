@@ -1,0 +1,11 @@
+meta {
+  name: Submit Operations Workspace Ids
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/rest/operations/1.0/linkedWorkspaces/bulk
+  body: json
+  auth: inherit
+}

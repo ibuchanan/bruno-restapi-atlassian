@@ -1,0 +1,39 @@
+meta {
+  name: Edit issue
+  type: http
+  seq: 15
+}
+
+put {
+  url: {{baseUrl}}/rest/api/3/issue/:issueIdOrKey
+  body: json
+  auth: inherit
+}
+
+params:query {
+  ~notifyUsers:
+  ~overrideScreenSecurity:
+  ~overrideEditableFlag:
+  ~returnIssue:
+  ~expand:
+}
+
+params:path {
+  issueIdOrKey:
+}
+
+
+body:json {
+  {
+    "fields": {},
+    "historyMetadata": "",
+    "properties": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "transition": "",
+    "update": {}
+  }
+}

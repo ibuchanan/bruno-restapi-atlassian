@@ -1,0 +1,16 @@
+meta {
+  name: Get remote issue link by ID
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/issue/:issueIdOrKey/remotelink/:linkId
+  body: none
+  auth: inherit
+}
+
+params:path {
+  issueIdOrKey:
+  linkId:
+}

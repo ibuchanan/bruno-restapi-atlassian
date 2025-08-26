@@ -1,0 +1,17 @@
+meta {
+  name: Get all projects
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/project
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~expand:
+  ~recent:
+  ~properties:
+}

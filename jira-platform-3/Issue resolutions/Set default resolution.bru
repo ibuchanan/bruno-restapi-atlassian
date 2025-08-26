@@ -1,0 +1,18 @@
+meta {
+  name: Set default resolution
+  type: http
+  seq: 3
+}
+
+put {
+  url: {{baseUrl}}/rest/api/3/resolution/default
+  body: json
+  auth: inherit
+}
+
+
+body:json {
+  {
+    "id": ""
+  }
+}

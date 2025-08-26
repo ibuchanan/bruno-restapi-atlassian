@@ -1,0 +1,15 @@
+meta {
+  name: Trash plan
+  type: http
+  seq: 7
+}
+
+put {
+  url: {{baseUrl}}/rest/api/3/plans/plan/:planId/trash
+  body: none
+  auth: inherit
+}
+
+params:path {
+  planId:
+}

@@ -1,0 +1,19 @@
+meta {
+  name: Get issue security levels
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/issuesecurityschemes/level
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~startAt:
+  ~maxResults:
+  ~id:
+  ~schemeId:
+  ~onlyDefault:
+}

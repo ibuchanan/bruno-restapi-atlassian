@@ -1,0 +1,39 @@
+meta {
+  name: Update permission scheme
+  type: http
+  seq: 5
+}
+
+put {
+  url: {{baseUrl}}/rest/api/3/permissionscheme/:schemeId
+  body: json
+  auth: inherit
+}
+
+params:query {
+  ~expand:
+}
+
+params:path {
+  schemeId:
+}
+
+
+body:json {
+  {
+    "description": "",
+    "expand": "",
+    "id": 0,
+    "name": "",
+    "permissions": [
+      {
+        "holder": "",
+        "id": 0,
+        "permission": "",
+        "self": ""
+      }
+    ],
+    "scope": "",
+    "self": ""
+  }
+}

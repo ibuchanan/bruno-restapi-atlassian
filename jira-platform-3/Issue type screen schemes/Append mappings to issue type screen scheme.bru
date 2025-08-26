@@ -1,0 +1,27 @@
+meta {
+  name: Append mappings to issue type screen scheme
+  type: http
+  seq: 8
+}
+
+put {
+  url: {{baseUrl}}/rest/api/3/issuetypescreenscheme/:issueTypeScreenSchemeId/mapping
+  body: json
+  auth: inherit
+}
+
+params:path {
+  issueTypeScreenSchemeId:
+}
+
+
+body:json {
+  {
+    "issueTypeMappings": [
+      {
+        "issueTypeId": "",
+        "screenSchemeId": ""
+      }
+    ]
+  }
+}

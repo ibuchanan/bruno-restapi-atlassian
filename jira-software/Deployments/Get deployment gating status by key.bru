@@ -1,0 +1,17 @@
+meta {
+  name: Get deployment gating status by key
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{baseUrl}}/rest/deployments/0.1/pipelines/:pipelineId/environments/:environmentId/deployments/:deploymentSequenceNumber/gating-status
+  body: none
+  auth: inherit
+}
+
+params:path {
+  pipelineId:
+  environmentId:
+  deploymentSequenceNumber:
+}

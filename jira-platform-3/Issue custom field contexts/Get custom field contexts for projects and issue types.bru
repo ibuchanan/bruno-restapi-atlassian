@@ -1,0 +1,32 @@
+meta {
+  name: Get custom field contexts for projects and issue types
+  type: http
+  seq: 6
+}
+
+post {
+  url: {{baseUrl}}/rest/api/3/field/:fieldId/context/mapping
+  body: json
+  auth: inherit
+}
+
+params:query {
+  ~startAt:
+  ~maxResults:
+}
+
+params:path {
+  fieldId:
+}
+
+
+body:json {
+  {
+    "mappings": [
+      {
+        "issueTypeId": "",
+        "projectId": ""
+      }
+    ]
+  }
+}

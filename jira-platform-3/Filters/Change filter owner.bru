@@ -1,0 +1,22 @@
+meta {
+  name: Change filter owner
+  type: http
+  seq: 13
+}
+
+put {
+  url: {{baseUrl}}/rest/api/3/filter/:id/owner
+  body: json
+  auth: inherit
+}
+
+params:path {
+  id:
+}
+
+
+body:json {
+  {
+    "accountId": ""
+  }
+}

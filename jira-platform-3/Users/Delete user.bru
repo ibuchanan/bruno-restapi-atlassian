@@ -1,0 +1,17 @@
+meta {
+  name: Delete user
+  type: http
+  seq: 1
+}
+
+delete {
+  url: {{baseUrl}}/rest/api/3/user
+  body: none
+  auth: inherit
+}
+
+params:query {
+  accountId:
+  ~username:
+  ~key:
+}

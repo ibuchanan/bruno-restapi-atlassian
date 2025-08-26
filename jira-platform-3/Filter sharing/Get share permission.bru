@@ -1,0 +1,16 @@
+meta {
+  name: Get share permission
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/filter/:id/permission/:permissionId
+  body: none
+  auth: inherit
+}
+
+params:path {
+  id:
+  permissionId:
+}

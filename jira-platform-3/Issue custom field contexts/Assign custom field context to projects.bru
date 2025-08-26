@@ -1,0 +1,23 @@
+meta {
+  name: Assign custom field context to projects
+  type: http
+  seq: 12
+}
+
+put {
+  url: {{baseUrl}}/rest/api/3/field/:fieldId/context/:contextId/project
+  body: json
+  auth: inherit
+}
+
+params:path {
+  fieldId:
+  contextId:
+}
+
+
+body:json {
+  {
+    "projectIds": []
+  }
+}

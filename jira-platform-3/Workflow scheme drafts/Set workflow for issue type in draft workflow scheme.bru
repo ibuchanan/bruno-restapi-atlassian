@@ -1,0 +1,25 @@
+meta {
+  name: Set workflow for issue type in draft workflow scheme
+  type: http
+  seq: 10
+}
+
+put {
+  url: {{baseUrl}}/rest/api/3/workflowscheme/:id/draft/issuetype/:issueType
+  body: json
+  auth: inherit
+}
+
+params:path {
+  id:
+  issueType:
+}
+
+
+body:json {
+  {
+    "issueType": "",
+    "updateDraftIfNeeded": false,
+    "workflow": ""
+  }
+}

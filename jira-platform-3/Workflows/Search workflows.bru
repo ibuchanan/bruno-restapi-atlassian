@@ -1,0 +1,21 @@
+meta {
+  name: Search workflows
+  type: http
+  seq: 13
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/workflows/search
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~startAt:
+  ~maxResults:
+  ~expand:
+  ~queryString:
+  ~orderBy:
+  ~scope:
+  ~isActive:
+}

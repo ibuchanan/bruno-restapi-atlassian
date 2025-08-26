@@ -1,0 +1,21 @@
+meta {
+  name: Get issue type usages by status and project
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/statuses/:statusId/project/:projectId/issueTypeUsages
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~nextPageToken:
+  ~maxResults:
+}
+
+params:path {
+  statusId:
+  projectId:
+}

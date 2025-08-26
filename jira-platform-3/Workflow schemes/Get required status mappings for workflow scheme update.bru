@@ -1,0 +1,25 @@
+meta {
+  name: Get required status mappings for workflow scheme update
+  type: http
+  seq: 5
+}
+
+post {
+  url: {{baseUrl}}/rest/api/3/workflowscheme/update/mappings
+  body: json
+  auth: inherit
+}
+
+
+body:json {
+  {
+    "defaultWorkflowId": "",
+    "id": "",
+    "workflowsForIssueTypes": [
+      {
+        "issueTypeIds": [],
+        "workflowId": ""
+      }
+    ]
+  }
+}

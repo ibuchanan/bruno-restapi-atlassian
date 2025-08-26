@@ -1,0 +1,29 @@
+meta {
+  name: Create UI modification
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/rest/api/3/uiModifications
+  body: json
+  auth: inherit
+}
+
+
+body:json {
+  {
+    "contexts": [
+      {
+        "id": "",
+        "isAvailable": false,
+        "issueTypeId": "",
+        "projectId": "",
+        "viewType": ""
+      }
+    ],
+    "data": "",
+    "description": "",
+    "name": ""
+  }
+}

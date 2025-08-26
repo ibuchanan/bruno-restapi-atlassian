@@ -1,0 +1,29 @@
+meta {
+  name: Create custom field options (context)
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{baseUrl}}/rest/api/3/field/:fieldId/context/:contextId/option
+  body: json
+  auth: inherit
+}
+
+params:path {
+  fieldId:
+  contextId:
+}
+
+
+body:json {
+  {
+    "options": [
+      {
+        "disabled": false,
+        "optionId": "",
+        "value": ""
+      }
+    ]
+  }
+}

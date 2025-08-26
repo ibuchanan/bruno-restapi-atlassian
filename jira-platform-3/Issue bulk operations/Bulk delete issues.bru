@@ -1,0 +1,19 @@
+meta {
+  name: Bulk delete issues
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/rest/api/3/bulk/issues/delete
+  body: json
+  auth: inherit
+}
+
+
+body:json {
+  {
+    "selectedIssueIdsOrKeys": [],
+    "sendBulkNotification": false
+  }
+}

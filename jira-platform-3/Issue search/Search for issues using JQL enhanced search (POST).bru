@@ -1,0 +1,25 @@
+meta {
+  name: Search for issues using JQL enhanced search (POST)
+  type: http
+  seq: 7
+}
+
+post {
+  url: {{baseUrl}}/rest/api/3/search/jql
+  body: json
+  auth: inherit
+}
+
+
+body:json {
+  {
+    "expand": "",
+    "fields": [],
+    "fieldsByKeys": false,
+    "jql": "",
+    "maxResults": 0,
+    "nextPageToken": "",
+    "properties": [],
+    "reconcileIssues": []
+  }
+}

@@ -1,0 +1,11 @@
+meta {
+  name: Get all application roles
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/applicationrole
+  body: none
+  auth: inherit
+}

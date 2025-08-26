@@ -1,0 +1,23 @@
+meta {
+  name: Bulk set issue properties by issue
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/rest/api/3/issue/properties/multi
+  body: json
+  auth: inherit
+}
+
+
+body:json {
+  {
+    "issues": [
+      {
+        "issueID": 0,
+        "properties": {}
+      }
+    ]
+  }
+}

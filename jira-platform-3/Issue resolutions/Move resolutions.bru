@@ -1,0 +1,20 @@
+meta {
+  name: Move resolutions
+  type: http
+  seq: 4
+}
+
+put {
+  url: {{baseUrl}}/rest/api/3/resolution/move
+  body: json
+  auth: inherit
+}
+
+
+body:json {
+  {
+    "after": "",
+    "ids": [],
+    "position": ""
+  }
+}

@@ -1,0 +1,27 @@
+meta {
+  name: Bulk delete worklogs
+  type: http
+  seq: 1
+}
+
+delete {
+  url: {{baseUrl}}/rest/api/3/issue/:issueIdOrKey/worklog
+  body: json
+  auth: inherit
+}
+
+params:query {
+  ~adjustEstimate:
+  ~overrideEditableFlag:
+}
+
+params:path {
+  issueIdOrKey:
+}
+
+
+body:json {
+  {
+    "ids": []
+  }
+}

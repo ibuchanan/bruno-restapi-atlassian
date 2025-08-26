@@ -1,0 +1,15 @@
+meta {
+  name: Get resolution
+  type: http
+  seq: 7
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/resolution/:id
+  body: none
+  auth: inherit
+}
+
+params:path {
+  id:
+}

@@ -1,0 +1,15 @@
+meta {
+  name: Get issue security scheme
+  type: http
+  seq: 9
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/issuesecurityschemes/:id
+  body: none
+  auth: inherit
+}
+
+params:path {
+  id:
+}

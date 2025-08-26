@@ -1,0 +1,16 @@
+meta {
+  name: Delete screen tab
+  type: http
+  seq: 4
+}
+
+delete {
+  url: {{baseUrl}}/rest/api/3/screens/:screenId/tabs/:tabId
+  body: none
+  auth: inherit
+}
+
+params:path {
+  screenId:
+  tabId:
+}

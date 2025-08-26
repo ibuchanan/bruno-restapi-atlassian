@@ -1,0 +1,19 @@
+meta {
+  name: Get workflow scheme
+  type: http
+  seq: 7
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/workflowscheme/:id
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~returnDraftIfExists:
+}
+
+params:path {
+  id:
+}

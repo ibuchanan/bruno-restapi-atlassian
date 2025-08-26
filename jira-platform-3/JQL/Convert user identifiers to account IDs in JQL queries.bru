@@ -1,0 +1,18 @@
+meta {
+  name: Convert user identifiers to account IDs in JQL queries
+  type: http
+  seq: 5
+}
+
+post {
+  url: {{baseUrl}}/rest/api/3/jql/pdcleaner
+  body: json
+  auth: inherit
+}
+
+
+body:json {
+  {
+    "queryStrings": []
+  }
+}

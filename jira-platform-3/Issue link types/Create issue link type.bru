@@ -1,0 +1,22 @@
+meta {
+  name: Create issue link type
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/rest/api/3/issueLinkType
+  body: json
+  auth: inherit
+}
+
+
+body:json {
+  {
+    "id": "",
+    "inward": "",
+    "name": "",
+    "outward": "",
+    "self": ""
+  }
+}

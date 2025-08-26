@@ -1,0 +1,15 @@
+meta {
+  name: Get current user
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/myself
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~expand:
+}

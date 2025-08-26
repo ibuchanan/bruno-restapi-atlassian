@@ -1,0 +1,21 @@
+meta {
+  name: Load issue type avatar
+  type: http
+  seq: 8
+}
+
+post {
+  url: {{baseUrl}}/rest/api/3/issuetype/:id/avatar2
+  body: none
+  auth: inherit
+}
+
+params:query {
+  size:
+  ~x:
+  ~y:
+}
+
+params:path {
+  id:
+}

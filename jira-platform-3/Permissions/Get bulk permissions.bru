@@ -1,0 +1,26 @@
+meta {
+  name: Get bulk permissions
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{baseUrl}}/rest/api/3/permissions/check
+  body: json
+  auth: inherit
+}
+
+
+body:json {
+  {
+    "accountId": "",
+    "globalPermissions": [],
+    "projectPermissions": [
+      {
+        "issues": [],
+        "permissions": [],
+        "projects": []
+      }
+    ]
+  }
+}

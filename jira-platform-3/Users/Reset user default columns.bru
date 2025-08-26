@@ -1,0 +1,16 @@
+meta {
+  name: Reset user default columns
+  type: http
+  seq: 6
+}
+
+delete {
+  url: {{baseUrl}}/rest/api/3/user/columns
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~accountId:
+  ~username:
+}

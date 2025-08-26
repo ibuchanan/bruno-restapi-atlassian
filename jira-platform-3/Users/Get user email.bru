@@ -1,0 +1,15 @@
+meta {
+  name: Get user email
+  type: http
+  seq: 9
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/user/email
+  body: none
+  auth: inherit
+}
+
+params:query {
+  accountId:
+}

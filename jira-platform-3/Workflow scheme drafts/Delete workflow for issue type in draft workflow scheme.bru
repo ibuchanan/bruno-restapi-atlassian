@@ -1,0 +1,16 @@
+meta {
+  name: Delete workflow for issue type in draft workflow scheme
+  type: http
+  seq: 8
+}
+
+delete {
+  url: {{baseUrl}}/rest/api/3/workflowscheme/:id/draft/issuetype/:issueType
+  body: none
+  auth: inherit
+}
+
+params:path {
+  id:
+  issueType:
+}

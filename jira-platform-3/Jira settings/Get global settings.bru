@@ -1,0 +1,11 @@
+meta {
+  name: Get global settings
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/configuration
+  body: none
+  auth: inherit
+}

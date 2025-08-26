@@ -1,0 +1,15 @@
+meta {
+  name: Get all statuses for project
+  type: http
+  seq: 11
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/project/:projectIdOrKey/statuses
+  body: none
+  auth: inherit
+}
+
+params:path {
+  projectIdOrKey:
+}

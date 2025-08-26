@@ -1,0 +1,19 @@
+meta {
+  name: Get user nav property
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/user/nav4-opt-property/:propertyKey
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~accountId:
+}
+
+params:path {
+  propertyKey:
+}

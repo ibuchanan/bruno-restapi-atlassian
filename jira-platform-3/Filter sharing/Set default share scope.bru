@@ -1,0 +1,18 @@
+meta {
+  name: Set default share scope
+  type: http
+  seq: 2
+}
+
+put {
+  url: {{baseUrl}}/rest/api/3/filter/defaultShareScope
+  body: json
+  auth: inherit
+}
+
+
+body:json {
+  {
+    "scope": ""
+  }
+}

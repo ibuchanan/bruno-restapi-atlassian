@@ -1,0 +1,23 @@
+meta {
+  name: Find users and groups
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/groupuserpicker
+  body: none
+  auth: inherit
+}
+
+params:query {
+  query:
+  ~maxResults:
+  ~showAvatar:
+  ~fieldId:
+  ~projectId:
+  ~issueTypeId:
+  ~avatarSize:
+  ~caseInsensitive:
+  ~excludeConnectAddons:
+}

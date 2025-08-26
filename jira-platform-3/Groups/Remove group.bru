@@ -1,0 +1,18 @@
+meta {
+  name: Remove group
+  type: http
+  seq: 1
+}
+
+delete {
+  url: {{baseUrl}}/rest/api/3/group
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~groupname:
+  ~groupId:
+  ~swapGroup:
+  ~swapGroupId:
+}

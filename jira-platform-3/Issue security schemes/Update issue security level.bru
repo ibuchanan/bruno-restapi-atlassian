@@ -1,0 +1,24 @@
+meta {
+  name: Update issue security level
+  type: http
+  seq: 14
+}
+
+put {
+  url: {{baseUrl}}/rest/api/3/issuesecurityschemes/:schemeId/level/:levelId
+  body: json
+  auth: inherit
+}
+
+params:path {
+  schemeId:
+  levelId:
+}
+
+
+body:json {
+  {
+    "description": "",
+    "name": ""
+  }
+}

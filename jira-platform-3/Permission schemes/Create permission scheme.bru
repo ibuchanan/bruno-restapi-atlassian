@@ -1,0 +1,35 @@
+meta {
+  name: Create permission scheme
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/rest/api/3/permissionscheme
+  body: json
+  auth: inherit
+}
+
+params:query {
+  ~expand:
+}
+
+
+body:json {
+  {
+    "description": "",
+    "expand": "",
+    "id": 0,
+    "name": "",
+    "permissions": [
+      {
+        "holder": "",
+        "id": 0,
+        "permission": "",
+        "self": ""
+      }
+    ],
+    "scope": "",
+    "self": ""
+  }
+}

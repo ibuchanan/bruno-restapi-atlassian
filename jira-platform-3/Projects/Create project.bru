@@ -1,0 +1,35 @@
+meta {
+  name: Create project
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/rest/api/3/project
+  body: json
+  auth: inherit
+}
+
+
+body:json {
+  {
+    "assigneeType": "",
+    "avatarId": 0,
+    "categoryId": 0,
+    "description": "",
+    "fieldConfigurationScheme": 0,
+    "issueSecurityScheme": 0,
+    "issueTypeScheme": 0,
+    "issueTypeScreenScheme": 0,
+    "key": "",
+    "lead": "",
+    "leadAccountId": "",
+    "name": "",
+    "notificationScheme": 0,
+    "permissionScheme": 0,
+    "projectTemplateKey": "",
+    "projectTypeKey": "",
+    "url": "",
+    "workflowScheme": 0
+  }
+}

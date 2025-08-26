@@ -1,0 +1,25 @@
+meta {
+  name: Delete development information entity
+  type: http
+  seq: 6
+}
+
+delete {
+  url: {{baseUrl}}/rest/devinfo/0.10/repository/:repositoryId/:entityType/:entityId
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~_updateSequenceId:
+}
+
+params:path {
+  repositoryId:
+  entityType:
+  entityId:
+}
+
+headers {
+  Authorization:
+}

@@ -1,0 +1,33 @@
+meta {
+  name: Authorize
+  type: http
+  seq: 3
+}
+
+get {
+  url: https://auth.atlassian.com/authorize?client_id={{process.env.CLIENT_ID}}&scope={{process.env.SCOPES}}&redirect_uri={{process.env.CALLBACK_URL}}&state={{$guid}}&response_type=code&prompt=consent
+  body: none
+  auth: none
+}
+
+params:query {
+  client_id: {{process.env.CLIENT_ID}}
+  scope: {{process.env.SCOPES}}
+  redirect_uri: {{process.env.CALLBACK_URL}}
+  state: {{$guid}}
+  response_type: code
+  prompt: consent
+}
+
+settings {
+  encodeUrl: true
+}
+
+docs {
+  [Direct the user to the authorization URL to get an authorization code](https://developer.atlassian.com/cloud/oauth/getting-started/implementing-oauth-3lo/#direct-the-user-to-the-authorization-url-to-get-an-authorization-code).
+  
+  This is provided for OAuth 2.0 debugging.
+  Use Bruno's built-in OAuth support for authorizing most requests.
+  
+  Note: this is expected to be a browser-based flow, not JSON.
+}

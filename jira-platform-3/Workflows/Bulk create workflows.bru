@@ -1,0 +1,105 @@
+meta {
+  name: Bulk create workflows
+  type: http
+  seq: 10
+}
+
+post {
+  url: {{baseUrl}}/rest/api/3/workflows/create
+  body: json
+  auth: inherit
+}
+
+
+body:json {
+  {
+    "scope": {
+      "project": {
+        "id": ""
+      },
+      "type": ""
+    },
+    "statuses": [
+      {
+        "description": "",
+        "id": "",
+        "name": "",
+        "statusCategory": "",
+        "statusReference": ""
+      }
+    ],
+    "workflows": [
+      {
+        "description": "",
+        "loopedTransitionContainerLayout": {
+          "x": "",
+          "y": ""
+        },
+        "name": "",
+        "startPointLayout": {},
+        "statuses": [
+          {
+            "approvalConfiguration": {
+              "active": "",
+              "conditionType": "",
+              "conditionValue": "",
+              "exclude": [],
+              "fieldId": "",
+              "prePopulatedFieldId": "",
+              "transitionApproved": "",
+              "transitionRejected": ""
+            },
+            "layout": {},
+            "properties": {},
+            "statusReference": ""
+          }
+        ],
+        "transitions": [
+          {
+            "actions": [
+              {
+                "id": "",
+                "parameters": {},
+                "ruleKey": ""
+              }
+            ],
+            "conditions": {
+              "conditionGroups": [
+                {}
+              ],
+              "conditions": [
+                {}
+              ],
+              "operation": ""
+            },
+            "customIssueEventId": "",
+            "description": "",
+            "id": "",
+            "links": [
+              {
+                "fromPort": 0,
+                "fromStatusReference": "",
+                "toPort": 0
+              }
+            ],
+            "name": "",
+            "properties": {},
+            "toStatusReference": "",
+            "transitionScreen": {},
+            "triggers": [
+              {
+                "id": "",
+                "parameters": {},
+                "ruleKey": ""
+              }
+            ],
+            "type": "",
+            "validators": [
+              {}
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+meta {
+  name: Search for filters
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/filter/search
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~filterName:
+  ~accountId:
+  ~owner:
+  ~groupname:
+  ~groupId:
+  ~projectId:
+  ~id:
+  ~orderBy:
+  ~startAt:
+  ~maxResults:
+  ~expand:
+  ~overrideSharePermissions:
+  ~isSubstringMatch:
+}

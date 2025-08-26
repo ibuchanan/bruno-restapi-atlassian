@@ -1,0 +1,15 @@
+meta {
+  name: Archive project
+  type: http
+  seq: 8
+}
+
+post {
+  url: {{baseUrl}}/rest/api/3/project/:projectIdOrKey/archive
+  body: none
+  auth: inherit
+}
+
+params:path {
+  projectIdOrKey:
+}

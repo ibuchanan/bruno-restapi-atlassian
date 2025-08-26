@@ -1,0 +1,25 @@
+meta {
+  name: Create or update remote issue link
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{baseUrl}}/rest/api/3/issue/:issueIdOrKey/remotelink
+  body: json
+  auth: inherit
+}
+
+params:path {
+  issueIdOrKey:
+}
+
+
+body:json {
+  {
+    "application": "",
+    "globalId": "",
+    "object": "",
+    "relationship": ""
+  }
+}

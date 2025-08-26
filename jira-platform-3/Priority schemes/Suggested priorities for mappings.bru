@@ -1,0 +1,22 @@
+meta {
+  name: Suggested priorities for mappings
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{baseUrl}}/rest/api/3/priorityscheme/mappings
+  body: json
+  auth: inherit
+}
+
+
+body:json {
+  {
+    "maxResults": 0,
+    "priorities": "",
+    "projects": "",
+    "schemeId": 0,
+    "startAt": 0
+  }
+}

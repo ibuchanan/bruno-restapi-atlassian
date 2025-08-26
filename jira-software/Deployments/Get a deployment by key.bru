@@ -1,0 +1,17 @@
+meta {
+  name: Get a deployment by key
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{baseUrl}}/rest/deployments/0.1/pipelines/:pipelineId/environments/:environmentId/deployments/:deploymentSequenceNumber
+  body: none
+  auth: inherit
+}
+
+params:path {
+  pipelineId:
+  environmentId:
+  deploymentSequenceNumber:
+}

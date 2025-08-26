@@ -1,0 +1,15 @@
+meta {
+  name: Get version's related issues count
+  type: http
+  seq: 9
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/version/:id/relatedIssueCounts
+  body: none
+  auth: inherit
+}
+
+params:path {
+  id:
+}

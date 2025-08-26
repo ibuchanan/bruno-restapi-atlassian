@@ -1,0 +1,22 @@
+meta {
+  name: Get my permissions
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/mypermissions
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~projectKey:
+  ~projectId:
+  ~issueKey:
+  ~issueId:
+  ~permissions:
+  ~projectUuid:
+  ~projectConfigurationUuid:
+  ~commentId:
+}

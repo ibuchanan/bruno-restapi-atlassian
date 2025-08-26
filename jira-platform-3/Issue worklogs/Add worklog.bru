@@ -1,0 +1,48 @@
+meta {
+  name: Add worklog
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{baseUrl}}/rest/api/3/issue/:issueIdOrKey/worklog
+  body: json
+  auth: inherit
+}
+
+params:query {
+  ~notifyUsers:
+  ~adjustEstimate:
+  ~newEstimate:
+  ~reduceBy:
+  ~expand:
+  ~overrideEditableFlag:
+}
+
+params:path {
+  issueIdOrKey:
+}
+
+
+body:json {
+  {
+    "author": "",
+    "comment": "",
+    "created": "",
+    "id": "",
+    "issueId": "",
+    "properties": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "self": "",
+    "started": "",
+    "timeSpent": "",
+    "timeSpentSeconds": 0,
+    "updateAuthor": "",
+    "updated": "",
+    "visibility": ""
+  }
+}

@@ -1,0 +1,19 @@
+meta {
+  name: Get audit records
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/auditing/record
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~offset:
+  ~limit:
+  ~filter:
+  ~from:
+  ~to:
+}

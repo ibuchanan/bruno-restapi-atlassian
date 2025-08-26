@@ -1,0 +1,24 @@
+meta {
+  name: Add user to group
+  type: http
+  seq: 7
+}
+
+post {
+  url: {{baseUrl}}/rest/api/3/group/user
+  body: json
+  auth: inherit
+}
+
+params:query {
+  ~groupname:
+  ~groupId:
+}
+
+
+body:json {
+  {
+    "accountId": "",
+    "name": ""
+  }
+}

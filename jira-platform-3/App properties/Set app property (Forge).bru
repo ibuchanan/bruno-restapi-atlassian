@@ -1,0 +1,15 @@
+meta {
+  name: Set app property (Forge)
+  type: http
+  seq: 6
+}
+
+put {
+  url: {{baseUrl}}/rest/forge/1/app/properties/:propertyKey
+  body: json
+  auth: inherit
+}
+
+params:path {
+  propertyKey:
+}

@@ -1,0 +1,20 @@
+meta {
+  name: Get comment
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/issue/:issueIdOrKey/comment/:id
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~expand:
+}
+
+params:path {
+  issueIdOrKey:
+  id:
+}

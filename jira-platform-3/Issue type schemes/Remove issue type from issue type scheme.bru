@@ -1,0 +1,16 @@
+meta {
+  name: Remove issue type from issue type scheme
+  type: http
+  seq: 10
+}
+
+delete {
+  url: {{baseUrl}}/rest/api/3/issuetypescheme/:issueTypeSchemeId/issuetype/:issueTypeId
+  body: none
+  auth: inherit
+}
+
+params:path {
+  issueTypeSchemeId:
+  issueTypeId:
+}

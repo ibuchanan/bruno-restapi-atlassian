@@ -1,0 +1,20 @@
+meta {
+  name: Get issue types for workflows in workflow scheme
+  type: http
+  seq: 16
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/workflowscheme/:id/workflow
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~workflowName:
+  ~returnDraftIfExists:
+}
+
+params:path {
+  id:
+}

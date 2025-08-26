@@ -1,0 +1,21 @@
+meta {
+  name: Get workflows paginated
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/workflow/search
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~startAt:
+  ~maxResults:
+  ~workflowName:
+  ~expand:
+  ~queryString:
+  ~orderBy:
+  ~isActive:
+}

@@ -1,0 +1,23 @@
+meta {
+  name: Update field configuration scheme
+  type: http
+  seq: 13
+}
+
+put {
+  url: {{baseUrl}}/rest/api/3/fieldconfigurationscheme/:id
+  body: json
+  auth: inherit
+}
+
+params:path {
+  id:
+}
+
+
+body:json {
+  {
+    "description": "",
+    "name": ""
+  }
+}

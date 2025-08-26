@@ -1,0 +1,15 @@
+meta {
+  name: Get related work
+  type: http
+  seq: 10
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/version/:id/relatedwork
+  body: none
+  auth: inherit
+}
+
+params:path {
+  id:
+}

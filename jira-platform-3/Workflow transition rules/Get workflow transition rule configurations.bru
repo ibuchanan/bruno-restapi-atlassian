@@ -1,0 +1,22 @@
+meta {
+  name: Get workflow transition rule configurations
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/workflow/rule/config
+  body: none
+  auth: inherit
+}
+
+params:query {
+  types:
+  ~startAt:
+  ~maxResults:
+  ~keys:
+  ~workflowNames:
+  ~withTags:
+  ~draft:
+  ~expand:
+}

@@ -1,0 +1,15 @@
+meta {
+  name: Delete project asynchronously
+  type: http
+  seq: 9
+}
+
+post {
+  url: {{baseUrl}}/rest/api/3/project/:projectIdOrKey/delete
+  body: none
+  auth: inherit
+}
+
+params:path {
+  projectIdOrKey:
+}

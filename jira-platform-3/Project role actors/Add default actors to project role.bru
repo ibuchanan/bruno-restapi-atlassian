@@ -1,0 +1,24 @@
+meta {
+  name: Add default actors to project role
+  type: http
+  seq: 6
+}
+
+post {
+  url: {{baseUrl}}/rest/api/3/role/:id/actors
+  body: json
+  auth: inherit
+}
+
+params:path {
+  id:
+}
+
+
+body:json {
+  {
+    "group": [],
+    "groupId": [],
+    "user": []
+  }
+}

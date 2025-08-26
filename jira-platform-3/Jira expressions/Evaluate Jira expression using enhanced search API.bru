@@ -1,0 +1,23 @@
+meta {
+  name: Evaluate Jira expression using enhanced search API
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{baseUrl}}/rest/api/3/expression/evaluate
+  body: json
+  auth: inherit
+}
+
+params:query {
+  ~expand:
+}
+
+
+body:json {
+  {
+    "context": "",
+    "expression": ""
+  }
+}

@@ -1,0 +1,19 @@
+meta {
+  name: Get permission scheme grants
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/permissionscheme/:schemeId/permission
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~expand:
+}
+
+params:path {
+  schemeId:
+}

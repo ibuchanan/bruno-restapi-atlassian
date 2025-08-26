@@ -1,0 +1,16 @@
+meta {
+  name: Update Atlassian team in plan
+  type: http
+  seq: 5
+}
+
+put {
+  url: {{baseUrl}}/rest/api/3/plans/plan/:planId/team/atlassian/:atlassianTeamId
+  body: none
+  auth: inherit
+}
+
+params:path {
+  planId:
+  atlassianTeamId:
+}

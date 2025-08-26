@@ -1,0 +1,24 @@
+meta {
+  name: Update screen tab
+  type: http
+  seq: 5
+}
+
+put {
+  url: {{baseUrl}}/rest/api/3/screens/:screenId/tabs/:tabId
+  body: json
+  auth: inherit
+}
+
+params:path {
+  screenId:
+  tabId:
+}
+
+
+body:json {
+  {
+    "id": 0,
+    "name": ""
+  }
+}

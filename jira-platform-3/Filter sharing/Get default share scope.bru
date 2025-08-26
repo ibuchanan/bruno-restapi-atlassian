@@ -1,0 +1,11 @@
+meta {
+  name: Get default share scope
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/filter/defaultShareScope
+  body: none
+  auth: inherit
+}

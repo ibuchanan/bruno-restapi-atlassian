@@ -1,0 +1,24 @@
+meta {
+  name: Update custom field
+  type: http
+  seq: 5
+}
+
+put {
+  url: {{baseUrl}}/rest/api/3/field/:fieldId
+  body: json
+  auth: inherit
+}
+
+params:path {
+  fieldId:
+}
+
+
+body:json {
+  {
+    "description": "",
+    "name": "",
+    "searcherKey": ""
+  }
+}

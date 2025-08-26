@@ -1,0 +1,15 @@
+meta {
+  name: Delete notification scheme
+  type: http
+  seq: 7
+}
+
+delete {
+  url: {{baseUrl}}/rest/api/3/notificationscheme/:notificationSchemeId
+  body: none
+  auth: inherit
+}
+
+params:path {
+  notificationSchemeId:
+}

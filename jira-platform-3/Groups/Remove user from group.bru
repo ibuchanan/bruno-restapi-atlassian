@@ -1,0 +1,18 @@
+meta {
+  name: Remove user from group
+  type: http
+  seq: 6
+}
+
+delete {
+  url: {{baseUrl}}/rest/api/3/group/user
+  body: none
+  auth: inherit
+}
+
+params:query {
+  accountId:
+  ~groupname:
+  ~groupId:
+  ~username:
+}

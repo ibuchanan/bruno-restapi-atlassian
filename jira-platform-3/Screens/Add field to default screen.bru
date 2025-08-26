@@ -1,0 +1,15 @@
+meta {
+  name: Add field to default screen
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{baseUrl}}/rest/api/3/screens/addToDefault/:fieldId
+  body: none
+  auth: inherit
+}
+
+params:path {
+  fieldId:
+}

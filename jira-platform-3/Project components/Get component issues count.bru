@@ -1,0 +1,15 @@
+meta {
+  name: Get component issues count
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/component/:id/relatedIssueCounts
+  body: none
+  auth: inherit
+}
+
+params:path {
+  id:
+}

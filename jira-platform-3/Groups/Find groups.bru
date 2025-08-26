@@ -1,0 +1,22 @@
+meta {
+  name: Find groups
+  type: http
+  seq: 8
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/groups/picker
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~accountId:
+  ~query:
+  ~exclude:
+  ~excludeId:
+  ~maxResults:
+  ~caseInsensitive:
+  ~userName:
+  ~includeTeams:
+}

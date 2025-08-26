@@ -1,0 +1,26 @@
+meta {
+  name: Create custom field context
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/rest/api/3/field/:fieldId/context
+  body: json
+  auth: inherit
+}
+
+params:path {
+  fieldId:
+}
+
+
+body:json {
+  {
+    "description": "",
+    "id": "",
+    "issueTypeIds": [],
+    "name": "",
+    "projectIds": []
+  }
+}

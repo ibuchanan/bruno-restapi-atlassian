@@ -1,0 +1,15 @@
+meta {
+  name: Get a Component by ID
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{baseUrl}}/rest/devopscomponents/1.0/devopscomponents/:componentId
+  body: none
+  auth: inherit
+}
+
+params:path {
+  componentId:
+}

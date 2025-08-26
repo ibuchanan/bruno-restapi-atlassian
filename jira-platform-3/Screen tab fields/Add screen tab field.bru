@@ -1,0 +1,23 @@
+meta {
+  name: Add screen tab field
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/rest/api/3/screens/:screenId/tabs/:tabId/fields
+  body: json
+  auth: inherit
+}
+
+params:path {
+  screenId:
+  tabId:
+}
+
+
+body:json {
+  {
+    "fieldId": ""
+  }
+}

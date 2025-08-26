@@ -1,0 +1,11 @@
+meta {
+  name: Get issue navigator default columns
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/settings/columns
+  body: none
+  auth: inherit
+}

@@ -1,0 +1,20 @@
+meta {
+  name: Bulk get groups
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/group/bulk
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~startAt:
+  ~maxResults:
+  ~groupId:
+  ~groupName:
+  ~accessType:
+  ~applicationKey:
+}

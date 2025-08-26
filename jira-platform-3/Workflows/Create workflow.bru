@@ -1,0 +1,37 @@
+meta {
+  name: Create workflow
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/rest/api/3/workflow
+  body: json
+  auth: inherit
+}
+
+
+body:json {
+  {
+    "description": "",
+    "name": "",
+    "statuses": [
+      {
+        "id": "",
+        "properties": {}
+      }
+    ],
+    "transitions": [
+      {
+        "description": "",
+        "from": [],
+        "name": "",
+        "properties": {},
+        "rules": "",
+        "screen": "",
+        "to": "",
+        "type": ""
+      }
+    ]
+  }
+}

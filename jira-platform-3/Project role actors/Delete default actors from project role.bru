@@ -1,0 +1,21 @@
+meta {
+  name: Delete default actors from project role
+  type: http
+  seq: 4
+}
+
+delete {
+  url: {{baseUrl}}/rest/api/3/role/:id/actors
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~user:
+  ~groupId:
+  ~group:
+}
+
+params:path {
+  id:
+}

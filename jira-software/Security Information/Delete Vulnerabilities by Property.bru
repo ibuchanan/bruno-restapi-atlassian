@@ -1,0 +1,11 @@
+meta {
+  name: Delete Vulnerabilities by Property
+  type: http
+  seq: 6
+}
+
+delete {
+  url: {{baseUrl}}/rest/security/1.0/bulkByProperties
+  body: none
+  auth: inherit
+}

@@ -1,0 +1,23 @@
+meta {
+  name: Get custom field contexts
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/field/:fieldId/context
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~isAnyIssueType:
+  ~isGlobalContext:
+  ~contextId:
+  ~startAt:
+  ~maxResults:
+}
+
+params:path {
+  fieldId:
+}

@@ -1,0 +1,15 @@
+meta {
+  name: Delete a Incident by ID
+  type: http
+  seq: 7
+}
+
+delete {
+  url: {{baseUrl}}/rest/operations/1.0/incidents/:incidentId
+  body: none
+  auth: inherit
+}
+
+params:path {
+  incidentId:
+}

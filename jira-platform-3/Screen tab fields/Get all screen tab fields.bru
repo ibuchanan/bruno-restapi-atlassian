@@ -1,0 +1,20 @@
+meta {
+  name: Get all screen tab fields
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/screens/:screenId/tabs/:tabId/fields
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~projectKey:
+}
+
+params:path {
+  screenId:
+  tabId:
+}

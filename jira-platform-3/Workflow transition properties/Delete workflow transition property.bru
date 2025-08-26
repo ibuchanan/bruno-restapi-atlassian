@@ -1,0 +1,21 @@
+meta {
+  name: Delete workflow transition property
+  type: http
+  seq: 1
+}
+
+delete {
+  url: {{baseUrl}}/rest/api/3/workflow/transitions/:transitionId/properties
+  body: none
+  auth: inherit
+}
+
+params:query {
+  key:
+  workflowName:
+  ~workflowMode:
+}
+
+params:path {
+  transitionId:
+}

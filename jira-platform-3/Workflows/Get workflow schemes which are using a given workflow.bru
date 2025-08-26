@@ -1,0 +1,20 @@
+meta {
+  name: Get workflow schemes which are using a given workflow
+  type: http
+  seq: 7
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/workflow/:workflowId/workflowSchemes
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~nextPageToken:
+  ~maxResults:
+}
+
+params:path {
+  workflowId:
+}

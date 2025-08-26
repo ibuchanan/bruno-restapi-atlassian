@@ -1,0 +1,23 @@
+meta {
+  name: Remove custom field context from projects
+  type: http
+  seq: 13
+}
+
+post {
+  url: {{baseUrl}}/rest/api/3/field/:fieldId/context/:contextId/project/remove
+  body: json
+  auth: inherit
+}
+
+params:path {
+  fieldId:
+  contextId:
+}
+
+
+body:json {
+  {
+    "projectIds": []
+  }
+}

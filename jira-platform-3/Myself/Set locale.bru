@@ -1,0 +1,18 @@
+meta {
+  name: Set locale
+  type: http
+  seq: 5
+}
+
+put {
+  url: {{baseUrl}}/rest/api/3/mypreferences/locale
+  body: json
+  auth: inherit
+}
+
+
+body:json {
+  {
+    "locale": ""
+  }
+}

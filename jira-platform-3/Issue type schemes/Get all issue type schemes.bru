@@ -1,0 +1,20 @@
+meta {
+  name: Get all issue type schemes
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/issuetypescheme
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~startAt:
+  ~maxResults:
+  ~id:
+  ~orderBy:
+  ~expand:
+  ~queryString:
+}

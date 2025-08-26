@@ -1,0 +1,38 @@
+meta {
+  name: Update project
+  type: http
+  seq: 7
+}
+
+put {
+  url: {{baseUrl}}/rest/api/3/project/:projectIdOrKey
+  body: json
+  auth: inherit
+}
+
+params:query {
+  ~expand:
+}
+
+params:path {
+  projectIdOrKey:
+}
+
+
+body:json {
+  {
+    "assigneeType": "",
+    "avatarId": 0,
+    "categoryId": 0,
+    "description": "",
+    "issueSecurityScheme": 0,
+    "key": "",
+    "lead": "",
+    "leadAccountId": "",
+    "name": "",
+    "notificationScheme": 0,
+    "permissionScheme": 0,
+    "releasedProjectKeys": [],
+    "url": ""
+  }
+}

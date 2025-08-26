@@ -1,0 +1,11 @@
+meta {
+  name: Get all statuses
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/status
+  body: none
+  auth: inherit
+}

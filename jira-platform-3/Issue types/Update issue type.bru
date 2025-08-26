@@ -1,0 +1,24 @@
+meta {
+  name: Update issue type
+  type: http
+  seq: 6
+}
+
+put {
+  url: {{baseUrl}}/rest/api/3/issuetype/:id
+  body: json
+  auth: inherit
+}
+
+params:path {
+  id:
+}
+
+
+body:json {
+  {
+    "avatarId": 0,
+    "description": "",
+    "name": ""
+  }
+}

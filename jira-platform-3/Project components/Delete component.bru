@@ -1,0 +1,19 @@
+meta {
+  name: Delete component
+  type: http
+  seq: 3
+}
+
+delete {
+  url: {{baseUrl}}/rest/api/3/component/:id
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~moveIssuesTo:
+}
+
+params:path {
+  id:
+}

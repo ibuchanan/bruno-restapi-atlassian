@@ -1,0 +1,11 @@
+meta {
+  name: Delete Incidents or Review by Property
+  type: http
+  seq: 5
+}
+
+delete {
+  url: {{baseUrl}}/rest/operations/1.0/bulkByProperties
+  body: none
+  auth: inherit
+}

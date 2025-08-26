@@ -1,0 +1,20 @@
+meta {
+  name: Get fields in trash paginated
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/field/search/trashed
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~startAt:
+  ~maxResults:
+  ~id:
+  ~query:
+  ~expand:
+  ~orderBy:
+}

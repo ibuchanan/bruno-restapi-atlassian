@@ -1,0 +1,15 @@
+meta {
+  name: Get all project avatars
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/project/:projectIdOrKey/avatars
+  body: none
+  auth: inherit
+}
+
+params:path {
+  projectIdOrKey:
+}

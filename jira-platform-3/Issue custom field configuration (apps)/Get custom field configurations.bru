@@ -1,0 +1,25 @@
+meta {
+  name: Get custom field configurations
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/app/field/:fieldIdOrKey/context/configuration
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~id:
+  ~fieldContextId:
+  ~issueId:
+  ~projectKeyOrId:
+  ~issueTypeId:
+  ~startAt:
+  ~maxResults:
+}
+
+params:path {
+  fieldIdOrKey:
+}

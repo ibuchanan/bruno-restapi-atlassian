@@ -1,0 +1,19 @@
+meta {
+  name: Delete project role
+  type: http
+  seq: 6
+}
+
+delete {
+  url: {{baseUrl}}/rest/api/3/role/:id
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~swap:
+}
+
+params:path {
+  id:
+}

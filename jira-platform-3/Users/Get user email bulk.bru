@@ -1,0 +1,15 @@
+meta {
+  name: Get user email bulk
+  type: http
+  seq: 10
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/user/email/bulk
+  body: none
+  auth: inherit
+}
+
+params:query {
+  accountId:
+}

@@ -1,0 +1,30 @@
+meta {
+  name: Update field configuration items
+  type: http
+  seq: 6
+}
+
+put {
+  url: {{baseUrl}}/rest/api/3/fieldconfiguration/:id/fields
+  body: json
+  auth: inherit
+}
+
+params:path {
+  id:
+}
+
+
+body:json {
+  {
+    "fieldConfigurationItems": [
+      {
+        "description": "",
+        "id": "",
+        "isHidden": false,
+        "isRequired": false,
+        "renderer": ""
+      }
+    ]
+  }
+}

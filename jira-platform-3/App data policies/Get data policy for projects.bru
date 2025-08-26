@@ -1,0 +1,15 @@
+meta {
+  name: Get data policy for projects
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/data-policy/project
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~ids:
+}

@@ -1,0 +1,16 @@
+meta {
+  name: Set property
+  type: http
+  seq: 11
+}
+
+put {
+  url: {{baseUrl}}/rest/agile/1.0/sprint/:sprintId/properties/:propertyKey
+  body: json
+  auth: inherit
+}
+
+params:path {
+  sprintId:
+  propertyKey:
+}

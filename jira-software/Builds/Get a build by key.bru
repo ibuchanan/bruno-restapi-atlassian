@@ -1,0 +1,16 @@
+meta {
+  name: Get a build by key
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{baseUrl}}/rest/builds/0.1/pipelines/:pipelineId/builds/:buildNumber
+  body: none
+  auth: inherit
+}
+
+params:path {
+  pipelineId:
+  buildNumber:
+}

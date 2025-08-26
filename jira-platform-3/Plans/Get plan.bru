@@ -1,0 +1,19 @@
+meta {
+  name: Get plan
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/plans/plan/:planId
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~useGroupId:
+}
+
+params:path {
+  planId:
+}

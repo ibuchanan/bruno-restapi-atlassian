@@ -1,0 +1,17 @@
+meta {
+  name: Get available workflow capabilities
+  type: http
+  seq: 9
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/workflows/capabilities
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~workflowId:
+  ~projectId:
+  ~issueTypeId:
+}

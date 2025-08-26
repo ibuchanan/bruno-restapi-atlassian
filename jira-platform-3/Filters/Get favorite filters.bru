@@ -1,0 +1,15 @@
+meta {
+  name: Get favorite filters
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/filter/favourite
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~expand:
+}

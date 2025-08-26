@@ -1,0 +1,22 @@
+meta {
+  name: Find users with permissions
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/user/permission/search
+  body: none
+  auth: inherit
+}
+
+params:query {
+  permissions:
+  ~query:
+  ~username:
+  ~accountId:
+  ~issueKey:
+  ~projectKey:
+  ~startAt:
+  ~maxResults:
+}

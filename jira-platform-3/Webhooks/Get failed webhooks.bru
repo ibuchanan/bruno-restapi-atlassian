@@ -1,0 +1,16 @@
+meta {
+  name: Get failed webhooks
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/webhook/failed
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~maxResults:
+  ~after:
+}

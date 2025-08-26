@@ -1,0 +1,31 @@
+meta {
+  name: Bulk create issue
+  type: http
+  seq: 6
+}
+
+post {
+  url: {{baseUrl}}/rest/api/3/issue/bulk
+  body: json
+  auth: inherit
+}
+
+
+body:json {
+  {
+    "issueUpdates": [
+      {
+        "fields": {},
+        "historyMetadata": "",
+        "properties": [
+          {
+            "key": "",
+            "value": ""
+          }
+        ],
+        "transition": "",
+        "update": {}
+      }
+    ]
+  }
+}

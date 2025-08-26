@@ -1,0 +1,29 @@
+meta {
+  name: Bulk update entity properties
+  type: http
+  seq: 2
+}
+
+put {
+  url: {{baseUrl}}/rest/atlassian-connect/1/migration/properties/:entityType
+  body: json
+  auth: inherit
+}
+
+params:path {
+  entityType:
+}
+
+headers {
+  Atlassian-Transfer-Id:
+}
+
+body:json {
+  [
+    {
+      "entityId": "",
+      "key": "",
+      "value": ""
+    }
+  ]
+}

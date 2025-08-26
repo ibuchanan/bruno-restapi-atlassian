@@ -1,0 +1,17 @@
+meta {
+  name: Get field configuration issue type items
+  type: http
+  seq: 9
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/fieldconfigurationscheme/mapping
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~startAt:
+  ~maxResults:
+  ~fieldConfigurationSchemeId:
+}

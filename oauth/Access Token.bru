@@ -1,0 +1,37 @@
+meta {
+  name: Access Token
+  type: http
+  seq: 4
+}
+
+post {
+  url: https://auth.atlassian.com/oauth/token
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "grant_type": "authorization_code",
+    "client_id": "{{process.env.CLIENT_ID}}",
+    "client_secret": "{{process.env.SECRET}}",
+    "code": "YOUR_AUTHORIZATION_CODE",
+    "redirect_uri": "{{process.env.CALLBACK_URL}}"
+  }
+}
+
+settings {
+  encodeUrl: false
+}
+
+docs {
+  [Exchange authorization code for access token](https://developer.atlassian.com/cloud/oauth/getting-started/implementing-oauth-3lo/#exchange-authorization-code-for-access-token)
+  
+  This is provided for OAuth 2.0 debugging. Use Bruno's built-in OAuth support for authorizing most requests.
+  
+  Note: the authorization code is obtained from the web UI flow.
+}

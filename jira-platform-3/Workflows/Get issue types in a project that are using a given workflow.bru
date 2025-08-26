@@ -1,0 +1,21 @@
+meta {
+  name: Get issue types in a project that are using a given workflow
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/workflow/:workflowId/project/:projectId/issueTypeUsages
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~nextPageToken:
+  ~maxResults:
+}
+
+params:path {
+  workflowId:
+  projectId:
+}

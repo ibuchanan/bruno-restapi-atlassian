@@ -1,0 +1,25 @@
+meta {
+  name: Bulk update statuses
+  type: http
+  seq: 4
+}
+
+put {
+  url: {{baseUrl}}/rest/api/3/statuses
+  body: json
+  auth: inherit
+}
+
+
+body:json {
+  {
+    "statuses": [
+      {
+        "description": "",
+        "id": "",
+        "name": "",
+        "statusCategory": ""
+      }
+    ]
+  }
+}

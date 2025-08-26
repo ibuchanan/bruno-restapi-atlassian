@@ -1,0 +1,30 @@
+meta {
+  name: Update workflow transition property
+  type: http
+  seq: 4
+}
+
+put {
+  url: {{baseUrl}}/rest/api/3/workflow/transitions/:transitionId/properties
+  body: json
+  auth: inherit
+}
+
+params:query {
+  key:
+  workflowName:
+  ~workflowMode:
+}
+
+params:path {
+  transitionId:
+}
+
+
+body:json {
+  {
+    "id": "",
+    "key": "",
+    "value": ""
+  }
+}

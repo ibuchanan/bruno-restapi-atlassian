@@ -1,0 +1,23 @@
+meta {
+  name: Create priority scheme
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/rest/api/3/priorityscheme
+  body: json
+  auth: inherit
+}
+
+
+body:json {
+  {
+    "defaultPriorityId": 0,
+    "description": "",
+    "mappings": "",
+    "name": "",
+    "priorityIds": [],
+    "projectIds": []
+  }
+}

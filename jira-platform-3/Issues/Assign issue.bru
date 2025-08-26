@@ -1,0 +1,35 @@
+meta {
+  name: Assign issue
+  type: http
+  seq: 16
+}
+
+put {
+  url: {{baseUrl}}/rest/api/3/issue/:issueIdOrKey/assignee
+  body: json
+  auth: inherit
+}
+
+params:path {
+  issueIdOrKey:
+}
+
+
+body:json {
+  {
+    "accountId": "",
+    "accountType": "",
+    "active": false,
+    "applicationRoles": "",
+    "avatarUrls": "",
+    "displayName": "",
+    "emailAddress": "",
+    "expand": "",
+    "groups": "",
+    "key": "",
+    "locale": "",
+    "name": "",
+    "self": "",
+    "timeZone": ""
+  }
+}

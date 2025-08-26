@@ -1,0 +1,16 @@
+meta {
+  name: Merge versions
+  type: http
+  seq: 7
+}
+
+put {
+  url: {{baseUrl}}/rest/api/3/version/:id/mergeto/:moveIssuesTo
+  body: none
+  auth: inherit
+}
+
+params:path {
+  id:
+  moveIssuesTo:
+}

@@ -1,0 +1,20 @@
+meta {
+  name: Get all quick filters
+  type: http
+  seq: 21
+}
+
+get {
+  url: {{baseUrl}}/rest/agile/1.0/board/:boardId/quickfilter
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~startAt:
+  ~maxResults:
+}
+
+params:path {
+  boardId:
+}

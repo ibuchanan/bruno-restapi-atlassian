@@ -1,0 +1,15 @@
+meta {
+  name: Get all permission schemes
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/permissionscheme
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~expand:
+}

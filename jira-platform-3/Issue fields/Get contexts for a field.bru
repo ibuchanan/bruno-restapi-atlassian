@@ -1,0 +1,20 @@
+meta {
+  name: Get contexts for a field
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/field/:fieldId/contexts
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~startAt:
+  ~maxResults:
+}
+
+params:path {
+  fieldId:
+}

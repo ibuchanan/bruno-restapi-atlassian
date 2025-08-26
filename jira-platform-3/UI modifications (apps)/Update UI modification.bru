@@ -1,0 +1,33 @@
+meta {
+  name: Update UI modification
+  type: http
+  seq: 4
+}
+
+put {
+  url: {{baseUrl}}/rest/api/3/uiModifications/:uiModificationId
+  body: json
+  auth: inherit
+}
+
+params:path {
+  uiModificationId:
+}
+
+
+body:json {
+  {
+    "contexts": [
+      {
+        "id": "",
+        "isAvailable": false,
+        "issueTypeId": "",
+        "projectId": "",
+        "viewType": ""
+      }
+    ],
+    "data": "",
+    "description": "",
+    "name": ""
+  }
+}

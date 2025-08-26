@@ -1,0 +1,19 @@
+meta {
+  name: Get project notification scheme
+  type: http
+  seq: 13
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/project/:projectKeyOrId/notificationscheme
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~expand:
+}
+
+params:path {
+  projectKeyOrId:
+}

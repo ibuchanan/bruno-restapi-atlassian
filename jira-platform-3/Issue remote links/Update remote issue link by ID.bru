@@ -1,0 +1,26 @@
+meta {
+  name: Update remote issue link by ID
+  type: http
+  seq: 6
+}
+
+put {
+  url: {{baseUrl}}/rest/api/3/issue/:issueIdOrKey/remotelink/:linkId
+  body: json
+  auth: inherit
+}
+
+params:path {
+  issueIdOrKey:
+  linkId:
+}
+
+
+body:json {
+  {
+    "application": "",
+    "globalId": "",
+    "object": "",
+    "relationship": ""
+  }
+}

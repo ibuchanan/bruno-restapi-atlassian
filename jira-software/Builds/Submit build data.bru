@@ -1,0 +1,21 @@
+meta {
+  name: Submit build data
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/rest/builds/0.1/bulk
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "properties": {},
+    "builds": [],
+    "providerMetadata": {
+      "product": ""
+    }
+  }
+}

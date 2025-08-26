@@ -1,0 +1,16 @@
+meta {
+  name: Gets a custom project template
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/project-template/live-template
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~projectId:
+  ~templateKey:
+}

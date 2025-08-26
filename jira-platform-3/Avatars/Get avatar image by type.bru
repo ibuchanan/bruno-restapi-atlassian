@@ -1,0 +1,20 @@
+meta {
+  name: Get avatar image by type
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/universal_avatar/view/type/:type
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~size:
+  ~format:
+}
+
+params:path {
+  type:
+}

@@ -1,0 +1,15 @@
+meta {
+  name: Delete priority scheme
+  type: http
+  seq: 5
+}
+
+delete {
+  url: {{baseUrl}}/rest/api/3/priorityscheme/:schemeId
+  body: none
+  auth: inherit
+}
+
+params:path {
+  schemeId:
+}

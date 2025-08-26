@@ -1,0 +1,19 @@
+meta {
+  name: Delete development information by properties
+  type: http
+  seq: 4
+}
+
+delete {
+  url: {{baseUrl}}/rest/devinfo/0.10/bulkByProperties
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~_updateSequenceId:
+}
+
+headers {
+  Authorization:
+}

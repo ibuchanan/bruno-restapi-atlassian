@@ -1,0 +1,24 @@
+meta {
+  name: Bulk transition issue statuses
+  type: http
+  seq: 6
+}
+
+post {
+  url: {{baseUrl}}/rest/api/3/bulk/issues/transition
+  body: json
+  auth: inherit
+}
+
+
+body:json {
+  {
+    "bulkTransitionInputs": [
+      {
+        "selectedIssueIdsOrKeys": [],
+        "transitionId": ""
+      }
+    ],
+    "sendBulkNotification": false
+  }
+}

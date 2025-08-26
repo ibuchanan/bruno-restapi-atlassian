@@ -1,0 +1,21 @@
+meta {
+  name: Search priorities
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/priority/search
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~startAt:
+  ~maxResults:
+  ~id:
+  ~projectId:
+  ~priorityName:
+  ~onlyDefault:
+  ~expand:
+}

@@ -1,0 +1,19 @@
+meta {
+  name: Get users from group
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/group/member
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~groupname:
+  ~groupId:
+  ~includeInactiveUsers:
+  ~startAt:
+  ~maxResults:
+}

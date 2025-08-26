@@ -1,0 +1,29 @@
+meta {
+  name: Remove associations
+  type: http
+  seq: 1
+}
+
+delete {
+  url: {{baseUrl}}/rest/api/3/field/association
+  body: json
+  auth: inherit
+}
+
+
+body:json {
+  {
+    "associationContexts": [
+      {
+        "identifier": {},
+        "type": ""
+      }
+    ],
+    "fields": [
+      {
+        "identifier": {},
+        "type": ""
+      }
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+meta {
+  name: Create draft workflow scheme
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/rest/api/3/workflowscheme/:id/createdraft
+  body: none
+  auth: inherit
+}
+
+params:path {
+  id:
+}

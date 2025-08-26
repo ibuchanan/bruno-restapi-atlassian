@@ -1,0 +1,19 @@
+meta {
+  name: Create field configuration scheme
+  type: http
+  seq: 8
+}
+
+post {
+  url: {{baseUrl}}/rest/api/3/fieldconfigurationscheme
+  body: json
+  auth: inherit
+}
+
+
+body:json {
+  {
+    "description": "",
+    "name": ""
+  }
+}

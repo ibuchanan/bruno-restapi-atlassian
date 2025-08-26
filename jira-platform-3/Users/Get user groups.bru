@@ -1,0 +1,17 @@
+meta {
+  name: Get user groups
+  type: http
+  seq: 11
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/user/groups
+  body: none
+  auth: inherit
+}
+
+params:query {
+  accountId:
+  ~username:
+  ~key:
+}

@@ -1,0 +1,20 @@
+meta {
+  name: Get field configuration items
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/fieldconfiguration/:id/fields
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~startAt:
+  ~maxResults:
+}
+
+params:path {
+  id:
+}

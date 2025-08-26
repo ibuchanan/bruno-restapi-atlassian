@@ -1,0 +1,20 @@
+meta {
+  name: Delete a build by key
+  type: http
+  seq: 4
+}
+
+delete {
+  url: {{baseUrl}}/rest/builds/0.1/pipelines/:pipelineId/builds/:buildNumber
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~_updateSequenceNumber:
+}
+
+params:path {
+  pipelineId:
+  buildNumber:
+}

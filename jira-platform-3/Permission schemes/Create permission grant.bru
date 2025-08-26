@@ -1,0 +1,29 @@
+meta {
+  name: Create permission grant
+  type: http
+  seq: 7
+}
+
+post {
+  url: {{baseUrl}}/rest/api/3/permissionscheme/:schemeId/permission
+  body: json
+  auth: inherit
+}
+
+params:query {
+  ~expand:
+}
+
+params:path {
+  schemeId:
+}
+
+
+body:json {
+  {
+    "holder": "",
+    "id": 0,
+    "permission": "",
+    "self": ""
+  }
+}

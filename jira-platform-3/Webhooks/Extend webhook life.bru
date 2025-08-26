@@ -1,0 +1,18 @@
+meta {
+  name: Extend webhook life
+  type: http
+  seq: 5
+}
+
+put {
+  url: {{baseUrl}}/rest/api/3/webhook/refresh
+  body: json
+  auth: inherit
+}
+
+
+body:json {
+  {
+    "webhookIds": []
+  }
+}

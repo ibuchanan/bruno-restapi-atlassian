@@ -1,0 +1,32 @@
+meta {
+  name: Create issue security scheme
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/rest/api/3/issuesecurityschemes
+  body: json
+  auth: inherit
+}
+
+
+body:json {
+  {
+    "description": "",
+    "levels": [
+      {
+        "description": "",
+        "isDefault": false,
+        "members": [
+          {
+            "parameter": "",
+            "type": ""
+          }
+        ],
+        "name": ""
+      }
+    ],
+    "name": ""
+  }
+}

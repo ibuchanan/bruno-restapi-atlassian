@@ -1,0 +1,22 @@
+meta {
+  name: Add issue types to issue type scheme
+  type: http
+  seq: 8
+}
+
+put {
+  url: {{baseUrl}}/rest/api/3/issuetypescheme/:issueTypeSchemeId/issuetype
+  body: json
+  auth: inherit
+}
+
+params:path {
+  issueTypeSchemeId:
+}
+
+
+body:json {
+  {
+    "issueTypeIds": []
+  }
+}

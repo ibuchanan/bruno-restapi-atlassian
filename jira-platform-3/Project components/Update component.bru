@@ -1,0 +1,37 @@
+meta {
+  name: Update component
+  type: http
+  seq: 5
+}
+
+put {
+  url: {{baseUrl}}/rest/api/3/component/:id
+  body: json
+  auth: inherit
+}
+
+params:path {
+  id:
+}
+
+
+body:json {
+  {
+    "ari": "",
+    "assignee": "",
+    "assigneeType": "",
+    "description": "",
+    "id": "",
+    "isAssigneeTypeValid": false,
+    "lead": "",
+    "leadAccountId": "",
+    "leadUserName": "",
+    "metadata": {},
+    "name": "",
+    "project": "",
+    "projectId": 0,
+    "realAssignee": "",
+    "realAssigneeType": "",
+    "self": ""
+  }
+}

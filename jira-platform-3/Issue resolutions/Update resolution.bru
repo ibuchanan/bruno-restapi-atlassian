@@ -1,0 +1,23 @@
+meta {
+  name: Update resolution
+  type: http
+  seq: 8
+}
+
+put {
+  url: {{baseUrl}}/rest/api/3/resolution/:id
+  body: json
+  auth: inherit
+}
+
+params:path {
+  id:
+}
+
+
+body:json {
+  {
+    "description": "",
+    "name": ""
+  }
+}

@@ -1,0 +1,26 @@
+meta {
+  name: Send notification for issue
+  type: http
+  seq: 20
+}
+
+post {
+  url: {{baseUrl}}/rest/api/3/issue/:issueIdOrKey/notify
+  body: json
+  auth: inherit
+}
+
+params:path {
+  issueIdOrKey:
+}
+
+
+body:json {
+  {
+    "htmlBody": "",
+    "restrict": "",
+    "subject": "",
+    "textBody": "",
+    "to": ""
+  }
+}

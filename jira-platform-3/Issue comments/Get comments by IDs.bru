@@ -1,0 +1,22 @@
+meta {
+  name: Get comments by IDs
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/rest/api/3/comment/list
+  body: json
+  auth: inherit
+}
+
+params:query {
+  ~expand:
+}
+
+
+body:json {
+  {
+    "ids": []
+  }
+}

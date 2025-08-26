@@ -1,0 +1,20 @@
+meta {
+  name: Find users assignable to projects
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/user/assignable/multiProjectSearch
+  body: none
+  auth: inherit
+}
+
+params:query {
+  projectKeys:
+  ~query:
+  ~username:
+  ~accountId:
+  ~startAt:
+  ~maxResults:
+}

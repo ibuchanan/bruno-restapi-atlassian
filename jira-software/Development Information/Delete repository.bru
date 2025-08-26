@@ -1,0 +1,23 @@
+meta {
+  name: Delete repository
+  type: http
+  seq: 3
+}
+
+delete {
+  url: {{baseUrl}}/rest/devinfo/0.10/repository/:repositoryId
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~_updateSequenceId:
+}
+
+params:path {
+  repositoryId:
+}
+
+headers {
+  Authorization:
+}

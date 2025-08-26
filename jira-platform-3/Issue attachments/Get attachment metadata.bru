@@ -1,0 +1,15 @@
+meta {
+  name: Get attachment metadata
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/attachment/:id
+  body: none
+  auth: inherit
+}
+
+params:path {
+  id:
+}

@@ -1,0 +1,11 @@
+meta {
+  name: Get selected time tracking provider
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/configuration/timetracking
+  body: none
+  auth: inherit
+}

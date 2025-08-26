@@ -1,0 +1,15 @@
+meta {
+  name: Delete field configuration scheme
+  type: http
+  seq: 12
+}
+
+delete {
+  url: {{baseUrl}}/rest/api/3/fieldconfigurationscheme/:id
+  body: none
+  auth: inherit
+}
+
+params:path {
+  id:
+}

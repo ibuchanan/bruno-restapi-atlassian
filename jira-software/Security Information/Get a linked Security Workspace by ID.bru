@@ -1,0 +1,15 @@
+meta {
+  name: Get a linked Security Workspace by ID
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{baseUrl}}/rest/security/1.0/linkedWorkspaces/:workspaceId
+  body: none
+  auth: inherit
+}
+
+params:path {
+  workspaceId:
+}

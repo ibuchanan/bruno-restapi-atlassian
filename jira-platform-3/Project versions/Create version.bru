@@ -1,0 +1,53 @@
+meta {
+  name: Create version
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{baseUrl}}/rest/api/3/version
+  body: json
+  auth: inherit
+}
+
+
+body:json {
+  {
+    "approvers": [
+      {
+        "accountId": "",
+        "declineReason": "",
+        "description": "",
+        "status": ""
+      }
+    ],
+    "archived": false,
+    "description": "",
+    "driver": "",
+    "expand": "",
+    "id": "",
+    "issuesStatusForFixVersion": "",
+    "moveUnfixedIssuesTo": "",
+    "name": "",
+    "operations": [
+      {
+        "href": "",
+        "iconClass": "",
+        "id": "",
+        "label": "",
+        "styleClass": "",
+        "title": "",
+        "weight": 0
+      }
+    ],
+    "overdue": false,
+    "project": "",
+    "projectId": 0,
+    "releaseDate": "",
+    "released": false,
+    "self": "",
+    "startDate": "",
+    "userReleaseDate": "",
+    "userStartDate": ""
+  }
+}

@@ -1,0 +1,17 @@
+meta {
+  name: Get field configuration schemes for projects
+  type: http
+  seq: 10
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/fieldconfigurationscheme/project
+  body: none
+  auth: inherit
+}
+
+params:query {
+  projectId:
+  ~startAt:
+  ~maxResults:
+}

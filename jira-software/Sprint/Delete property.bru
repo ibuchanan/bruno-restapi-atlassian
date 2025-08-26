@@ -1,0 +1,16 @@
+meta {
+  name: Delete property
+  type: http
+  seq: 9
+}
+
+delete {
+  url: {{baseUrl}}/rest/agile/1.0/sprint/:sprintId/properties/:propertyKey
+  body: none
+  auth: inherit
+}
+
+params:path {
+  sprintId:
+  propertyKey:
+}

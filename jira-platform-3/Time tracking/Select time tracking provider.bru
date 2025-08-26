@@ -1,0 +1,20 @@
+meta {
+  name: Select time tracking provider
+  type: http
+  seq: 2
+}
+
+put {
+  url: {{baseUrl}}/rest/api/3/configuration/timetracking
+  body: json
+  auth: inherit
+}
+
+
+body:json {
+  {
+    "key": "",
+    "name": "",
+    "url": ""
+  }
+}

@@ -1,0 +1,11 @@
+meta {
+  name: Get all issue types for user
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/rest/api/3/issuetype
+  body: none
+  auth: inherit
+}

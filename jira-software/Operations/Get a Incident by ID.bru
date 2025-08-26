@@ -1,0 +1,15 @@
+meta {
+  name: Get a Incident by ID
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{baseUrl}}/rest/operations/1.0/incidents/:incidentId
+  body: none
+  auth: inherit
+}
+
+params:path {
+  incidentId:
+}

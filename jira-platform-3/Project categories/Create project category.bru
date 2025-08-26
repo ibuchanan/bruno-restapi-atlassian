@@ -1,0 +1,21 @@
+meta {
+  name: Create project category
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/rest/api/3/projectCategory
+  body: json
+  auth: inherit
+}
+
+
+body:json {
+  {
+    "description": "",
+    "id": "",
+    "name": "",
+    "self": ""
+  }
+}

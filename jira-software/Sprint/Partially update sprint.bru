@@ -1,0 +1,30 @@
+meta {
+  name: Partially update sprint
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{baseUrl}}/rest/agile/1.0/sprint/:sprintId
+  body: json
+  auth: inherit
+}
+
+params:path {
+  sprintId:
+}
+
+body:json {
+  {
+    "completeDate": "",
+    "createdDate": "",
+    "endDate": "",
+    "goal": "",
+    "id": 0,
+    "name": "",
+    "originBoardId": 0,
+    "self": "",
+    "startDate": "",
+    "state": ""
+  }
+}
