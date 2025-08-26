@@ -1,6 +1,6 @@
 {
   "version": "1",
-  "name": "Jira Software Cloud v3 API",
+  "name": "Jira Software",
   "type": "collection",
   "ignore": ["node_modules", ".git"]
 }
