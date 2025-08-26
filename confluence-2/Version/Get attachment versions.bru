@@ -1,0 +1,26 @@
+meta {
+  name: Get attachment versions
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/attachments/:id/versions
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~cursor: 
+  ~limit: 
+  ~sort: 
+}
+
+params:path {
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

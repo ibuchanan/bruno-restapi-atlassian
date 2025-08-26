@@ -1,0 +1,18 @@
+meta {
+  name: Create or update a report
+  type: http
+  seq: 2
+}
+
+put {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/commit/:commit/reports/:reportId
+  body: json
+  auth: none
+}
+
+params:path {
+  workspace: 
+  repo_slug: 
+  commit: 
+  reportId: 
+}

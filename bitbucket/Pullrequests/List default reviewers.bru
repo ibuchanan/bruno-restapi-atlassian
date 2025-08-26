@@ -1,0 +1,11 @@
+meta {
+  name: List default reviewers
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/default-reviewers
+  body: none
+  auth: none
+}

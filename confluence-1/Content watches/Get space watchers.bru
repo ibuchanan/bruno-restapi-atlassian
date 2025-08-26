@@ -1,0 +1,25 @@
+meta {
+  name: Get space watchers
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{baseUrl}}/wiki/rest/api/space/:spaceKey/watch
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~start: 
+  ~limit: 
+}
+
+params:path {
+  spaceKey: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

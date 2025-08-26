@@ -1,0 +1,16 @@
+meta {
+  name: Revoke an API key for an org
+  type: http
+  seq: 3
+}
+
+patch {
+  url: {{baseUrl}}/orgs/:orgId/api-keys/revoke/:apiKeyId
+  body: none
+  auth: none
+}
+
+params:path {
+  orgId: 
+  apiKeyId: 
+}

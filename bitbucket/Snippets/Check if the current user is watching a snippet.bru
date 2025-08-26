@@ -1,0 +1,11 @@
+meta {
+  name: Check if the current user is watching a snippet
+  type: http
+  seq: 17
+}
+
+get {
+  url: {{baseUrl}}/snippets/:workspace/:encoded_id/watch
+  body: none
+  auth: none
+}

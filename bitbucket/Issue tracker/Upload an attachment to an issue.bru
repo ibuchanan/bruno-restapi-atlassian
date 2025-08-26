@@ -1,0 +1,11 @@
+meta {
+  name: Upload an attachment to an issue
+  type: http
+  seq: 13
+}
+
+post {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/issues/:issue_id/attachments
+  body: none
+  auth: none
+}

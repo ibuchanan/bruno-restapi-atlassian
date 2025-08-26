@@ -1,0 +1,11 @@
+meta {
+  name: Create a build status for a commit
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/commit/:commit/statuses/build
+  body: json
+  auth: none
+}

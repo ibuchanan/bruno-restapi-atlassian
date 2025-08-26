@@ -1,0 +1,24 @@
+meta {
+  name: Get issue security levels
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{baseUrl}}/rest/api/2/issuesecurityschemes/level
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~startAt: 
+  ~maxResults: 
+  ~id: 
+  ~schemeId: 
+  ~onlyDefault: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

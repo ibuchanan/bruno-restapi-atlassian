@@ -1,0 +1,26 @@
+meta {
+  name: Add member to group by groupId
+  type: http
+  seq: 7
+}
+
+post {
+  url: {{baseUrl}}/wiki/rest/api/group/userByGroupId
+  body: json
+  auth: basic
+}
+
+params:query {
+  groupId: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "accountId": ""
+  }
+}

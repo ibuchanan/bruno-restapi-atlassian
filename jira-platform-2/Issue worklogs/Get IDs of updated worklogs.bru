@@ -1,0 +1,21 @@
+meta {
+  name: Get IDs of updated worklogs
+  type: http
+  seq: 10
+}
+
+get {
+  url: {{baseUrl}}/rest/api/2/worklog/updated
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~since: 
+  ~expand: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

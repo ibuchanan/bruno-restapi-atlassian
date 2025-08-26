@@ -1,0 +1,11 @@
+meta {
+  name: Add a user to the default reviewers
+  type: http
+  seq: 5
+}
+
+put {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/default-reviewers/:target_username
+  body: none
+  auth: none
+}

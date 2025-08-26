@@ -1,0 +1,22 @@
+meta {
+  name: Get groups
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/wiki/rest/api/group
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~start: 
+  ~limit: 
+  ~accessType: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

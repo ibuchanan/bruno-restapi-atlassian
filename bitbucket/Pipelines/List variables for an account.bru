@@ -1,0 +1,15 @@
+meta {
+  name: List variables for an account
+  type: http
+  seq: 42
+}
+
+get {
+  url: {{baseUrl}}/teams/:username/pipelines_config/variables
+  body: none
+  auth: none
+}
+
+params:path {
+  username: 
+}

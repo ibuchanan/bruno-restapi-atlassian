@@ -1,0 +1,17 @@
+meta {
+  name: List commits that modified a file
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/filehistory/:commit/:path
+  body: none
+  auth: none
+}
+
+params:query {
+  ~renames: 
+  ~q: 
+  ~sort: 
+}

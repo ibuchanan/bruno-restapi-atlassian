@@ -1,0 +1,22 @@
+meta {
+  name: Add request participants
+  type: http
+  seq: 20
+}
+
+post {
+  url: {{baseUrl}}/rest/servicedeskapi/request/:issueIdOrKey/participant
+  body: json
+  auth: inherit
+}
+
+params:path {
+  issueIdOrKey:
+}
+
+body:json {
+  {
+    "accountIds": [],
+    "usernames": []
+  }
+}

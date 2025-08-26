@@ -1,0 +1,27 @@
+meta {
+  name: Update draft default workflow
+  type: http
+  seq: 7
+}
+
+put {
+  url: {{baseUrl}}/rest/api/2/workflowscheme/:id/draft/default
+  body: json
+  auth: basic
+}
+
+params:path {
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "updateDraftIfNeeded": false,
+    "workflow": ""
+  }
+}

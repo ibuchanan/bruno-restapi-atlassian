@@ -1,0 +1,11 @@
+meta {
+  name: Delete a linker value
+  type: http
+  seq: 9
+}
+
+delete {
+  url: {{baseUrl}}/addon/linkers/:linker_key/values/:value_id
+  body: none
+  auth: none
+}

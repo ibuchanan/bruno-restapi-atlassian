@@ -1,0 +1,33 @@
+meta {
+  name: Set issue types for workflow in workflow scheme
+  type: http
+  seq: 17
+}
+
+put {
+  url: {{baseUrl}}/rest/api/2/workflowscheme/:id/workflow
+  body: json
+  auth: basic
+}
+
+params:query {
+  workflowName: 
+}
+
+params:path {
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "defaultMapping": false,
+    "issueTypes": [],
+    "updateDraftIfNeeded": false,
+    "workflow": ""
+  }
+}

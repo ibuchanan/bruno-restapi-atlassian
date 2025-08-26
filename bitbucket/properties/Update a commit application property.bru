@@ -1,0 +1,25 @@
+meta {
+  name: Update a commit application property
+  type: http
+  seq: 1
+}
+
+put {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/commit/:commit/properties/:app_key/:property_name
+  body: json
+  auth: none
+}
+
+params:path {
+  workspace: 
+  repo_slug: 
+  commit: 
+  app_key: 
+  property_name: 
+}
+
+body:json {
+  {
+    "_attributes": []
+  }
+}

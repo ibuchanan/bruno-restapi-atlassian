@@ -1,0 +1,21 @@
+meta {
+  name: Search for code in a workspace
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{baseUrl}}/workspaces/:workspace/search/code
+  body: none
+  auth: none
+}
+
+params:query {
+  search_query: 
+  ~page: 
+  ~pagelen: 
+}
+
+params:path {
+  workspace: 
+}

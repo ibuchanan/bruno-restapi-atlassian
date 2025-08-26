@@ -1,0 +1,26 @@
+meta {
+  name: Reset whiteboard classification level
+  type: http
+  seq: 13
+}
+
+post {
+  url: {{baseUrl}}/whiteboards/:id/classification-level/reset
+  body: json
+  auth: basic
+}
+
+params:path {
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "status": ""
+  }
+}

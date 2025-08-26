@@ -1,0 +1,33 @@
+meta {
+  name: Find source entities related to a target entity
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{baseUrl}}/wiki/rest/api/relation/:relationName/to/:targetType/:targetKey/from/:sourceType
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~sourceStatus: 
+  ~targetStatus: 
+  ~sourceVersion: 
+  ~targetVersion: 
+  ~expand: 
+  ~start: 
+  ~limit: 
+}
+
+params:path {
+  relationName: 
+  sourceType: 
+  targetType: 
+  targetKey: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

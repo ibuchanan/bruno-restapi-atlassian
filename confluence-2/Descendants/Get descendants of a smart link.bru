@@ -1,0 +1,26 @@
+meta {
+  name: Get descendants of a smart link
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{baseUrl}}/embeds/:id/descendants
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~limit: 
+  ~depth: 
+  ~cursor: 
+}
+
+params:path {
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

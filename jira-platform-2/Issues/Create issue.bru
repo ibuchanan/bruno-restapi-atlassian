@@ -1,0 +1,35 @@
+meta {
+  name: Create issue
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{baseUrl}}/rest/api/2/issue
+  body: json
+  auth: basic
+}
+
+params:query {
+  ~updateHistory: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "fields": {},
+    "historyMetadata": "",
+    "properties": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "transition": "",
+    "update": {}
+  }
+}

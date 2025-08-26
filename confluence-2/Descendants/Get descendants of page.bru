@@ -1,0 +1,26 @@
+meta {
+  name: Get descendants of page
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{baseUrl}}/pages/:id/descendants
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~limit: 
+  ~depth: 
+  ~cursor: 
+}
+
+params:path {
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

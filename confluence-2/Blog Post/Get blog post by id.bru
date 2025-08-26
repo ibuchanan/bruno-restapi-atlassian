@@ -1,0 +1,36 @@
+meta {
+  name: Get blog post by id
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{baseUrl}}/blogposts/:id
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~body-format: 
+  ~get-draft: 
+  ~status: 
+  ~version: 
+  ~include-labels: 
+  ~include-properties: 
+  ~include-operations: 
+  ~include-likes: 
+  ~include-versions: 
+  ~include-version: 
+  ~include-favorited-by-current-user-status: 
+  ~include-webresources: 
+  ~include-collaborators: 
+}
+
+params:path {
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

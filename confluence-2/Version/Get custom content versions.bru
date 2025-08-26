@@ -1,0 +1,27 @@
+meta {
+  name: Get custom content versions
+  type: http
+  seq: 7
+}
+
+get {
+  url: {{baseUrl}}/custom-content/:custom-content-id/versions
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~body-format: 
+  ~cursor: 
+  ~limit: 
+  ~sort: 
+}
+
+params:path {
+  custom-content-id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

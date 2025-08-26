@@ -1,0 +1,20 @@
+meta {
+  name: Get favorite filters
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/rest/api/2/filter/favourite
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~expand: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

@@ -1,0 +1,11 @@
+meta {
+  name: Create a tag
+  type: http
+  seq: 7
+}
+
+post {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/refs/tags
+  body: json
+  auth: none
+}

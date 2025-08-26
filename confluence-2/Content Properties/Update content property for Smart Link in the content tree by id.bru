@@ -1,0 +1,32 @@
+meta {
+  name: Update content property for Smart Link in the content tree by id
+  type: http
+  seq: 34
+}
+
+put {
+  url: {{baseUrl}}/embeds/:embed-id/properties/:property-id
+  body: json
+  auth: basic
+}
+
+params:path {
+  embed-id: 
+  property-id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "key": "",
+    "value": "",
+    "version": {
+      "number": 0,
+      "message": ""
+    }
+  }
+}

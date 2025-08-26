@@ -1,0 +1,11 @@
+meta {
+  name: List commits with include/exclude
+  type: http
+  seq: 10
+}
+
+post {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/commits
+  body: none
+  auth: none
+}

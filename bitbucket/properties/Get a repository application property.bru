@@ -1,0 +1,18 @@
+meta {
+  name: Get a repository application property
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/properties/:app_key/:property_name
+  body: none
+  auth: none
+}
+
+params:path {
+  workspace: 
+  repo_slug: 
+  app_key: 
+  property_name: 
+}

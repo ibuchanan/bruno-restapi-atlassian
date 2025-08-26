@@ -1,0 +1,20 @@
+meta {
+  name: Reset space theme
+  type: http
+  seq: 6
+}
+
+delete {
+  url: {{baseUrl}}/wiki/rest/api/space/:spaceKey/theme
+  body: none
+  auth: basic
+}
+
+params:path {
+  spaceKey: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

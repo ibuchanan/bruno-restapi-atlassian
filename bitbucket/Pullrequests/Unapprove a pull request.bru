@@ -1,0 +1,11 @@
+meta {
+  name: Unapprove a pull request
+  type: http
+  seq: 13
+}
+
+delete {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/pullrequests/:pull_request_id/approve
+  body: none
+  auth: none
+}

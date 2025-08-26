@@ -1,0 +1,20 @@
+meta {
+  name: Get asynchronous content body conversion task result in bulk
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{baseUrl}}/wiki/rest/api/contentbody/convert/async/bulk/tasks
+  body: none
+  auth: basic
+}
+
+params:query {
+  ids: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

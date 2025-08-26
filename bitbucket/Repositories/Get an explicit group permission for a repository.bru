@@ -1,0 +1,11 @@
+meta {
+  name: Get an explicit group permission for a repository
+  type: http
+  seq: 18
+}
+
+get {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/permissions-config/groups/:group_slug
+  body: none
+  auth: none
+}

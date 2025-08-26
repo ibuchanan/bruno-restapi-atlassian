@@ -1,0 +1,25 @@
+meta {
+  name: Delete issue types for workflow in workflow scheme
+  type: http
+  seq: 15
+}
+
+delete {
+  url: {{baseUrl}}/rest/api/2/workflowscheme/:id/workflow
+  body: none
+  auth: basic
+}
+
+params:query {
+  workflowName: 
+  ~updateDraftIfNeeded: 
+}
+
+params:path {
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

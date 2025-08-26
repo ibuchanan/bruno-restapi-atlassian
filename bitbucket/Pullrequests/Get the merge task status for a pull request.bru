@@ -1,0 +1,11 @@
+meta {
+  name: Get the merge task status for a pull request
+  type: http
+  seq: 27
+}
+
+get {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/pullrequests/:pull_request_id/merge/task-status/:task_id
+  body: none
+  auth: none
+}

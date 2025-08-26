@@ -1,0 +1,46 @@
+meta {
+  name: Redact Content in a Confluence Page
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/pages/:id/redact
+  body: json
+  auth: basic
+}
+
+params:path {
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "createdAt": "",
+    "cleanHistory": false,
+    "body": {
+      "redactions": [
+        {
+          "redactions": [
+            {
+              "pointer": "",
+              "from": 0,
+              "to": 0,
+              "reason": ""
+            }
+          ]
+        }
+      ]
+    },
+    "title": {
+      "redactions": [
+        {}
+      ]
+    }
+  }
+}

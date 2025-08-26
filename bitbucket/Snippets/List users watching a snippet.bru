@@ -1,0 +1,11 @@
+meta {
+  name: List users watching a snippet
+  type: http
+  seq: 19
+}
+
+get {
+  url: {{baseUrl}}/snippets/:workspace/:encoded_id/watchers
+  body: none
+  auth: none
+}

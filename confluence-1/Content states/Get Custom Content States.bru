@@ -1,0 +1,16 @@
+meta {
+  name: Get Custom Content States
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{baseUrl}}/wiki/rest/api/content-states
+  body: none
+  auth: basic
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

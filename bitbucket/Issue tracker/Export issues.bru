@@ -1,0 +1,21 @@
+meta {
+  name: Export issues
+  type: http
+  seq: 5
+}
+
+post {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/issues/export
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "type": "",
+    "project_key": "",
+    "project_name": "",
+    "send_email": false,
+    "include_attachments": false
+  }
+}

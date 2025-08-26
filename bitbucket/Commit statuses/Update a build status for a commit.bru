@@ -1,0 +1,11 @@
+meta {
+  name: Update a build status for a commit
+  type: http
+  seq: 4
+}
+
+put {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/commit/:commit/statuses/build/:key
+  body: json
+  auth: none
+}

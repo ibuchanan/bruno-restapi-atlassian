@@ -1,0 +1,23 @@
+meta {
+  name: Remove users from organization
+  type: http
+  seq: 9
+}
+
+delete {
+  url: {{baseUrl}}/rest/servicedeskapi/organization/:organizationId/user
+  body: json
+  auth: inherit
+}
+
+params:path {
+  organizationId:
+}
+
+body:json {
+  {
+    "accountIds": [],
+    "organizationId": 0,
+    "usernames": []
+  }
+}

@@ -1,0 +1,127 @@
+meta {
+  name: Validate update workflows
+  type: http
+  seq: 15
+}
+
+post {
+  url: {{baseUrl}}/rest/api/2/workflows/update/validation
+  body: json
+  auth: basic
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "payload": {
+      "statuses": [
+        {
+          "description": "",
+          "id": "",
+          "name": "",
+          "statusCategory": "",
+          "statusReference": ""
+        }
+      ],
+      "workflows": [
+        {
+          "defaultStatusMappings": [
+            {
+              "newStatusReference": "",
+              "oldStatusReference": ""
+            }
+          ],
+          "description": "",
+          "id": "",
+          "loopedTransitionContainerLayout": {
+            "x": "",
+            "y": ""
+          },
+          "startPointLayout": {},
+          "statusMappings": [
+            {
+              "issueTypeId": "",
+              "projectId": "",
+              "statusMigrations": [
+                {}
+              ]
+            }
+          ],
+          "statuses": [
+            {
+              "approvalConfiguration": {
+                "active": "",
+                "conditionType": "",
+                "conditionValue": "",
+                "exclude": [],
+                "fieldId": "",
+                "prePopulatedFieldId": "",
+                "transitionApproved": "",
+                "transitionRejected": ""
+              },
+              "layout": {},
+              "properties": {},
+              "statusReference": ""
+            }
+          ],
+          "transitions": [
+            {
+              "actions": [
+                {
+                  "id": "",
+                  "parameters": {},
+                  "ruleKey": ""
+                }
+              ],
+              "conditions": {
+                "conditionGroups": [
+                  {}
+                ],
+                "conditions": [
+                  {}
+                ],
+                "operation": ""
+              },
+              "customIssueEventId": "",
+              "description": "",
+              "id": "",
+              "links": [
+                {
+                  "fromPort": 0,
+                  "fromStatusReference": "",
+                  "toPort": 0
+                }
+              ],
+              "name": "",
+              "properties": {},
+              "toStatusReference": "",
+              "transitionScreen": {},
+              "triggers": [
+                {
+                  "id": "",
+                  "parameters": {},
+                  "ruleKey": ""
+                }
+              ],
+              "type": "",
+              "validators": [
+                {}
+              ]
+            }
+          ],
+          "version": {
+            "id": "",
+            "versionNumber": 0
+          }
+        }
+      ]
+    },
+    "validationOptions": {
+      "levels": []
+    }
+  }
+}

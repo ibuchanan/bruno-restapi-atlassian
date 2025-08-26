@@ -1,0 +1,11 @@
+meta {
+  name: Get a branch
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/refs/branches/:name
+  body: none
+  auth: none
+}

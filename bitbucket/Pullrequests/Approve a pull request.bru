@@ -1,0 +1,11 @@
+meta {
+  name: Approve a pull request
+  type: http
+  seq: 14
+}
+
+post {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/pullrequests/:pull_request_id/approve
+  body: none
+  auth: none
+}

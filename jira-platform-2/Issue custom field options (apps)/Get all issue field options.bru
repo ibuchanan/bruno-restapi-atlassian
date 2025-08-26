@@ -1,0 +1,25 @@
+meta {
+  name: Get all issue field options
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/rest/api/2/field/:fieldKey/option
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~startAt: 
+  ~maxResults: 
+}
+
+params:path {
+  fieldKey: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

@@ -1,0 +1,22 @@
+meta {
+  name: Invite a list of emails to the site
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{baseUrl}}/user/access/invite-by-email
+  body: json
+  auth: basic
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "emails": []
+  }
+}

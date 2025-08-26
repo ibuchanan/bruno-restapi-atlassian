@@ -1,0 +1,400 @@
+meta {
+  name: Create custom project
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/rest/api/2/project-template
+  body: json
+  auth: basic
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "details": {
+      "accessLevel": "",
+      "additionalProperties": {},
+      "assigneeType": "",
+      "avatarId": 0,
+      "categoryId": 0,
+      "description": "",
+      "enableComponents": false,
+      "key": "",
+      "language": "",
+      "leadAccountId": "",
+      "name": "",
+      "url": ""
+    },
+    "template": {
+      "boards": {
+        "boards": [
+          {
+            "boardFilterJQL": "",
+            "cardColorStrategy": "",
+            "cardLayout": {
+              "showDaysInColumn": false
+            },
+            "cardLayouts": [
+              {
+                "fieldId": "",
+                "id": 0,
+                "mode": "",
+                "position": 0
+              }
+            ],
+            "columns": [
+              {
+                "maximumIssueConstraint": 0,
+                "minimumIssueConstraint": 0,
+                "name": "",
+                "statusIds": [
+                  {
+                    "anID": false,
+                    "areference": false,
+                    "entityId": "",
+                    "entityType": "",
+                    "id": "",
+                    "type": ""
+                  }
+                ]
+              }
+            ],
+            "features": [
+              {
+                "featureKey": "",
+                "state": false
+              }
+            ],
+            "name": "",
+            "pcri": {},
+            "quickFilters": [
+              {
+                "description": "",
+                "jqlQuery": "",
+                "name": ""
+              }
+            ],
+            "supportsSprint": false,
+            "swimlanes": {
+              "customSwimlanes": [
+                {
+                  "description": "",
+                  "jqlQuery": "",
+                  "name": ""
+                }
+              ],
+              "defaultCustomSwimlaneName": "",
+              "swimlaneStrategy": ""
+            },
+            "workingDaysConfig": {
+              "friday": false,
+              "id": 0,
+              "monday": false,
+              "nonWorkingDays": [
+                {
+                  "id": 0,
+                  "iso8601Date": ""
+                }
+              ],
+              "saturday": false,
+              "sunday": false,
+              "thursday": false,
+              "timezoneId": "",
+              "tuesday": false,
+              "wednesday": false
+            }
+          }
+        ]
+      },
+      "field": {
+        "customFieldDefinitions": [
+          {
+            "cfType": "",
+            "description": "",
+            "name": "",
+            "onConflict": "",
+            "pcri": {},
+            "searcherKey": ""
+          }
+        ],
+        "fieldLayoutScheme": {
+          "defaultFieldLayout": {},
+          "description": "",
+          "explicitMappings": {},
+          "name": "",
+          "pcri": {}
+        },
+        "fieldLayouts": [
+          {
+            "configuration": [
+              {
+                "field": false,
+                "pcri": {},
+                "required": false
+              }
+            ],
+            "description": "",
+            "name": "",
+            "pcri": {}
+          }
+        ],
+        "issueLayouts": [
+          {
+            "containerId": {},
+            "issueLayoutType": "",
+            "items": [
+              {
+                "itemKey": {},
+                "sectionType": "",
+                "type": ""
+              }
+            ],
+            "pcri": {}
+          }
+        ],
+        "issueTypeScreenScheme": {
+          "defaultScreenScheme": {},
+          "description": "",
+          "explicitMappings": {},
+          "name": "",
+          "pcri": {}
+        },
+        "screenScheme": [
+          {
+            "defaultScreen": {},
+            "description": "",
+            "name": "",
+            "pcri": {},
+            "screens": {}
+          }
+        ],
+        "screens": [
+          {
+            "description": "",
+            "name": "",
+            "pcri": {},
+            "tabs": [
+              {
+                "fields": [
+                  {}
+                ],
+                "name": ""
+              }
+            ]
+          }
+        ]
+      },
+      "issueType": {
+        "issueTypeHierarchy": [
+          {
+            "hierarchyLevel": 0,
+            "name": "",
+            "onConflict": "",
+            "pcri": {}
+          }
+        ],
+        "issueTypeScheme": {
+          "defaultIssueTypeId": {},
+          "description": "",
+          "issueTypeIds": [
+            {}
+          ],
+          "name": "",
+          "pcri": {}
+        },
+        "issueTypes": [
+          {
+            "avatarId": 0,
+            "description": "",
+            "hierarchyLevel": 0,
+            "name": "",
+            "onConflict": "",
+            "pcri": {}
+          }
+        ]
+      },
+      "notification": {
+        "description": "",
+        "name": "",
+        "notificationSchemeEvents": [
+          {
+            "event": {
+              "id": ""
+            },
+            "notifications": [
+              {
+                "notificationType": "",
+                "parameter": ""
+              }
+            ]
+          }
+        ],
+        "onConflict": "",
+        "pcri": {}
+      },
+      "permissionScheme": {
+        "addAddonRole": false,
+        "description": "",
+        "grants": [
+          {
+            "applicationAccess": [],
+            "groupCustomFields": [
+              {}
+            ],
+            "groups": [
+              {}
+            ],
+            "permissionKeys": [],
+            "projectRoles": [
+              {}
+            ],
+            "specialGrants": [],
+            "userCustomFields": [
+              {}
+            ],
+            "users": [
+              {}
+            ]
+          }
+        ],
+        "name": "",
+        "onConflict": "",
+        "pcri": {}
+      },
+      "project": {
+        "fieldLayoutSchemeId": {},
+        "issueSecuritySchemeId": {},
+        "issueTypeSchemeId": {},
+        "issueTypeScreenSchemeId": {},
+        "notificationSchemeId": {},
+        "pcri": {},
+        "permissionSchemeId": {},
+        "projectTypeKey": "",
+        "workflowSchemeId": {}
+      },
+      "role": {
+        "roleToProjectActors": {},
+        "roles": [
+          {
+            "defaultActors": [
+              {}
+            ],
+            "description": "",
+            "name": "",
+            "onConflict": "",
+            "pcri": {},
+            "type": ""
+          }
+        ]
+      },
+      "scope": {
+        "type": ""
+      },
+      "security": {
+        "description": "",
+        "name": "",
+        "pcri": {},
+        "securityLevels": [
+          {
+            "description": "",
+            "isDefault": false,
+            "name": "",
+            "securityLevelMembers": [
+              {
+                "parameter": "",
+                "type": ""
+              }
+            ]
+          }
+        ]
+      },
+      "workflow": {
+        "statuses": [
+          {
+            "description": "",
+            "name": "",
+            "onConflict": "",
+            "pcri": {},
+            "statusCategory": ""
+          }
+        ],
+        "workflowScheme": {
+          "defaultWorkflow": {},
+          "description": "",
+          "explicitMappings": {},
+          "name": "",
+          "pcri": {}
+        },
+        "workflows": [
+          {
+            "description": "",
+            "loopedTransitionContainerLayout": {
+              "x": "",
+              "y": ""
+            },
+            "name": "",
+            "onConflict": "",
+            "pcri": {},
+            "startPointLayout": {},
+            "statuses": [
+              {
+                "layout": {},
+                "pcri": {},
+                "properties": {}
+              }
+            ],
+            "transitions": [
+              {
+                "actions": [
+                  {
+                    "parameters": {},
+                    "ruleKey": ""
+                  }
+                ],
+                "conditions": {
+                  "conditionGroup": [
+                    {}
+                  ],
+                  "conditions": [
+                    {}
+                  ],
+                  "operation": ""
+                },
+                "customIssueEventId": "",
+                "description": "",
+                "from": [
+                  {
+                    "fromPort": 0,
+                    "status": {},
+                    "toPortOverride": 0
+                  }
+                ],
+                "id": 0,
+                "name": "",
+                "properties": {},
+                "to": {
+                  "port": 0,
+                  "status": {}
+                },
+                "transitionScreen": {},
+                "triggers": [
+                  {}
+                ],
+                "type": "",
+                "validators": [
+                  {}
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

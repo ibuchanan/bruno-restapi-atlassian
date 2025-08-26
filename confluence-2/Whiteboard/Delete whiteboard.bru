@@ -1,0 +1,20 @@
+meta {
+  name: Delete whiteboard
+  type: http
+  seq: 3
+}
+
+delete {
+  url: {{baseUrl}}/whiteboards/:id
+  body: none
+  auth: basic
+}
+
+params:path {
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

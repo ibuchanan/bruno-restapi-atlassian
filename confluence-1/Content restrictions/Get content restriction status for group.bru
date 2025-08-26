@@ -1,0 +1,22 @@
+meta {
+  name: Get content restriction status for group
+  type: http
+  seq: 7
+}
+
+get {
+  url: {{baseUrl}}/wiki/rest/api/content/:id/restriction/byOperation/:operationKey/byGroupId/:groupId
+  body: none
+  auth: basic
+}
+
+params:path {
+  id: 
+  operationKey: 
+  groupId: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

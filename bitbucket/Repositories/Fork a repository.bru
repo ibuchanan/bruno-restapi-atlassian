@@ -1,0 +1,11 @@
+meta {
+  name: Fork a repository
+  type: http
+  seq: 8
+}
+
+post {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/forks
+  body: json
+  auth: none
+}

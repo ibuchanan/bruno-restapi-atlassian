@@ -1,0 +1,11 @@
+meta {
+  name: Check if current user is watching a issue
+  type: http
+  seq: 28
+}
+
+get {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/issues/:issue_id/watch
+  body: none
+  auth: none
+}

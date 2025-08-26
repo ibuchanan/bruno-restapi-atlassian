@@ -1,0 +1,27 @@
+meta {
+  name: Get blog post versions
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{baseUrl}}/blogposts/:id/versions
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~body-format: 
+  ~cursor: 
+  ~limit: 
+  ~sort: 
+}
+
+params:path {
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

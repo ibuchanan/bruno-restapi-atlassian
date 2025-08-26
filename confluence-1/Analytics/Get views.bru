@@ -1,0 +1,24 @@
+meta {
+  name: Get views
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/wiki/rest/api/analytics/content/:contentId/views
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~fromDate: 
+}
+
+params:path {
+  contentId: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

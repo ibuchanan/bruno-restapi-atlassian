@@ -1,0 +1,16 @@
+meta {
+  name: List environments
+  type: http
+  seq: 8
+}
+
+get {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/environments
+  body: none
+  auth: none
+}
+
+params:path {
+  workspace: 
+  repo_slug: 
+}

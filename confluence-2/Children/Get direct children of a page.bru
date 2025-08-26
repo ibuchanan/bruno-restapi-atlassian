@@ -1,0 +1,26 @@
+meta {
+  name: Get direct children of a page
+  type: http
+  seq: 7
+}
+
+get {
+  url: {{baseUrl}}/pages/:id/direct-children
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~cursor: 
+  ~limit: 
+  ~sort: 
+}
+
+params:path {
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

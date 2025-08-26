@@ -1,0 +1,11 @@
+meta {
+  name: Get a GPG key
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{baseUrl}}/users/:selected_user/gpg-keys/:fingerprint
+  body: none
+  auth: none
+}

@@ -1,0 +1,26 @@
+meta {
+  name: Update space settings
+  type: http
+  seq: 2
+}
+
+put {
+  url: {{baseUrl}}/wiki/rest/api/space/:spaceKey/settings
+  body: json
+  auth: basic
+}
+
+params:path {
+  spaceKey: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "routeOverrideEnabled": false
+  }
+}

@@ -1,0 +1,21 @@
+meta {
+  name: Search for code in a team's repositories
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/teams/:username/search/code
+  body: none
+  auth: none
+}
+
+params:query {
+  search_query: 
+  ~page: 
+  ~pagelen: 
+}
+
+params:path {
+  username: 
+}

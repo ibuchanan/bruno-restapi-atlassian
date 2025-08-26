@@ -1,0 +1,27 @@
+meta {
+  name: Create footer comment
+  type: http
+  seq: 8
+}
+
+post {
+  url: {{baseUrl}}/footer-comments
+  body: json
+  auth: basic
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "blogPostId": "",
+    "pageId": "",
+    "parentCommentId": "",
+    "attachmentId": "",
+    "customContentId": "",
+    "body": ""
+  }
+}

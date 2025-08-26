@@ -1,0 +1,16 @@
+meta {
+  name: Delete property
+  type: http
+  seq: 6
+}
+
+delete {
+  url: {{baseUrl}}/rest/servicedeskapi/organization/:organizationId/property/:propertyKey
+  body: none
+  auth: inherit
+}
+
+params:path {
+  organizationId:
+  propertyKey:
+}

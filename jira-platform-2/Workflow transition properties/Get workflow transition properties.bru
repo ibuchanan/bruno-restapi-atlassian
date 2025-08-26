@@ -1,0 +1,27 @@
+meta {
+  name: Get workflow transition properties
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/rest/api/2/workflow/transitions/:transitionId/properties
+  body: none
+  auth: basic
+}
+
+params:query {
+  workflowName: 
+  ~includeReservedKeys: 
+  ~key: 
+  ~workflowMode: 
+}
+
+params:path {
+  transitionId: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

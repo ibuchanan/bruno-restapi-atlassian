@@ -1,0 +1,11 @@
+meta {
+  name: List projects in a workspace
+  type: http
+  seq: 14
+}
+
+get {
+  url: {{baseUrl}}/workspaces/:workspace/projects
+  body: none
+  auth: none
+}

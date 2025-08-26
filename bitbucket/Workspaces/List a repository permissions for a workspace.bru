@@ -1,0 +1,16 @@
+meta {
+  name: List a repository permissions for a workspace
+  type: http
+  seq: 13
+}
+
+get {
+  url: {{baseUrl}}/workspaces/:workspace/permissions/repositories/:repo_slug
+  body: none
+  auth: none
+}
+
+params:query {
+  ~q: 
+  ~sort: 
+}

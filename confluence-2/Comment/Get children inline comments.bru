@@ -1,0 +1,27 @@
+meta {
+  name: Get children inline comments
+  type: http
+  seq: 18
+}
+
+get {
+  url: {{baseUrl}}/inline-comments/:id/children
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~body-format: 
+  ~sort: 
+  ~cursor: 
+  ~limit: 
+}
+
+params:path {
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

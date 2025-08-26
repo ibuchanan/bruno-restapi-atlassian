@@ -1,0 +1,17 @@
+meta {
+  name: Delete an environment
+  type: http
+  seq: 11
+}
+
+delete {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/environments/:environment_uuid
+  body: none
+  auth: none
+}
+
+params:path {
+  workspace: 
+  repo_slug: 
+  environment_uuid: 
+}

@@ -1,0 +1,32 @@
+meta {
+  name: Update content property for whiteboard by id
+  type: http
+  seq: 24
+}
+
+put {
+  url: {{baseUrl}}/whiteboards/:whiteboard-id/properties/:property-id
+  body: json
+  auth: basic
+}
+
+params:path {
+  whiteboard-id: 
+  property-id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "key": "",
+    "value": "",
+    "version": {
+      "number": 0,
+      "message": ""
+    }
+  }
+}

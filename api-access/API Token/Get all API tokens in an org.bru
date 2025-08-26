@@ -1,0 +1,37 @@
+meta {
+  name: Get all API tokens in an org
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/orgs/:orgId/api-tokens
+  body: none
+  auth: none
+}
+
+params:query {
+  ~q: 
+  ~status: 
+  ~createdAtSearchType: 
+  ~createdAtUom: 
+  ~createdAtValue: 
+  ~createdAtFrom: 
+  ~createdAtTo: 
+  ~createdAtRangeFrom: 
+  ~createdAtRangeTo: 
+  ~lastActiveAtSearchType: 
+  ~lastActiveAtUom: 
+  ~lastActiveAtValue: 
+  ~lastActiveAtFrom: 
+  ~lastActiveAtTo: 
+  ~lastActiveAtRangeFrom: 
+  ~lastActiveAtRangeTo: 
+  ~sort: 
+  ~pageSize: 
+  ~cursor: 
+}
+
+params:path {
+  orgId: 
+}

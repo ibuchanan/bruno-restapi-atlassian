@@ -1,0 +1,29 @@
+meta {
+  name: Get macro body by macro ID and convert the representation synchronously
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/wiki/rest/api/content/:id/history/:version/macro/id/:macroId/convert/:to
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~expand: 
+  ~spaceKeyContext: 
+  ~embeddedContentRender: 
+}
+
+params:path {
+  id: 
+  version: 
+  macroId: 
+  to: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

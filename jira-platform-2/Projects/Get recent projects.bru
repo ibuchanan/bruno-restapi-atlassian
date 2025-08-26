@@ -1,0 +1,21 @@
+meta {
+  name: Get recent projects
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{baseUrl}}/rest/api/2/project/recent
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~expand: 
+  ~properties: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

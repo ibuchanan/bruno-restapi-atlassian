@@ -1,0 +1,16 @@
+meta {
+  name: Get all project types
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/rest/api/2/project/type
+  body: none
+  auth: basic
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

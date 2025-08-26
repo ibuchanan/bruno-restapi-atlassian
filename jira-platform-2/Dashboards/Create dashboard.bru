@@ -1,0 +1,40 @@
+meta {
+  name: Create dashboard
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/rest/api/2/dashboard
+  body: json
+  auth: basic
+}
+
+params:query {
+  ~extendAdminPermissions: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "description": "",
+    "editPermissions": [
+      {
+        "group": "",
+        "id": 0,
+        "project": "",
+        "role": "",
+        "type": "",
+        "user": ""
+      }
+    ],
+    "name": "",
+    "sharePermissions": [
+      {}
+    ]
+  }
+}

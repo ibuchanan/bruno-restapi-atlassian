@@ -1,0 +1,50 @@
+meta {
+  name: Create audit record
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/wiki/rest/api/audit
+  body: json
+  auth: basic
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "author": {
+      "type": "",
+      "displayName": "",
+      "operations": {},
+      "username": "",
+      "userKey": ""
+    },
+    "remoteAddress": "",
+    "creationDate": 0,
+    "summary": "",
+    "description": "",
+    "category": "",
+    "sysAdmin": false,
+    "affectedObject": {
+      "name": "",
+      "objectType": ""
+    },
+    "changedValues": [
+      {
+        "name": "",
+        "oldValue": "",
+        "hiddenOldValue": "",
+        "newValue": "",
+        "hiddenNewValue": ""
+      }
+    ],
+    "associatedObjects": [
+      {}
+    ]
+  }
+}

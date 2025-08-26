@@ -1,0 +1,22 @@
+meta {
+  name: Get macro body by macro ID
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/wiki/rest/api/content/:id/history/:version/macro/id/:macroId
+  body: none
+  auth: basic
+}
+
+params:path {
+  id: 
+  version: 
+  macroId: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

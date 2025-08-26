@@ -1,0 +1,25 @@
+meta {
+  name: Get available space roles
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/space-roles
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~space-id: 
+  ~role-type: 
+  ~principal-id: 
+  ~principal-type: 
+  ~cursor: 
+  ~limit: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

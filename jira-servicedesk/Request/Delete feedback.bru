@@ -1,0 +1,15 @@
+meta {
+  name: Delete feedback
+  type: http
+  seq: 26
+}
+
+delete {
+  url: {{baseUrl}}/rest/servicedeskapi/request/:requestIdOrKey/feedback
+  body: none
+  auth: inherit
+}
+
+params:path {
+  requestIdOrKey:
+}

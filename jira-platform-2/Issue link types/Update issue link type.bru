@@ -1,0 +1,30 @@
+meta {
+  name: Update issue link type
+  type: http
+  seq: 5
+}
+
+put {
+  url: {{baseUrl}}/rest/api/2/issueLinkType/:issueLinkTypeId
+  body: json
+  auth: basic
+}
+
+params:path {
+  issueLinkTypeId: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "id": "",
+    "inward": "",
+    "name": "",
+    "outward": "",
+    "self": ""
+  }
+}

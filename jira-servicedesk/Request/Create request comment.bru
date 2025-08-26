@@ -1,0 +1,22 @@
+meta {
+  name: Create request comment
+  type: http
+  seq: 12
+}
+
+post {
+  url: {{baseUrl}}/rest/servicedeskapi/request/:issueIdOrKey/comment
+  body: json
+  auth: inherit
+}
+
+params:path {
+  issueIdOrKey:
+}
+
+body:json {
+  {
+    "body": "",
+    "public": false
+  }
+}

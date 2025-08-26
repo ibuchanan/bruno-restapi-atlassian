@@ -1,0 +1,11 @@
+meta {
+  name: Check issue export status
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/issues/export/:repo_name-issues-:task_id.zip
+  body: none
+  auth: none
+}

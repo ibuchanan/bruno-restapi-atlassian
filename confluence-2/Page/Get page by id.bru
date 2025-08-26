@@ -1,0 +1,37 @@
+meta {
+  name: Get page by id
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{baseUrl}}/pages/:id
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~body-format: 
+  ~get-draft: 
+  ~status: 
+  ~version: 
+  ~include-labels: 
+  ~include-properties: 
+  ~include-operations: 
+  ~include-likes: 
+  ~include-versions: 
+  ~include-version: 
+  ~include-favorited-by-current-user-status: 
+  ~include-webresources: 
+  ~include-collaborators: 
+  ~include-direct-children: 
+}
+
+params:path {
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

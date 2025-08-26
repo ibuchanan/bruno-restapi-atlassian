@@ -1,0 +1,11 @@
+meta {
+  name: Create a project deploy key
+  type: http
+  seq: 14
+}
+
+post {
+  url: {{baseUrl}}/workspaces/:workspace/projects/:project_key/deploy-keys
+  body: none
+  auth: none
+}

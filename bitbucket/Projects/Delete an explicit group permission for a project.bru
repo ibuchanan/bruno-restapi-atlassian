@@ -1,0 +1,11 @@
+meta {
+  name: Delete an explicit group permission for a project
+  type: http
+  seq: 10
+}
+
+delete {
+  url: {{baseUrl}}/workspaces/:workspace/projects/:project_key/permissions-config/groups/:group_slug
+  body: none
+  auth: none
+}

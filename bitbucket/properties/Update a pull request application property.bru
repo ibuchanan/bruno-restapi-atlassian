@@ -1,0 +1,25 @@
+meta {
+  name: Update a pull request application property
+  type: http
+  seq: 7
+}
+
+put {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/pullrequests/:pullrequest_id/properties/:app_key/:property_name
+  body: json
+  auth: none
+}
+
+params:path {
+  workspace: 
+  repo_slug: 
+  pullrequest_id: 
+  app_key: 
+  property_name: 
+}
+
+body:json {
+  {
+    "_attributes": []
+  }
+}

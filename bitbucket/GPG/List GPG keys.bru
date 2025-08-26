@@ -1,0 +1,11 @@
+meta {
+  name: List GPG keys
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/users/:selected_user/gpg-keys
+  body: none
+  auth: none
+}

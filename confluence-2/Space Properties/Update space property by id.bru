@@ -1,0 +1,32 @@
+meta {
+  name: Update space property by id
+  type: http
+  seq: 4
+}
+
+put {
+  url: {{baseUrl}}/spaces/:space-id/properties/:property-id
+  body: json
+  auth: basic
+}
+
+params:path {
+  space-id: 
+  property-id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "key": "",
+    "value": "",
+    "version": {
+      "number": 0,
+      "message": ""
+    }
+  }
+}

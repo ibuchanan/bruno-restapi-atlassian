@@ -1,0 +1,11 @@
+meta {
+  name: Update a pull request
+  type: http
+  seq: 11
+}
+
+put {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/pullrequests/:pull_request_id
+  body: json
+  auth: none
+}

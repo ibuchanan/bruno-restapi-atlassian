@@ -1,0 +1,22 @@
+meta {
+  name: Remove organization
+  type: http
+  seq: 12
+}
+
+delete {
+  url: {{baseUrl}}/rest/servicedeskapi/servicedesk/:serviceDeskId/organization
+  body: json
+  auth: inherit
+}
+
+params:path {
+  serviceDeskId:
+}
+
+body:json {
+  {
+    "organizationId": 0,
+    "serviceDeskId": ""
+  }
+}

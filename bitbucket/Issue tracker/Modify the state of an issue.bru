@@ -1,0 +1,74 @@
+meta {
+  name: Modify the state of an issue
+  type: http
+  seq: 17
+}
+
+post {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/issues/:issue_id/changes
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "type": "",
+    "links": {
+      "self": {
+        "href": "",
+        "name": ""
+      },
+      "issue": {
+        "href": "",
+        "name": ""
+      }
+    },
+    "name": "",
+    "created_on": "",
+    "user": "",
+    "issue": "",
+    "changes": {
+      "assignee": {
+        "old": "",
+        "new": ""
+      },
+      "state": {
+        "old": "",
+        "new": ""
+      },
+      "title": {
+        "old": "",
+        "new": ""
+      },
+      "kind": {
+        "old": "",
+        "new": ""
+      },
+      "milestone": {
+        "old": "",
+        "new": ""
+      },
+      "component": {
+        "old": "",
+        "new": ""
+      },
+      "priority": {
+        "old": "",
+        "new": ""
+      },
+      "version": {
+        "old": "",
+        "new": ""
+      },
+      "content": {
+        "old": "",
+        "new": ""
+      }
+    },
+    "message": {
+      "raw": "",
+      "markup": "",
+      "html": ""
+    }
+  }
+}

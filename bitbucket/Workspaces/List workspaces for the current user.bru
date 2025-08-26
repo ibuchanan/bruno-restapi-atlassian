@@ -1,0 +1,16 @@
+meta {
+  name: List workspaces for the current user
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/user/permissions/workspaces
+  body: none
+  auth: none
+}
+
+params:query {
+  ~q: 
+  ~sort: 
+}

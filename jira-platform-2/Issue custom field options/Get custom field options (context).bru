@@ -1,0 +1,28 @@
+meta {
+  name: Get custom field options (context)
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/rest/api/2/field/:fieldId/context/:contextId/option
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~optionId: 
+  ~onlyOptions: 
+  ~startAt: 
+  ~maxResults: 
+}
+
+params:path {
+  fieldId: 
+  contextId: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

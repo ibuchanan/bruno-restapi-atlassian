@@ -1,0 +1,25 @@
+meta {
+  name: Get issue security level members
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{baseUrl}}/rest/api/2/issuesecurityschemes/level/member
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~startAt: 
+  ~maxResults: 
+  ~id: 
+  ~schemeId: 
+  ~levelId: 
+  ~expand: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

@@ -1,0 +1,21 @@
+meta {
+  name: Delete content property for database by id
+  type: http
+  seq: 30
+}
+
+delete {
+  url: {{baseUrl}}/databases/:database-id/properties/:property-id
+  body: none
+  auth: basic
+}
+
+params:path {
+  database-id: 
+  property-id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

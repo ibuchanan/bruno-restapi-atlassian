@@ -1,0 +1,15 @@
+meta {
+  name: Get properties keys
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{baseUrl}}/rest/servicedeskapi/organization/:organizationId/property
+  body: none
+  auth: inherit
+}
+
+params:path {
+  organizationId:
+}

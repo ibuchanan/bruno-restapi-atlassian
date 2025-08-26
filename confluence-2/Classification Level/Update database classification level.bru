@@ -1,0 +1,27 @@
+meta {
+  name: Update database classification level
+  type: http
+  seq: 15
+}
+
+put {
+  url: {{baseUrl}}/databases/:id/classification-level
+  body: json
+  auth: basic
+}
+
+params:path {
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "id": "",
+    "status": ""
+  }
+}

@@ -1,0 +1,11 @@
+meta {
+  name: Stop watching a snippet
+  type: http
+  seq: 16
+}
+
+delete {
+  url: {{baseUrl}}/snippets/:workspace/:encoded_id/watch
+  body: none
+  auth: none
+}

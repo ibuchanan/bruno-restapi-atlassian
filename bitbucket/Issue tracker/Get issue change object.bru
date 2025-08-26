@@ -1,0 +1,11 @@
+meta {
+  name: Get issue change object
+  type: http
+  seq: 18
+}
+
+get {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/issues/:issue_id/changes/:change_id
+  body: none
+  auth: none
+}

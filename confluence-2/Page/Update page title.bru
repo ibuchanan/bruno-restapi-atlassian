@@ -1,0 +1,27 @@
+meta {
+  name: Update page title
+  type: http
+  seq: 7
+}
+
+put {
+  url: {{baseUrl}}/pages/:id/title
+  body: json
+  auth: basic
+}
+
+params:path {
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "status": "",
+    "title": ""
+  }
+}

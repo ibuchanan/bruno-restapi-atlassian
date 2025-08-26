@@ -1,0 +1,27 @@
+meta {
+  name: Add issue types to context
+  type: http
+  seq: 10
+}
+
+put {
+  url: {{baseUrl}}/rest/api/2/field/:fieldId/context/:contextId/issuetype
+  body: json
+  auth: basic
+}
+
+params:path {
+  fieldId: 
+  contextId: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "issueTypeIds": []
+  }
+}

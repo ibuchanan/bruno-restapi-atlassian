@@ -1,0 +1,30 @@
+meta {
+  name: Send notification for issue
+  type: http
+  seq: 20
+}
+
+post {
+  url: {{baseUrl}}/rest/api/2/issue/:issueIdOrKey/notify
+  body: json
+  auth: basic
+}
+
+params:path {
+  issueIdOrKey: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "htmlBody": "",
+    "restrict": "",
+    "subject": "",
+    "textBody": "",
+    "to": ""
+  }
+}

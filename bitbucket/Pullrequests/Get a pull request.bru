@@ -1,0 +1,11 @@
+meta {
+  name: Get a pull request
+  type: http
+  seq: 10
+}
+
+get {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/pullrequests/:pull_request_id
+  body: none
+  auth: none
+}

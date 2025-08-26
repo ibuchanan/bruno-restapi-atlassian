@@ -1,0 +1,24 @@
+meta {
+  name: Get permission scheme
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{baseUrl}}/rest/api/2/permissionscheme/:schemeId
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~expand: 
+}
+
+params:path {
+  schemeId: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

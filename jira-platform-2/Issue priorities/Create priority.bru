@@ -1,0 +1,26 @@
+meta {
+  name: Create priority
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/rest/api/2/priority
+  body: json
+  auth: basic
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "avatarId": 0,
+    "description": "",
+    "iconUrl": "",
+    "name": "",
+    "statusColor": ""
+  }
+}

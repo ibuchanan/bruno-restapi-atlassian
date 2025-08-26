@@ -1,0 +1,27 @@
+meta {
+  name: Update whiteboard classification level
+  type: http
+  seq: 12
+}
+
+put {
+  url: {{baseUrl}}/whiteboards/:id/classification-level
+  body: json
+  auth: basic
+}
+
+params:path {
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "id": "",
+    "status": ""
+  }
+}

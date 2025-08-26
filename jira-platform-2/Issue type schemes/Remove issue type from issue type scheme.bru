@@ -1,0 +1,21 @@
+meta {
+  name: Remove issue type from issue type scheme
+  type: http
+  seq: 10
+}
+
+delete {
+  url: {{baseUrl}}/rest/api/2/issuetypescheme/:issueTypeSchemeId/issuetype/:issueTypeId
+  body: none
+  auth: basic
+}
+
+params:path {
+  issueTypeSchemeId: 
+  issueTypeId: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

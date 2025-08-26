@@ -1,0 +1,21 @@
+meta {
+  name: Delete content property for Smart Link in the content tree by id
+  type: http
+  seq: 35
+}
+
+delete {
+  url: {{baseUrl}}/embeds/:embed-id/properties/:property-id
+  body: none
+  auth: basic
+}
+
+params:path {
+  embed-id: 
+  property-id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

@@ -1,0 +1,11 @@
+meta {
+  name: Delete an issue
+  type: http
+  seq: 9
+}
+
+delete {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/issues/:issue_id
+  body: none
+  auth: none
+}

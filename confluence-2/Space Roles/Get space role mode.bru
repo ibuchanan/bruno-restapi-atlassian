@@ -1,0 +1,16 @@
+meta {
+  name: Get space role mode
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{baseUrl}}/space-role-mode
+  body: none
+  auth: basic
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

@@ -1,0 +1,21 @@
+meta {
+  name: Delete app property
+  type: http
+  seq: 2
+}
+
+delete {
+  url: {{baseUrl}}/rest/atlassian-connect/1/addons/:addonKey/properties/:propertyKey
+  body: none
+  auth: basic
+}
+
+params:path {
+  addonKey: 
+  propertyKey: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

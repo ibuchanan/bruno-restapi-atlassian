@@ -1,0 +1,21 @@
+meta {
+  name: Get issue type property
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{baseUrl}}/rest/api/2/issuetype/:issueTypeId/properties/:propertyKey
+  body: none
+  auth: basic
+}
+
+params:path {
+  issueTypeId: 
+  propertyKey: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

@@ -1,0 +1,24 @@
+meta {
+  name: Delete custom content
+  type: http
+  seq: 6
+}
+
+delete {
+  url: {{baseUrl}}/custom-content/:id
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~purge: 
+}
+
+params:path {
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

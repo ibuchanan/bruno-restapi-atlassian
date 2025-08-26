@@ -1,0 +1,21 @@
+meta {
+  name: Get all classification levels
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/rest/api/2/classification-levels
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~status: 
+  ~orderBy: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

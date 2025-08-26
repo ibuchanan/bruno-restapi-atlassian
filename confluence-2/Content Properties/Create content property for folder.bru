@@ -1,0 +1,27 @@
+meta {
+  name: Create content property for folder
+  type: http
+  seq: 37
+}
+
+post {
+  url: {{baseUrl}}/folders/:id/properties
+  body: json
+  auth: basic
+}
+
+params:path {
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "key": "",
+    "value": ""
+  }
+}

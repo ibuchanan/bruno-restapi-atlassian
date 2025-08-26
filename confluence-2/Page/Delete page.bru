@@ -1,0 +1,25 @@
+meta {
+  name: Delete page
+  type: http
+  seq: 6
+}
+
+delete {
+  url: {{baseUrl}}/pages/:id
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~purge: 
+  ~draft: 
+}
+
+params:path {
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

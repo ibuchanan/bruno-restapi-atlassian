@@ -1,0 +1,16 @@
+meta {
+  name: Run a pipeline
+  type: http
+  seq: 6
+}
+
+post {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/pipelines
+  body: json
+  auth: none
+}
+
+params:path {
+  workspace: 
+  repo_slug: 
+}

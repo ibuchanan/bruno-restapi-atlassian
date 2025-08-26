@@ -1,0 +1,19 @@
+meta {
+  name: Get a pull request application property
+  type: http
+  seq: 9
+}
+
+get {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/pullrequests/:pullrequest_id/properties/:app_key/:property_name
+  body: none
+  auth: none
+}
+
+params:path {
+  workspace: 
+  repo_slug: 
+  pullrequest_id: 
+  app_key: 
+  property_name: 
+}

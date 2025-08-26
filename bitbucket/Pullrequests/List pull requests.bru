@@ -1,0 +1,15 @@
+meta {
+  name: List pull requests
+  type: http
+  seq: 7
+}
+
+get {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/pullrequests
+  body: none
+  auth: none
+}
+
+params:query {
+  ~state: 
+}

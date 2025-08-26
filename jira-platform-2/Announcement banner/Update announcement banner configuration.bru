@@ -1,0 +1,25 @@
+meta {
+  name: Update announcement banner configuration
+  type: http
+  seq: 2
+}
+
+put {
+  url: {{baseUrl}}/rest/api/2/announcementBanner
+  body: json
+  auth: basic
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "isDismissible": false,
+    "isEnabled": false,
+    "message": "",
+    "visibility": ""
+  }
+}

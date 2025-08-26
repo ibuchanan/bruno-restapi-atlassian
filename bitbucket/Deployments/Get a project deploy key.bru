@@ -1,0 +1,11 @@
+meta {
+  name: Get a project deploy key
+  type: http
+  seq: 16
+}
+
+get {
+  url: {{baseUrl}}/workspaces/:workspace/projects/:project_key/deploy-keys/:key_id
+  body: none
+  auth: none
+}

@@ -1,0 +1,24 @@
+meta {
+  name: Get audit records
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/rest/api/2/auditing/record
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~offset: 
+  ~limit: 
+  ~filter: 
+  ~from: 
+  ~to: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

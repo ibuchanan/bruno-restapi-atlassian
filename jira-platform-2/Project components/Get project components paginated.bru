@@ -1,0 +1,28 @@
+meta {
+  name: Get project components paginated
+  type: http
+  seq: 7
+}
+
+get {
+  url: {{baseUrl}}/rest/api/2/project/:projectIdOrKey/component
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~startAt: 
+  ~maxResults: 
+  ~orderBy: 
+  ~componentSource: 
+  ~query: 
+}
+
+params:path {
+  projectIdOrKey: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

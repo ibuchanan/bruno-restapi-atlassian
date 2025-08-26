@@ -1,0 +1,21 @@
+meta {
+  name: Update Atlassian team in plan
+  type: http
+  seq: 5
+}
+
+put {
+  url: {{baseUrl}}/rest/api/2/plans/plan/:planId/team/atlassian/:atlassianTeamId
+  body: none
+  auth: basic
+}
+
+params:path {
+  planId: 
+  atlassianTeamId: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

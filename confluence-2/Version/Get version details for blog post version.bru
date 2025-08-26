@@ -1,0 +1,21 @@
+meta {
+  name: Get version details for blog post version
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{baseUrl}}/blogposts/:blogpost-id/versions/:version-number
+  body: none
+  auth: basic
+}
+
+params:path {
+  blogpost-id: 
+  version-number: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

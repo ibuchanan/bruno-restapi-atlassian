@@ -1,0 +1,29 @@
+meta {
+  name: Get attachments for blog post
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{baseUrl}}/blogposts/:id/attachments
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~sort: 
+  ~cursor: 
+  ~status: 
+  ~mediaType: 
+  ~filename: 
+  ~limit: 
+}
+
+params:path {
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

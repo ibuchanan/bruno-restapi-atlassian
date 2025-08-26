@@ -1,0 +1,21 @@
+meta {
+  name: Get project property
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{baseUrl}}/rest/api/2/project/:projectIdOrKey/properties/:propertyKey
+  body: none
+  auth: basic
+}
+
+params:path {
+  projectIdOrKey: 
+  propertyKey: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

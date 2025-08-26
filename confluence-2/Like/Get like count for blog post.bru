@@ -1,0 +1,20 @@
+meta {
+  name: Get like count for blog post
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/blogposts/:id/likes/count
+  body: none
+  auth: basic
+}
+
+params:path {
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

@@ -1,0 +1,24 @@
+meta {
+  name: Move priorities
+  type: http
+  seq: 4
+}
+
+put {
+  url: {{baseUrl}}/rest/api/2/priority/move
+  body: json
+  auth: basic
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "after": "",
+    "ids": [],
+    "position": ""
+  }
+}

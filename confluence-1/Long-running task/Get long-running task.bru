@@ -1,0 +1,20 @@
+meta {
+  name: Get long-running task
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/wiki/rest/api/longtask/:id
+  body: none
+  auth: basic
+}
+
+params:path {
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

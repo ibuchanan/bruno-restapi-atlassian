@@ -1,0 +1,27 @@
+meta {
+  name: Get content properties for folder
+  type: http
+  seq: 36
+}
+
+get {
+  url: {{baseUrl}}/folders/:id/properties
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~key: 
+  ~sort: 
+  ~cursor: 
+  ~limit: 
+}
+
+params:path {
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

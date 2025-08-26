@@ -1,0 +1,26 @@
+meta {
+  name: Reset blog post classification level
+  type: http
+  seq: 10
+}
+
+post {
+  url: {{baseUrl}}/blogposts/:id/classification-level/reset
+  body: json
+  auth: basic
+}
+
+params:path {
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "status": ""
+  }
+}

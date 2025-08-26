@@ -1,0 +1,32 @@
+meta {
+  name: Update content property for attachment by id
+  type: http
+  seq: 4
+}
+
+put {
+  url: {{baseUrl}}/attachments/:attachment-id/properties/:property-id
+  body: json
+  auth: basic
+}
+
+params:path {
+  attachment-id: 
+  property-id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "key": "",
+    "value": "",
+    "version": {
+      "number": 0,
+      "message": ""
+    }
+  }
+}

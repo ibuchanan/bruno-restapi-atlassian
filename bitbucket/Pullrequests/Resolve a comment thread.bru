@@ -1,0 +1,11 @@
+meta {
+  name: Resolve a comment thread
+  type: http
+  seq: 21
+}
+
+post {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/pullrequests/:pull_request_id/comments/:comment_id/resolve
+  body: none
+  auth: none
+}

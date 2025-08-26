@@ -1,0 +1,24 @@
+meta {
+  name: Get articles
+  type: http
+  seq: 7
+}
+
+get {
+  url: {{baseUrl}}/rest/servicedeskapi/servicedesk/:serviceDeskId/knowledgebase/article
+  body: none
+  auth: inherit
+}
+
+params:query {
+  query:
+  ~highlight:
+  ~start:
+  ~limit:
+  ~cursor:
+  ~prev:
+}
+
+params:path {
+  serviceDeskId:
+}

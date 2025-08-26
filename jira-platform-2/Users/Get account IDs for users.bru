@@ -1,0 +1,23 @@
+meta {
+  name: Get account IDs for users
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{baseUrl}}/rest/api/2/user/bulk/migration
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~startAt: 
+  ~maxResults: 
+  ~username: 
+  ~key: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

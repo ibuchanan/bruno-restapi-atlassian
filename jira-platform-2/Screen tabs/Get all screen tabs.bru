@@ -1,0 +1,24 @@
+meta {
+  name: Get all screen tabs
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/rest/api/2/screens/:screenId/tabs
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~projectKey: 
+}
+
+params:path {
+  screenId: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

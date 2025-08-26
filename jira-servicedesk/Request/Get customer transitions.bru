@@ -1,0 +1,20 @@
+meta {
+  name: Get customer transitions
+  type: http
+  seq: 24
+}
+
+get {
+  url: {{baseUrl}}/rest/servicedeskapi/request/:issueIdOrKey/transition
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~start:
+  ~limit:
+}
+
+params:path {
+  issueIdOrKey:
+}

@@ -1,0 +1,26 @@
+auth {
+  mode: oauth2
+}
+
+auth:oauth2 {
+  grant_type: authorization_code
+  callback_url: {{process.env.CALLBACK_URL}}
+  authorization_url: https://auth.atlassian.com/authorize?audience=api.atlassian.com
+  access_token_url: https://auth.atlassian.com/oauth/token
+  refresh_token_url: https://auth.atlassian.com/oauth/token
+  client_id: {{process.env.CLIENT_ID}}
+  client_secret: {{process.env.SECRET}}
+  scope: {{process.env.SCOPES}}
+  state: {{$guid}}
+  pkce: false
+  credentials_placement: body
+  credentials_id: credentials
+  token_placement: header
+  token_header_prefix: Bearer
+  auto_fetch_token: true
+  auto_refresh_token: true
+}
+
+vars:pre-request {
+  baseUrl: https://api.atlassian.com/ex/jira/{{cloudid}}/
+}

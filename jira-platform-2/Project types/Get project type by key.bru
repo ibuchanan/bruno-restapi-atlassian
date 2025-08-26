@@ -1,0 +1,20 @@
+meta {
+  name: Get project type by key
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{baseUrl}}/rest/api/2/project/type/:projectTypeKey
+  body: none
+  auth: basic
+}
+
+params:path {
+  projectTypeKey: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

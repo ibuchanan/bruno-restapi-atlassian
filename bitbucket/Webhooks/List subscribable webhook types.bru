@@ -1,0 +1,11 @@
+meta {
+  name: List subscribable webhook types
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/hook_events/:subject_type
+  body: none
+  auth: none
+}

@@ -1,0 +1,11 @@
+meta {
+  name: Get a download artifact link
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/downloads/:filename
+  body: none
+  auth: none
+}

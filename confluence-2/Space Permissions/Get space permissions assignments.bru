@@ -1,0 +1,25 @@
+meta {
+  name: Get space permissions assignments
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/spaces/:id/permissions
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~cursor: 
+  ~limit: 
+}
+
+params:path {
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

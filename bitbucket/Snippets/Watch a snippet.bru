@@ -1,0 +1,11 @@
+meta {
+  name: Watch a snippet
+  type: http
+  seq: 18
+}
+
+put {
+  url: {{baseUrl}}/snippets/:workspace/:encoded_id/watch
+  body: none
+  auth: none
+}

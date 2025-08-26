@@ -1,0 +1,33 @@
+meta {
+  name: Update issue field option
+  type: http
+  seq: 7
+}
+
+put {
+  url: {{baseUrl}}/rest/api/2/field/:fieldKey/option/:optionId
+  body: json
+  auth: basic
+}
+
+params:path {
+  fieldKey: 
+  optionId: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "config": {
+      "attributes": [],
+      "scope": ""
+    },
+    "id": 0,
+    "properties": {},
+    "value": ""
+  }
+}

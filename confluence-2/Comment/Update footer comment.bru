@@ -1,0 +1,20 @@
+meta {
+  name: Update footer comment
+  type: http
+  seq: 10
+}
+
+put {
+  url: {{baseUrl}}/footer-comments/:comment-id
+  body: json
+  auth: basic
+}
+
+params:path {
+  comment-id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

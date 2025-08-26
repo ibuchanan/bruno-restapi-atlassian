@@ -1,0 +1,16 @@
+meta {
+  name: List known hosts
+  type: http
+  seq: 32
+}
+
+get {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/pipelines_config/ssh/known_hosts
+  body: none
+  auth: none
+}
+
+params:path {
+  workspace: 
+  repo_slug: 
+}

@@ -1,0 +1,11 @@
+meta {
+  name: List the default reviewers in a project
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{baseUrl}}/workspaces/:workspace/projects/:project_key/default-reviewers
+  body: none
+  auth: none
+}

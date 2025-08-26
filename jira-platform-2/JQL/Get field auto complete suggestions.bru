@@ -1,0 +1,23 @@
+meta {
+  name: Get field auto complete suggestions
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{baseUrl}}/rest/api/2/jql/autocompletedata/suggestions
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~fieldName: 
+  ~fieldValue: 
+  ~predicateName: 
+  ~predicateValue: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

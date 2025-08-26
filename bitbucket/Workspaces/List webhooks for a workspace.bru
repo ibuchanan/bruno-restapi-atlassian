@@ -1,0 +1,11 @@
+meta {
+  name: List webhooks for a workspace
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{baseUrl}}/workspaces/:workspace/hooks
+  body: none
+  auth: none
+}

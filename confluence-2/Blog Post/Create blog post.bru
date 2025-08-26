@@ -1,0 +1,30 @@
+meta {
+  name: Create blog post
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/blogposts
+  body: json
+  auth: basic
+}
+
+params:query {
+  ~private: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "spaceId": "",
+    "status": "",
+    "title": "",
+    "body": "",
+    "createdAt": ""
+  }
+}

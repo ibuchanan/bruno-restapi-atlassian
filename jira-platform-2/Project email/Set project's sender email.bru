@@ -1,0 +1,27 @@
+meta {
+  name: Set project's sender email
+  type: http
+  seq: 2
+}
+
+put {
+  url: {{baseUrl}}/rest/api/2/project/:projectId/email
+  body: json
+  auth: basic
+}
+
+params:path {
+  projectId: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "emailAddress": "",
+    "emailAddressStatus": []
+  }
+}

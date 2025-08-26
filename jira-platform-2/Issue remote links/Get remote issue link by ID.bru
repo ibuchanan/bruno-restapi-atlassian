@@ -1,0 +1,21 @@
+meta {
+  name: Get remote issue link by ID
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{baseUrl}}/rest/api/2/issue/:issueIdOrKey/remotelink/:linkId
+  body: none
+  auth: basic
+}
+
+params:path {
+  issueIdOrKey: 
+  linkId: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

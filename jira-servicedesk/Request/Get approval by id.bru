@@ -1,0 +1,16 @@
+meta {
+  name: Get approval by id
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{baseUrl}}/rest/servicedeskapi/request/:issueIdOrKey/approval/:approvalId
+  body: none
+  auth: inherit
+}
+
+params:path {
+  issueIdOrKey:
+  approvalId:
+}

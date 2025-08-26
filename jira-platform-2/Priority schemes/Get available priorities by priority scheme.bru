@@ -1,0 +1,24 @@
+meta {
+  name: Get available priorities by priority scheme
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{baseUrl}}/rest/api/2/priorityscheme/priorities/available
+  body: none
+  auth: basic
+}
+
+params:query {
+  schemeId: 
+  ~startAt: 
+  ~maxResults: 
+  ~query: 
+  ~exclude: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

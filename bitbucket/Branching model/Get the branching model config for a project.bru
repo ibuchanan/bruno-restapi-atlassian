@@ -1,0 +1,11 @@
+meta {
+  name: Get the branching model config for a project
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{baseUrl}}/workspaces/:workspace/projects/:project_key/branching-model/settings
+  body: none
+  auth: none
+}

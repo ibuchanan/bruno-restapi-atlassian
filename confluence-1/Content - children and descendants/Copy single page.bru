@@ -1,0 +1,46 @@
+meta {
+  name: Copy single page
+  type: http
+  seq: 5
+}
+
+post {
+  url: {{baseUrl}}/wiki/rest/api/content/:id/copy
+  body: json
+  auth: basic
+}
+
+params:query {
+  ~expand: 
+}
+
+params:path {
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "copyAttachments": false,
+    "copyPermissions": false,
+    "copyProperties": false,
+    "copyLabels": false,
+    "copyCustomContents": false,
+    "destination": {
+      "type": "",
+      "value": ""
+    },
+    "pageTitle": "",
+    "body": {
+      "storage": {
+        "value": "",
+        "representation": ""
+      },
+      "editor2": {}
+    }
+  }
+}

@@ -1,0 +1,15 @@
+meta {
+  name: Deletes a Forge app property.
+  type: http
+  seq: 2
+}
+
+delete {
+  url: {{baseUrl}}/app/properties/:propertyKey
+  body: none
+  auth: inherit
+}
+
+params:path {
+  propertyKey:
+}

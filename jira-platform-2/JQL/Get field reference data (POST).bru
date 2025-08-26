@@ -1,0 +1,23 @@
+meta {
+  name: Get field reference data (POST)
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/rest/api/2/jql/autocompletedata
+  body: json
+  auth: basic
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "includeCollapsedFields": false,
+    "projectIds": []
+  }
+}

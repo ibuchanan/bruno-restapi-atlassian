@@ -1,0 +1,17 @@
+meta {
+  name: Update an explicit group permission for a project
+  type: http
+  seq: 12
+}
+
+put {
+  url: {{baseUrl}}/workspaces/:workspace/projects/:project_key/permissions-config/groups/:group_slug
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "permission": ""
+  }
+}

@@ -1,0 +1,28 @@
+meta {
+  name: Bulk set issue property
+  type: http
+  seq: 4
+}
+
+put {
+  url: {{baseUrl}}/rest/api/2/issue/properties/:propertyKey
+  body: json
+  auth: basic
+}
+
+params:path {
+  propertyKey: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "expression": "",
+    "filter": "",
+    "value": ""
+  }
+}

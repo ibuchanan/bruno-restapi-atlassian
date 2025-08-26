@@ -1,0 +1,27 @@
+meta {
+  name: Update page classification level
+  type: http
+  seq: 6
+}
+
+put {
+  url: {{baseUrl}}/pages/:id/classification-level
+  body: json
+  auth: basic
+}
+
+params:path {
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "id": "",
+    "status": ""
+  }
+}

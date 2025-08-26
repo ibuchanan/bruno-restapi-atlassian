@@ -1,0 +1,11 @@
+meta {
+  name: Compare two commit diff stats
+  type: http
+  seq: 14
+}
+
+get {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/diffstat/:spec
+  body: none
+  auth: none
+}

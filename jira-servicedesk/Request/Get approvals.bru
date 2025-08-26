@@ -1,0 +1,20 @@
+meta {
+  name: Get approvals
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{baseUrl}}/rest/servicedeskapi/request/:issueIdOrKey/approval
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~start:
+  ~limit:
+}
+
+params:path {
+  issueIdOrKey:
+}

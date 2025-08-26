@@ -1,0 +1,32 @@
+meta {
+  name: Find relationship from source to target
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/wiki/rest/api/relation/:relationName/from/:sourceType/:sourceKey/to/:targetType/:targetKey
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~sourceStatus: 
+  ~targetStatus: 
+  ~sourceVersion: 
+  ~targetVersion: 
+  ~expand: 
+}
+
+params:path {
+  relationName: 
+  sourceType: 
+  sourceKey: 
+  targetType: 
+  targetKey: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

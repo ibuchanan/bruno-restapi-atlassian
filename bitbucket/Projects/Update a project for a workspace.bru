@@ -1,0 +1,11 @@
+meta {
+  name: Update a project for a workspace
+  type: http
+  seq: 4
+}
+
+put {
+  url: {{baseUrl}}/workspaces/:workspace/projects/:project_key
+  body: json
+  auth: none
+}

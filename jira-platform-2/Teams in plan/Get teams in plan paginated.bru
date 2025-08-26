@@ -1,0 +1,25 @@
+meta {
+  name: Get teams in plan paginated
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/rest/api/2/plans/plan/:planId/team
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~cursor: 
+  ~maxResults: 
+}
+
+params:path {
+  planId: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

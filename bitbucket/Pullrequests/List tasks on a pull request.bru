@@ -1,0 +1,17 @@
+meta {
+  name: List tasks on a pull request
+  type: http
+  seq: 32
+}
+
+get {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/pullrequests/:pull_request_id/tasks
+  body: none
+  auth: none
+}
+
+params:query {
+  ~q: 
+  ~sort: 
+  ~pagelen: 
+}

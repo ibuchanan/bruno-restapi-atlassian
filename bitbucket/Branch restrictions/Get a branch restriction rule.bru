@@ -1,0 +1,11 @@
+meta {
+  name: Get a branch restriction rule
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/branch-restrictions/:id
+  body: none
+  auth: none
+}

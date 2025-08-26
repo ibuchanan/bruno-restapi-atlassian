@@ -1,0 +1,11 @@
+meta {
+  name: Get a repository
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug
+  body: none
+  auth: none
+}

@@ -1,0 +1,15 @@
+meta {
+  name: List user permissions in a workspace
+  type: http
+  seq: 11
+}
+
+get {
+  url: {{baseUrl}}/workspaces/:workspace/permissions
+  body: none
+  auth: none
+}
+
+params:query {
+  ~q: 
+}

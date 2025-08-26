@@ -1,0 +1,26 @@
+meta {
+  name: Get descendants of a database
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/databases/:id/descendants
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~limit: 
+  ~depth: 
+  ~cursor: 
+}
+
+params:path {
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

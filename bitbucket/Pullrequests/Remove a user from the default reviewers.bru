@@ -1,0 +1,11 @@
+meta {
+  name: Remove a user from the default reviewers
+  type: http
+  seq: 3
+}
+
+delete {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/default-reviewers/:target_username
+  body: none
+  auth: none
+}

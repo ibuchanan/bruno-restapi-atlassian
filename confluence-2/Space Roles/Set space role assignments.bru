@@ -1,0 +1,32 @@
+meta {
+  name: Set space role assignments
+  type: http
+  seq: 5
+}
+
+post {
+  url: {{baseUrl}}/spaces/:id/role-assignments
+  body: json
+  auth: basic
+}
+
+params:path {
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  [
+    {
+      "principal": {
+        "principalType": "",
+        "principalId": ""
+      },
+      "roleId": ""
+    }
+  ]
+}

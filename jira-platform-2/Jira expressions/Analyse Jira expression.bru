@@ -1,0 +1,27 @@
+meta {
+  name: Analyse Jira expression
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/rest/api/2/expression/analyse
+  body: json
+  auth: basic
+}
+
+params:query {
+  ~check: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "contextVariables": {},
+    "expressions": []
+  }
+}

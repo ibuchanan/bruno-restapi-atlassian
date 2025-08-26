@@ -1,0 +1,17 @@
+meta {
+  name: Get a deployment
+  type: http
+  seq: 7
+}
+
+get {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/deployments/:deployment_uuid
+  body: none
+  auth: none
+}
+
+params:path {
+  workspace: 
+  repo_slug: 
+  deployment_uuid: 
+}

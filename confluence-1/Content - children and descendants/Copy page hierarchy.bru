@@ -1,0 +1,37 @@
+meta {
+  name: Copy page hierarchy
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{baseUrl}}/wiki/rest/api/content/:id/pagehierarchy/copy
+  body: json
+  auth: basic
+}
+
+params:path {
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "copyAttachments": false,
+    "copyPermissions": false,
+    "copyProperties": false,
+    "copyLabels": false,
+    "copyCustomContents": false,
+    "copyDescendants": false,
+    "destinationPageId": "",
+    "titleOptions": {
+      "prefix": "",
+      "replace": "",
+      "search": ""
+    }
+  }
+}

@@ -1,0 +1,26 @@
+meta {
+  name: Add issue types to issue type scheme
+  type: http
+  seq: 8
+}
+
+put {
+  url: {{baseUrl}}/rest/api/2/issuetypescheme/:issueTypeSchemeId/issuetype
+  body: json
+  auth: basic
+}
+
+params:path {
+  issueTypeSchemeId: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "issueTypeIds": []
+  }
+}

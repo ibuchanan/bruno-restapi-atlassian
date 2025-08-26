@@ -1,0 +1,11 @@
+meta {
+  name: List explicit user permissions for a project
+  type: http
+  seq: 13
+}
+
+get {
+  url: {{baseUrl}}/workspaces/:workspace/projects/:project_key/permissions-config/users
+  body: none
+  auth: none
+}

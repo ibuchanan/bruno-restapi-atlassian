@@ -1,0 +1,25 @@
+meta {
+  name: Get projects using a given workflow
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{baseUrl}}/rest/api/2/workflow/:workflowId/projectUsages
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~nextPageToken: 
+  ~maxResults: 
+}
+
+params:path {
+  workflowId: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

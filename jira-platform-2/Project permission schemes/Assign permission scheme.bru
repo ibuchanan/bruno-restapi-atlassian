@@ -1,0 +1,30 @@
+meta {
+  name: Assign permission scheme
+  type: http
+  seq: 3
+}
+
+put {
+  url: {{baseUrl}}/rest/api/2/project/:projectKeyOrId/permissionscheme
+  body: json
+  auth: basic
+}
+
+params:query {
+  ~expand: 
+}
+
+params:path {
+  projectKeyOrId: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "id": 0
+  }
+}

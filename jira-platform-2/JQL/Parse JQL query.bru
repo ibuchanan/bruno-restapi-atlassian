@@ -1,0 +1,26 @@
+meta {
+  name: Parse JQL query
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{baseUrl}}/rest/api/2/jql/parse
+  body: json
+  auth: basic
+}
+
+params:query {
+  validation: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "queries": []
+  }
+}

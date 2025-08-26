@@ -1,0 +1,11 @@
+meta {
+  name: Add the specific user as a default reviewer for the project
+  type: http
+  seq: 8
+}
+
+put {
+  url: {{baseUrl}}/workspaces/:workspace/projects/:project_key/default-reviewers/:selected_user
+  body: none
+  auth: none
+}

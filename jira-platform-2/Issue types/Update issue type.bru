@@ -1,0 +1,28 @@
+meta {
+  name: Update issue type
+  type: http
+  seq: 6
+}
+
+put {
+  url: {{baseUrl}}/rest/api/2/issuetype/:id
+  body: json
+  auth: basic
+}
+
+params:path {
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "avatarId": 0,
+    "description": "",
+    "name": ""
+  }
+}

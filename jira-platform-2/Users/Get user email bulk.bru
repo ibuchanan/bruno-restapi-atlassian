@@ -1,0 +1,20 @@
+meta {
+  name: Get user email bulk
+  type: http
+  seq: 10
+}
+
+get {
+  url: {{baseUrl}}/rest/api/2/user/email/bulk
+  body: none
+  auth: basic
+}
+
+params:query {
+  accountId: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

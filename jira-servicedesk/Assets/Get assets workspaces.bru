@@ -1,0 +1,16 @@
+meta {
+  name: Get assets workspaces
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/rest/servicedeskapi/assets/workspace
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~start:
+  ~limit:
+}

@@ -1,0 +1,23 @@
+meta {
+  name: Check request type permissions
+  type: http
+  seq: 13
+}
+
+post {
+  url: {{baseUrl}}/rest/servicedeskapi/servicedesk/:serviceDeskId/requesttype/permissions/check
+  body: json
+  auth: inherit
+}
+
+params:path {
+  serviceDeskId:
+}
+
+body:json {
+  {
+    "accountId": "",
+    "permissions": [],
+    "requestTypeIds": []
+  }
+}

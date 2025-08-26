@@ -1,0 +1,21 @@
+meta {
+  name: Get all request types
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/rest/servicedeskapi/requesttype
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~searchQuery:
+  ~serviceDeskId:
+  ~start:
+  ~limit:
+  ~expand:
+  ~includeHiddenRequestTypesInSearch:
+  ~restrictionStatus:
+}

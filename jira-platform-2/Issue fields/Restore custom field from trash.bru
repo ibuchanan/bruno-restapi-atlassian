@@ -1,0 +1,20 @@
+meta {
+  name: Restore custom field from trash
+  type: http
+  seq: 8
+}
+
+post {
+  url: {{baseUrl}}/rest/api/2/field/:id/restore
+  body: none
+  auth: basic
+}
+
+params:path {
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

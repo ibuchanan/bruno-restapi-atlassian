@@ -1,0 +1,11 @@
+meta {
+  name: Get the effective, or currently applied, branching model for a repository
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/effective-branching-model
+  body: none
+  auth: none
+}

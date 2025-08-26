@@ -1,0 +1,11 @@
+meta {
+  name: Create a webhook for a repository
+  type: http
+  seq: 10
+}
+
+post {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/hooks
+  body: none
+  auth: none
+}

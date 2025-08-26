@@ -1,0 +1,24 @@
+meta {
+  name: Get customer requests
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/rest/servicedeskapi/request
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~searchTerm:
+  ~requestOwnership:
+  ~requestStatus:
+  ~approvalStatus:
+  ~organizationId:
+  ~serviceDeskId:
+  ~requestTypeId:
+  ~expand:
+  ~start:
+  ~limit:
+}

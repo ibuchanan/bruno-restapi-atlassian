@@ -1,0 +1,16 @@
+meta {
+  name: Get list of classification levels
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/classification-levels
+  body: none
+  auth: basic
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

@@ -1,0 +1,26 @@
+meta {
+  name: Get direct children of a database
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/databases/:id/direct-children
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~cursor: 
+  ~limit: 
+  ~sort: 
+}
+
+params:path {
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

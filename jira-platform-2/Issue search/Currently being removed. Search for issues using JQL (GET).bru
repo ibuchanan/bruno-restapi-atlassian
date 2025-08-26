@@ -1,0 +1,28 @@
+meta {
+  name: Currently being removed. Search for issues using JQL (GET)
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{baseUrl}}/rest/api/2/search
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~jql: 
+  ~startAt: 
+  ~maxResults: 
+  ~validateQuery: 
+  ~fields: 
+  ~expand: 
+  ~properties: 
+  ~fieldsByKeys: 
+  ~failFast: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

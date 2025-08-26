@@ -1,0 +1,15 @@
+meta {
+  name: List variables for a user
+  type: http
+  seq: 47
+}
+
+get {
+  url: {{baseUrl}}/users/:selected_user/pipelines_config/variables
+  body: none
+  auth: none
+}
+
+params:path {
+  selected_user: 
+}

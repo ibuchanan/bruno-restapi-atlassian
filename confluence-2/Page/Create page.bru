@@ -1,0 +1,33 @@
+meta {
+  name: Create page
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{baseUrl}}/pages
+  body: json
+  auth: basic
+}
+
+params:query {
+  ~embedded: 
+  ~private: 
+  ~root-level: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "spaceId": "",
+    "status": "",
+    "title": "",
+    "parentId": "",
+    "body": "",
+    "subtype": ""
+  }
+}

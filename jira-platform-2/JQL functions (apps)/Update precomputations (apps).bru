@@ -1,0 +1,32 @@
+meta {
+  name: Update precomputations (apps)
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/rest/api/2/jql/function/computation
+  body: json
+  auth: basic
+}
+
+params:query {
+  ~skipNotFoundPrecomputations: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "values": [
+      {
+        "error": "",
+        "id": "",
+        "value": ""
+      }
+    ]
+  }
+}

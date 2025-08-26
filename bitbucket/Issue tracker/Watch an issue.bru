@@ -1,0 +1,11 @@
+meta {
+  name: Watch an issue
+  type: http
+  seq: 29
+}
+
+put {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/issues/:issue_id/watch
+  body: none
+  auth: none
+}

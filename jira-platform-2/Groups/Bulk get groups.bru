@@ -1,0 +1,25 @@
+meta {
+  name: Bulk get groups
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{baseUrl}}/rest/api/2/group/bulk
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~startAt: 
+  ~maxResults: 
+  ~groupId: 
+  ~groupName: 
+  ~accessType: 
+  ~applicationKey: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

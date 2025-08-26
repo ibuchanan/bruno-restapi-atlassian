@@ -1,0 +1,20 @@
+meta {
+  name: Get votes
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/rest/api/2/issue/:issueIdOrKey/votes
+  body: none
+  auth: basic
+}
+
+params:path {
+  issueIdOrKey: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

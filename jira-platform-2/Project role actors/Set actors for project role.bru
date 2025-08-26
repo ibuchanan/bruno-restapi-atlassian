@@ -1,0 +1,28 @@
+meta {
+  name: Set actors for project role
+  type: http
+  seq: 3
+}
+
+put {
+  url: {{baseUrl}}/rest/api/2/project/:projectIdOrKey/role/:id
+  body: json
+  auth: basic
+}
+
+params:path {
+  projectIdOrKey: 
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "categorisedActors": {},
+    "id": 0
+  }
+}

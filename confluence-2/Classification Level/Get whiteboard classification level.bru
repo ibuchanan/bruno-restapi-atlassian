@@ -1,0 +1,20 @@
+meta {
+  name: Get whiteboard classification level
+  type: http
+  seq: 11
+}
+
+get {
+  url: {{baseUrl}}/whiteboards/:id/classification-level
+  body: none
+  auth: basic
+}
+
+params:path {
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

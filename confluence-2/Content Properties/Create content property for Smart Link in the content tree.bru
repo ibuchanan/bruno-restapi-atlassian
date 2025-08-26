@@ -1,0 +1,27 @@
+meta {
+  name: Create content property for Smart Link in the content tree
+  type: http
+  seq: 32
+}
+
+post {
+  url: {{baseUrl}}/embeds/:id/properties
+  body: json
+  auth: basic
+}
+
+params:path {
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "key": "",
+    "value": ""
+  }
+}

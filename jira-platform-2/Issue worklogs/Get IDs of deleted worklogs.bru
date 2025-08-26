@@ -1,0 +1,20 @@
+meta {
+  name: Get IDs of deleted worklogs
+  type: http
+  seq: 8
+}
+
+get {
+  url: {{baseUrl}}/rest/api/2/worklog/deleted
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~since: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

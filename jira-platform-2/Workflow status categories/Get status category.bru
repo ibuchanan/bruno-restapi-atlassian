@@ -1,0 +1,20 @@
+meta {
+  name: Get status category
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/rest/api/2/statuscategory/:idOrKey
+  body: none
+  auth: basic
+}
+
+params:path {
+  idOrKey: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

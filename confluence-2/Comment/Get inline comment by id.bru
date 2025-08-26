@@ -1,0 +1,30 @@
+meta {
+  name: Get inline comment by id
+  type: http
+  seq: 15
+}
+
+get {
+  url: {{baseUrl}}/inline-comments/:comment-id
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~body-format: 
+  ~version: 
+  ~include-properties: 
+  ~include-operations: 
+  ~include-likes: 
+  ~include-versions: 
+  ~include-version: 
+}
+
+params:path {
+  comment-id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

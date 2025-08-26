@@ -1,0 +1,21 @@
+meta {
+  name: Compare two commits
+  type: http
+  seq: 13
+}
+
+get {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/diff/:spec
+  body: none
+  auth: none
+}
+
+params:query {
+  ~context: 
+  ~path: 
+  ~ignore_whitespace: 
+  ~binary: 
+  ~renames: 
+  ~merge: 
+  ~topic: 
+}

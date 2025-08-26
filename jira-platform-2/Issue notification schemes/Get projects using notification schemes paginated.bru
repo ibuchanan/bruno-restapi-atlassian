@@ -1,0 +1,23 @@
+meta {
+  name: Get projects using notification schemes paginated
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{baseUrl}}/rest/api/2/notificationscheme/project
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~startAt: 
+  ~maxResults: 
+  ~notificationSchemeId: 
+  ~projectId: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

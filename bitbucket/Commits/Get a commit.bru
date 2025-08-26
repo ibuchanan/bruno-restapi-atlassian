@@ -1,0 +1,11 @@
+meta {
+  name: Get a commit
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/commit/:commit
+  body: none
+  auth: none
+}

@@ -1,0 +1,20 @@
+meta {
+  name: Delete screen
+  type: http
+  seq: 5
+}
+
+delete {
+  url: {{baseUrl}}/rest/api/2/screens/:screenId
+  body: none
+  auth: basic
+}
+
+params:path {
+  screenId: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

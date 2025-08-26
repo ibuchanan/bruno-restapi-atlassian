@@ -1,0 +1,24 @@
+meta {
+  name: Search statuses paginated
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{baseUrl}}/rest/api/2/statuses/search
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~projectId: 
+  ~startAt: 
+  ~maxResults: 
+  ~searchString: 
+  ~statusCategory: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

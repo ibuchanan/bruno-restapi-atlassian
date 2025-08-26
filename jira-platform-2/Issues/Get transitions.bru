@@ -1,0 +1,28 @@
+meta {
+  name: Get transitions
+  type: http
+  seq: 21
+}
+
+get {
+  url: {{baseUrl}}/rest/api/2/issue/:issueIdOrKey/transitions
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~expand: 
+  ~transitionId: 
+  ~skipRemoteOnlyCondition: 
+  ~includeUnavailableTransitions: 
+  ~sortByOpsBarAndStatus: 
+}
+
+params:path {
+  issueIdOrKey: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

@@ -1,0 +1,30 @@
+meta {
+  name: Get attachment by id
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/attachments/:id
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~version: 
+  ~include-labels: 
+  ~include-properties: 
+  ~include-operations: 
+  ~include-versions: 
+  ~include-version: 
+  ~include-collaborators: 
+}
+
+params:path {
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

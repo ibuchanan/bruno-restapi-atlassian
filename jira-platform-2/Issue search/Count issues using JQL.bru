@@ -1,0 +1,22 @@
+meta {
+  name: Count issues using JQL
+  type: http
+  seq: 5
+}
+
+post {
+  url: {{baseUrl}}/rest/api/2/search/approximate-count
+  body: json
+  auth: basic
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "jql": ""
+  }
+}

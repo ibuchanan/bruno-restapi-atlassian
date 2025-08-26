@@ -1,0 +1,11 @@
+meta {
+  name: Get snippet patch between versions
+  type: http
+  seq: 25
+}
+
+get {
+  url: {{baseUrl}}/snippets/:workspace/:encoded_id/:revision/patch
+  body: none
+  auth: none
+}

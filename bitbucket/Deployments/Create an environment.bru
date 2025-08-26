@@ -1,0 +1,16 @@
+meta {
+  name: Create an environment
+  type: http
+  seq: 9
+}
+
+post {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/environments
+  body: json
+  auth: none
+}
+
+params:path {
+  workspace: 
+  repo_slug: 
+}

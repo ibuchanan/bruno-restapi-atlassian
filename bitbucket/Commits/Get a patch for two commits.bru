@@ -1,0 +1,11 @@
+meta {
+  name: Get a patch for two commits
+  type: http
+  seq: 16
+}
+
+get {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/patch/:spec
+  body: none
+  auth: none
+}

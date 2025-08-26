@@ -1,0 +1,26 @@
+meta {
+  name: Remove mappings from issue type screen scheme
+  type: http
+  seq: 10
+}
+
+post {
+  url: {{baseUrl}}/rest/api/2/issuetypescreenscheme/:issueTypeScreenSchemeId/mapping/remove
+  body: json
+  auth: basic
+}
+
+params:path {
+  issueTypeScreenSchemeId: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "issueTypeIds": []
+  }
+}

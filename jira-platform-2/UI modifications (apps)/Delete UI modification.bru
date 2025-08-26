@@ -1,0 +1,20 @@
+meta {
+  name: Delete UI modification
+  type: http
+  seq: 3
+}
+
+delete {
+  url: {{baseUrl}}/rest/api/2/uiModifications/:uiModificationId
+  body: none
+  auth: basic
+}
+
+params:path {
+  uiModificationId: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

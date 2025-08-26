@@ -1,0 +1,27 @@
+meta {
+  name: Create content property for whiteboard
+  type: http
+  seq: 22
+}
+
+post {
+  url: {{baseUrl}}/whiteboards/:id/properties
+  body: json
+  auth: basic
+}
+
+params:path {
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "key": "",
+    "value": ""
+  }
+}

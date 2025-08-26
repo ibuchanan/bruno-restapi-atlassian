@@ -1,0 +1,24 @@
+meta {
+  name: Create request type
+  type: http
+  seq: 12
+}
+
+post {
+  url: {{baseUrl}}/rest/servicedeskapi/servicedesk/:serviceDeskId/requesttype
+  body: json
+  auth: inherit
+}
+
+params:path {
+  serviceDeskId:
+}
+
+body:json {
+  {
+    "description": "",
+    "helpText": "",
+    "issueTypeId": "",
+    "name": ""
+  }
+}

@@ -1,0 +1,11 @@
+meta {
+  name: List comments on a pull request
+  type: http
+  seq: 15
+}
+
+get {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/pullrequests/:pull_request_id/comments
+  body: none
+  auth: none
+}

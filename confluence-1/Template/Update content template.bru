@@ -1,0 +1,50 @@
+meta {
+  name: Update content template
+  type: http
+  seq: 1
+}
+
+put {
+  url: {{baseUrl}}/wiki/rest/api/template
+  body: json
+  auth: basic
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "templateId": "",
+    "name": "",
+    "templateType": "",
+    "body": {
+      "view": {
+        "value": "",
+        "representation": ""
+      },
+      "export_view": {},
+      "styled_view": {},
+      "storage": {},
+      "editor": {},
+      "editor2": {},
+      "wiki": {},
+      "atlas_doc_format": {},
+      "anonymous_export_view": {}
+    },
+    "description": "",
+    "labels": [
+      {
+        "prefix": "",
+        "name": "",
+        "id": "",
+        "label": ""
+      }
+    ],
+    "space": {
+      "key": ""
+    }
+  }
+}

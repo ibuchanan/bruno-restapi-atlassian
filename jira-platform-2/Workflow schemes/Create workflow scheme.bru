@@ -1,0 +1,34 @@
+meta {
+  name: Create workflow scheme
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/rest/api/2/workflowscheme
+  body: json
+  auth: basic
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "defaultWorkflow": "",
+    "description": "",
+    "draft": false,
+    "id": 0,
+    "issueTypeMappings": {},
+    "issueTypes": {},
+    "lastModified": "",
+    "lastModifiedUser": "",
+    "name": "",
+    "originalDefaultWorkflow": "",
+    "originalIssueTypeMappings": {},
+    "self": "",
+    "updateDraftIfNeeded": false
+  }
+}

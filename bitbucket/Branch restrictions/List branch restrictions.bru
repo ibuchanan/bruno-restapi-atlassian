@@ -1,0 +1,16 @@
+meta {
+  name: List branch restrictions
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/branch-restrictions
+  body: none
+  auth: none
+}
+
+params:query {
+  ~kind: 
+  ~pattern: 
+}

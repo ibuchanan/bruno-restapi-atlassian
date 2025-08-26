@@ -1,0 +1,20 @@
+meta {
+  name: Get project's sender email
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/rest/api/2/project/:projectId/email
+  body: none
+  auth: basic
+}
+
+params:path {
+  projectId: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

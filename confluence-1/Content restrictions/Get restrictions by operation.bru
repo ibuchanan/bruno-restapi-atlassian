@@ -1,0 +1,24 @@
+meta {
+  name: Get restrictions by operation
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{baseUrl}}/wiki/rest/api/content/:id/restriction/byOperation
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~expand: 
+}
+
+params:path {
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

@@ -1,0 +1,22 @@
+meta {
+  name: Create group
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{baseUrl}}/rest/api/2/group
+  body: json
+  auth: basic
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "name": ""
+  }
+}

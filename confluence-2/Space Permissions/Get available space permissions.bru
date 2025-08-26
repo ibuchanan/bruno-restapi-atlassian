@@ -1,0 +1,21 @@
+meta {
+  name: Get available space permissions
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/space-permissions
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~cursor: 
+  ~limit: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

@@ -1,0 +1,16 @@
+meta {
+  name: Get locale
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{baseUrl}}/rest/api/2/mypreferences/locale
+  body: none
+  auth: basic
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

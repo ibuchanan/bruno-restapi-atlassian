@@ -1,0 +1,16 @@
+meta {
+  name: Update variable for a workspace
+  type: http
+  seq: 57
+}
+
+put {
+  url: {{baseUrl}}/workspaces/:workspace/pipelines-config/variables/:variable_uuid
+  body: json
+  auth: none
+}
+
+params:path {
+  workspace: 
+  variable_uuid: 
+}

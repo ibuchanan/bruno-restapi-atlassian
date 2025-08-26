@@ -1,0 +1,21 @@
+meta {
+  name: Delete content property for page by id
+  type: http
+  seq: 20
+}
+
+delete {
+  url: {{baseUrl}}/pages/:page-id/properties/:property-id
+  body: none
+  auth: basic
+}
+
+params:path {
+  page-id: 
+  property-id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

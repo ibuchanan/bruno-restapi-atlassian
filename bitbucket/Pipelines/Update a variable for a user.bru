@@ -1,0 +1,16 @@
+meta {
+  name: Update a variable for a user
+  type: http
+  seq: 50
+}
+
+put {
+  url: {{baseUrl}}/users/:selected_user/pipelines_config/variables/:variable_uuid
+  body: json
+  auth: none
+}
+
+params:path {
+  selected_user: 
+  variable_uuid: 
+}

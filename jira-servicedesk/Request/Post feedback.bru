@@ -1,0 +1,23 @@
+meta {
+  name: Post feedback
+  type: http
+  seq: 28
+}
+
+post {
+  url: {{baseUrl}}/rest/servicedeskapi/request/:requestIdOrKey/feedback
+  body: json
+  auth: inherit
+}
+
+params:path {
+  requestIdOrKey:
+}
+
+body:json {
+  {
+    "comment": "",
+    "rating": 0,
+    "type": ""
+  }
+}

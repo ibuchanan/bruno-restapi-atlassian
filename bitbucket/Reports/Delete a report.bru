@@ -1,0 +1,18 @@
+meta {
+  name: Delete a report
+  type: http
+  seq: 4
+}
+
+delete {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/commit/:commit/reports/:reportId
+  body: none
+  auth: none
+}
+
+params:path {
+  workspace: 
+  repo_slug: 
+  commit: 
+  reportId: 
+}

@@ -1,0 +1,24 @@
+meta {
+  name: Get content state
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/wiki/rest/api/content/:id/state
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~status: 
+}
+
+params:path {
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

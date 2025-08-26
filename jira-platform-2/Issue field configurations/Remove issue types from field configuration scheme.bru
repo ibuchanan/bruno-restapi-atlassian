@@ -1,0 +1,26 @@
+meta {
+  name: Remove issue types from field configuration scheme
+  type: http
+  seq: 15
+}
+
+post {
+  url: {{baseUrl}}/rest/api/2/fieldconfigurationscheme/:id/mapping/delete
+  body: json
+  auth: basic
+}
+
+params:path {
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "issueTypeIds": []
+  }
+}

@@ -1,0 +1,23 @@
+meta {
+  name: Export audit records
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{baseUrl}}/wiki/rest/api/audit/export
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~startDate: 
+  ~endDate: 
+  ~searchString: 
+  ~format: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

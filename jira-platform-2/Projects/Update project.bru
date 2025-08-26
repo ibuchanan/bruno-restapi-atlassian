@@ -1,0 +1,42 @@
+meta {
+  name: Update project
+  type: http
+  seq: 7
+}
+
+put {
+  url: {{baseUrl}}/rest/api/2/project/:projectIdOrKey
+  body: json
+  auth: basic
+}
+
+params:query {
+  ~expand: 
+}
+
+params:path {
+  projectIdOrKey: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "assigneeType": "",
+    "avatarId": 0,
+    "categoryId": 0,
+    "description": "",
+    "issueSecurityScheme": 0,
+    "key": "",
+    "lead": "",
+    "leadAccountId": "",
+    "name": "",
+    "notificationScheme": 0,
+    "permissionScheme": 0,
+    "releasedProjectKeys": [],
+    "url": ""
+  }
+}

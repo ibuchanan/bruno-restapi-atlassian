@@ -1,0 +1,22 @@
+meta {
+  name: Convert content ids to content types
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/content/convert-ids-to-types
+  body: json
+  auth: basic
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "contentIds": []
+  }
+}

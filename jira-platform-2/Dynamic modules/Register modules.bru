@@ -1,0 +1,19 @@
+meta {
+  name: Register modules
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{baseUrl}}/rest/atlassian-connect/1/app/module/dynamic
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "modules": [
+      {}
+    ]
+  }
+}

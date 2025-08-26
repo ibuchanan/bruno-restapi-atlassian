@@ -1,0 +1,15 @@
+meta {
+  name: Get keys for OIDC in Pipelines
+  type: http
+  seq: 53
+}
+
+get {
+  url: {{baseUrl}}/workspaces/:workspace/pipelines-config/identity/oidc/keys.json
+  body: none
+  auth: none
+}
+
+params:path {
+  workspace: 
+}

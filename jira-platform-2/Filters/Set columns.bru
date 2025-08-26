@@ -1,0 +1,20 @@
+meta {
+  name: Set columns
+  type: http
+  seq: 10
+}
+
+put {
+  url: {{baseUrl}}/rest/api/2/filter/:id/columns
+  body: none
+  auth: basic
+}
+
+params:path {
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

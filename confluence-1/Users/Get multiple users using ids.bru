@@ -1,0 +1,21 @@
+meta {
+  name: Get multiple users using ids
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{baseUrl}}/wiki/rest/api/user/bulk
+  body: none
+  auth: basic
+}
+
+params:query {
+  accountId: 
+  ~expand: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

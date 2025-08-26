@@ -1,0 +1,19 @@
+meta {
+  name: Create a commit by uploading a file
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/src
+  body: none
+  auth: none
+}
+
+params:query {
+  ~message: 
+  ~author: 
+  ~parents: 
+  ~files: 
+  ~branch: 
+}

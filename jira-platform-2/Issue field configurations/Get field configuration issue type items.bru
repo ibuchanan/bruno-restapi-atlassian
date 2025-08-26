@@ -1,0 +1,22 @@
+meta {
+  name: Get field configuration issue type items
+  type: http
+  seq: 9
+}
+
+get {
+  url: {{baseUrl}}/rest/api/2/fieldconfigurationscheme/mapping
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~startAt: 
+  ~maxResults: 
+  ~fieldConfigurationSchemeId: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

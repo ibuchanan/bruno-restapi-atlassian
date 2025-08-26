@@ -1,0 +1,35 @@
+meta {
+  name: Create asynchronous content body conversion tasks in bulk
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{baseUrl}}/wiki/rest/api/contentbody/convert/async/bulk/tasks
+  body: json
+  auth: basic
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "conversionInputs": [
+      {
+        "to": "",
+        "allowCache": false,
+        "spaceKeyContext": "",
+        "contentIdContext": "",
+        "embeddedContentRender": "",
+        "expand": [],
+        "body": {
+          "value": "",
+          "representation": ""
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+meta {
+  name: Get custom content by type in space
+  type: http
+  seq: 8
+}
+
+get {
+  url: {{baseUrl}}/spaces/:id/custom-content
+  body: none
+  auth: basic
+}
+
+params:query {
+  type: 
+  ~cursor: 
+  ~limit: 
+  ~body-format: 
+}
+
+params:path {
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

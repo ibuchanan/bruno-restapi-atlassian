@@ -1,0 +1,38 @@
+meta {
+  name: Redact
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/rest/api/2/redact
+  body: json
+  auth: basic
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "redactions": [
+      {
+        "contentItem": {
+          "entityId": "",
+          "entityType": "",
+          "id": ""
+        },
+        "externalId": "",
+        "reason": "",
+        "redactionPosition": {
+          "adfPointer": "",
+          "expectedText": "",
+          "from": 0,
+          "to": 0
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+meta {
+  name: Get changelogs by IDs
+  type: http
+  seq: 18
+}
+
+post {
+  url: {{baseUrl}}/rest/api/2/issue/:issueIdOrKey/changelog/list
+  body: json
+  auth: basic
+}
+
+params:path {
+  issueIdOrKey: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "changelogIds": []
+  }
+}

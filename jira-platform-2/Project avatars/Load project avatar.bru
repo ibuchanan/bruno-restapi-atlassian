@@ -1,0 +1,26 @@
+meta {
+  name: Load project avatar
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{baseUrl}}/rest/api/2/project/:projectIdOrKey/avatar2
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~x: 
+  ~y: 
+  ~size: 
+}
+
+params:path {
+  projectIdOrKey: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

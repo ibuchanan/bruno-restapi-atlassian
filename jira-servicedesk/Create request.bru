@@ -1,0 +1,24 @@
+meta {
+  name: Create request
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/rest/servicedeskapi/request
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "isAdfRequest": false,
+    "raiseOnBehalfOf": "{{customerUserId}}",
+    "requestFieldValues": {
+      "summary": "{{$randomPhrase}}",
+      "description": "{{$randomLoremParagraphs}}"
+    },
+    "requestTypeId": "{{requestTypeId}}",
+    "serviceDeskId": "{{serviceDeskId}}"
+  }
+}

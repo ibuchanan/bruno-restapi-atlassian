@@ -1,0 +1,30 @@
+meta {
+  name: Create custom field context
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/rest/api/2/field/:fieldId/context
+  body: json
+  auth: basic
+}
+
+params:path {
+  fieldId: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "description": "",
+    "id": "",
+    "issueTypeIds": [],
+    "name": "",
+    "projectIds": []
+  }
+}

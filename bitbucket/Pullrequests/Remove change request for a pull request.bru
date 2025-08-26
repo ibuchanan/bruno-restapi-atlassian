@@ -1,0 +1,11 @@
+meta {
+  name: Remove change request for a pull request
+  type: http
+  seq: 29
+}
+
+delete {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/pullrequests/:pull_request_id/request-changes
+  body: none
+  auth: none
+}

@@ -1,0 +1,26 @@
+meta {
+  name: Get space watch status
+  type: http
+  seq: 10
+}
+
+get {
+  url: {{baseUrl}}/wiki/rest/api/user/watch/space/:spaceKey
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~key: 
+  ~username: 
+  ~accountId: 
+}
+
+params:path {
+  spaceKey: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

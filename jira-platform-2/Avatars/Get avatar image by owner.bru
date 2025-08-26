@@ -1,0 +1,26 @@
+meta {
+  name: Get avatar image by owner
+  type: http
+  seq: 7
+}
+
+get {
+  url: {{baseUrl}}/rest/api/2/universal_avatar/view/type/:type/owner/:entityId
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~size: 
+  ~format: 
+}
+
+params:path {
+  type: 
+  entityId: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

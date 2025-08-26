@@ -1,0 +1,27 @@
+meta {
+  name: Replace custom field options
+  type: http
+  seq: 7
+}
+
+delete {
+  url: {{baseUrl}}/rest/api/2/field/:fieldId/context/:contextId/option/:optionId/issue
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~replaceWith: 
+  ~jql: 
+}
+
+params:path {
+  fieldId: 
+  optionId: 
+  contextId: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

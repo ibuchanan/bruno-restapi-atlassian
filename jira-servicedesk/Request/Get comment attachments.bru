@@ -1,0 +1,21 @@
+meta {
+  name: Get comment attachments
+  type: http
+  seq: 14
+}
+
+get {
+  url: {{baseUrl}}/rest/servicedeskapi/request/:issueIdOrKey/comment/:commentId/attachment
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~start:
+  ~limit:
+}
+
+params:path {
+  issueIdOrKey:
+  commentId:
+}

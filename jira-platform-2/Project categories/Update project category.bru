@@ -1,0 +1,29 @@
+meta {
+  name: Update project category
+  type: http
+  seq: 5
+}
+
+put {
+  url: {{baseUrl}}/rest/api/2/projectCategory/:id
+  body: json
+  auth: basic
+}
+
+params:path {
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "description": "",
+    "id": "",
+    "name": "",
+    "self": ""
+  }
+}

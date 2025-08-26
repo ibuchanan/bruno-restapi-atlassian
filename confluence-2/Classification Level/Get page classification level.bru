@@ -1,0 +1,24 @@
+meta {
+  name: Get page classification level
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{baseUrl}}/pages/:id/classification-level
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~status: 
+}
+
+params:path {
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

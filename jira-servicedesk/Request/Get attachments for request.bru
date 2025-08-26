@@ -1,0 +1,20 @@
+meta {
+  name: Get attachments for request
+  type: http
+  seq: 7
+}
+
+get {
+  url: {{baseUrl}}/rest/servicedeskapi/request/:issueIdOrKey/attachment
+  body: none
+  auth: inherit
+}
+
+params:query {
+  start:
+  limit:
+}
+
+params:path {
+  issueIdOrKey:
+}

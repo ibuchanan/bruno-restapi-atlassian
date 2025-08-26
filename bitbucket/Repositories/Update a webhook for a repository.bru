@@ -1,0 +1,11 @@
+meta {
+  name: Update a webhook for a repository
+  type: http
+  seq: 13
+}
+
+put {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/hooks/:uid
+  body: none
+  auth: none
+}

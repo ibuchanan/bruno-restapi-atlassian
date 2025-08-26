@@ -1,0 +1,11 @@
+meta {
+  name: Check issue import status
+  type: http
+  seq: 7
+}
+
+get {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/issues/import
+  body: none
+  auth: none
+}

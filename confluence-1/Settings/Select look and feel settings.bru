@@ -1,0 +1,23 @@
+meta {
+  name: Select look and feel settings
+  type: http
+  seq: 2
+}
+
+put {
+  url: {{baseUrl}}/wiki/rest/api/settings/lookandfeel
+  body: json
+  auth: basic
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "spaceKey": "",
+    "lookAndFeelType": ""
+  }
+}

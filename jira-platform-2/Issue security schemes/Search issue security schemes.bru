@@ -1,0 +1,23 @@
+meta {
+  name: Search issue security schemes
+  type: http
+  seq: 8
+}
+
+get {
+  url: {{baseUrl}}/rest/api/2/issuesecurityschemes/search
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~startAt: 
+  ~maxResults: 
+  ~id: 
+  ~projectId: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

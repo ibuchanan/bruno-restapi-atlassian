@@ -1,0 +1,33 @@
+meta {
+  name: Create UI modification
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/rest/api/2/uiModifications
+  body: json
+  auth: basic
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "contexts": [
+      {
+        "id": "",
+        "isAvailable": false,
+        "issueTypeId": "",
+        "projectId": "",
+        "viewType": ""
+      }
+    ],
+    "data": "",
+    "description": "",
+    "name": ""
+  }
+}

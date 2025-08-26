@@ -1,0 +1,31 @@
+meta {
+  name: Assign issue types to field configurations
+  type: http
+  seq: 14
+}
+
+put {
+  url: {{baseUrl}}/rest/api/2/fieldconfigurationscheme/:id/mapping
+  body: json
+  auth: basic
+}
+
+params:path {
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "mappings": [
+      {
+        "fieldConfigurationId": "",
+        "issueTypeId": ""
+      }
+    ]
+  }
+}

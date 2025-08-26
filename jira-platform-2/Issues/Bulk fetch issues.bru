@@ -1,0 +1,26 @@
+meta {
+  name: Bulk fetch issues
+  type: http
+  seq: 7
+}
+
+post {
+  url: {{baseUrl}}/rest/api/2/issue/bulkfetch
+  body: json
+  auth: basic
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "expand": [],
+    "fields": [],
+    "fieldsByKeys": false,
+    "issueIdsOrKeys": [],
+    "properties": []
+  }
+}

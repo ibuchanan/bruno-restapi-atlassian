@@ -1,0 +1,24 @@
+meta {
+  name: Get users from group
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{baseUrl}}/rest/api/2/group/member
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~groupname: 
+  ~groupId: 
+  ~includeInactiveUsers: 
+  ~startAt: 
+  ~maxResults: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

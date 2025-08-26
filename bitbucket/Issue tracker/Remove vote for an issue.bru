@@ -1,0 +1,11 @@
+meta {
+  name: Remove vote for an issue
+  type: http
+  seq: 24
+}
+
+delete {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/issues/:issue_id/vote
+  body: none
+  auth: none
+}

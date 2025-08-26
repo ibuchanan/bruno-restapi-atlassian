@@ -1,0 +1,11 @@
+meta {
+  name: Create an issue
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/issues
+  body: json
+  auth: none
+}

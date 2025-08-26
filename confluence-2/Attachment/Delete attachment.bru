@@ -1,0 +1,24 @@
+meta {
+  name: Delete attachment
+  type: http
+  seq: 3
+}
+
+delete {
+  url: {{baseUrl}}/attachments/:id
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~purge: 
+}
+
+params:path {
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

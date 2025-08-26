@@ -1,0 +1,22 @@
+meta {
+  name: Remove customers
+  type: http
+  seq: 4
+}
+
+delete {
+  url: {{baseUrl}}/rest/servicedeskapi/servicedesk/:serviceDeskId/customer
+  body: json
+  auth: inherit
+}
+
+params:path {
+  serviceDeskId:
+}
+
+body:json {
+  {
+    "accountIds": [],
+    "usernames": []
+  }
+}

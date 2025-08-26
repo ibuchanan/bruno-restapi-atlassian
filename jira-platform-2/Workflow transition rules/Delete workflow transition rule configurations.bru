@@ -1,0 +1,30 @@
+meta {
+  name: Delete workflow transition rule configurations
+  type: http
+  seq: 3
+}
+
+put {
+  url: {{baseUrl}}/rest/api/2/workflow/rule/config/delete
+  body: json
+  auth: basic
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "workflows": [
+      {
+        "workflowId": {
+          "draft": false,
+          "name": ""
+        },
+        "workflowRuleIds": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+meta {
+  name: Set application property
+  type: http
+  seq: 3
+}
+
+put {
+  url: {{baseUrl}}/rest/api/2/application-properties/:id
+  body: json
+  auth: basic
+}
+
+params:path {
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "id": "",
+    "value": ""
+  }
+}

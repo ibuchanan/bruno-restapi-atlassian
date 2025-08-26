@@ -1,0 +1,27 @@
+meta {
+  name: Get inline comment versions
+  type: http
+  seq: 11
+}
+
+get {
+  url: {{baseUrl}}/inline-comments/:id/versions
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~body-format: 
+  ~cursor: 
+  ~limit: 
+  ~sort: 
+}
+
+params:path {
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

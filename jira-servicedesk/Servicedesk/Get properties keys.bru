@@ -1,0 +1,16 @@
+meta {
+  name: Get properties keys
+  type: http
+  seq: 17
+}
+
+get {
+  url: {{baseUrl}}/rest/servicedeskapi/servicedesk/:serviceDeskId/requesttype/:requestTypeId/property
+  body: none
+  auth: inherit
+}
+
+params:path {
+  requestTypeId:
+  serviceDeskId:
+}

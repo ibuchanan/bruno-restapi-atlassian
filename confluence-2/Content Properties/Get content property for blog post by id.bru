@@ -1,0 +1,21 @@
+meta {
+  name: Get content property for blog post by id
+  type: http
+  seq: 8
+}
+
+get {
+  url: {{baseUrl}}/blogposts/:blogpost-id/properties/:property-id
+  body: none
+  auth: basic
+}
+
+params:path {
+  blogpost-id: 
+  property-id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

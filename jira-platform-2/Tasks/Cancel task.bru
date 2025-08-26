@@ -1,0 +1,20 @@
+meta {
+  name: Cancel task
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/rest/api/2/task/:taskId/cancel
+  body: none
+  auth: basic
+}
+
+params:path {
+  taskId: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

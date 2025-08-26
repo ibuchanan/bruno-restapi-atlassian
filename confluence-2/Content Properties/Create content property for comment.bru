@@ -1,0 +1,27 @@
+meta {
+  name: Create content property for comment
+  type: http
+  seq: 42
+}
+
+post {
+  url: {{baseUrl}}/comments/:comment-id/properties
+  body: json
+  auth: basic
+}
+
+params:path {
+  comment-id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "key": "",
+    "value": ""
+  }
+}

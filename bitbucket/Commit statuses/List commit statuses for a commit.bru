@@ -1,0 +1,17 @@
+meta {
+  name: List commit statuses for a commit
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/commit/:commit/statuses
+  body: none
+  auth: none
+}
+
+params:query {
+  ~refname: 
+  ~q: 
+  ~sort: 
+}

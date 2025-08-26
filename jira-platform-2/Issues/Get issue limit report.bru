@@ -1,0 +1,20 @@
+meta {
+  name: Get issue limit report
+  type: http
+  seq: 11
+}
+
+get {
+  url: {{baseUrl}}/rest/api/2/issue/limit/report
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~isReturningKeys: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

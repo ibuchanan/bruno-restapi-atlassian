@@ -1,0 +1,27 @@
+meta {
+  name: Get attachment thumbnail
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{baseUrl}}/rest/api/2/attachment/thumbnail/:id
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~redirect: 
+  ~fallbackToDefault: 
+  ~width: 
+  ~height: 
+}
+
+params:path {
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

@@ -1,0 +1,16 @@
+meta {
+  name: Get data policy metadata for the workspace
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/data-policies/metadata
+  body: none
+  auth: basic
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

@@ -1,0 +1,24 @@
+meta {
+  name: Get notification scheme
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{baseUrl}}/rest/api/2/notificationscheme/:id
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~expand: 
+}
+
+params:path {
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

@@ -1,0 +1,26 @@
+meta {
+  name: Get restrictions
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/wiki/rest/api/content/:id/restriction
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~expand: 
+  ~start: 
+  ~limit: 
+}
+
+params:path {
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

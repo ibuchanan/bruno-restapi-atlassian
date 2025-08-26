@@ -1,0 +1,31 @@
+meta {
+  name: Update inline comment
+  type: http
+  seq: 16
+}
+
+put {
+  url: {{baseUrl}}/inline-comments/:comment-id
+  body: json
+  auth: basic
+}
+
+params:path {
+  comment-id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "version": {
+      "number": 0,
+      "message": ""
+    },
+    "body": "",
+    "resolved": false
+  }
+}

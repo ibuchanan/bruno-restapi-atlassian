@@ -1,0 +1,21 @@
+meta {
+  name: Remove Atlassian team from plan
+  type: http
+  seq: 3
+}
+
+delete {
+  url: {{baseUrl}}/rest/api/2/plans/plan/:planId/team/atlassian/:atlassianTeamId
+  body: none
+  auth: basic
+}
+
+params:path {
+  planId: 
+  atlassianTeamId: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

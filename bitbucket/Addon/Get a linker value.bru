@@ -1,0 +1,11 @@
+meta {
+  name: Get a linker value
+  type: http
+  seq: 10
+}
+
+get {
+  url: {{baseUrl}}/addon/linkers/:linker_key/values/:value_id
+  body: none
+  auth: none
+}

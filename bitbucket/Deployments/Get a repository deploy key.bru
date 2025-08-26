@@ -1,0 +1,11 @@
+meta {
+  name: Get a repository deploy key
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/deploy-keys/:key_id
+  body: none
+  auth: none
+}

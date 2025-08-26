@@ -1,0 +1,20 @@
+meta {
+  name: Get look and feel settings
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/wiki/rest/api/settings/lookandfeel
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~spaceKey: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

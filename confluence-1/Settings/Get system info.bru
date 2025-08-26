@@ -1,0 +1,16 @@
+meta {
+  name: Get system info
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{baseUrl}}/wiki/rest/api/settings/systemInfo
+  body: none
+  auth: basic
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

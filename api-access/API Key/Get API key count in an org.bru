@@ -1,0 +1,38 @@
+meta {
+  name: Get API key count in an org
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/orgs/:orgId/api-keys/count
+  body: none
+  auth: none
+}
+
+params:query {
+  ~q: 
+  ~keyType: 
+  ~expiresAtSearchType: 
+  ~expiresAtUom: 
+  ~expiresAtValue: 
+  ~expiresAtFrom: 
+  ~expiresAtTo: 
+  ~expiresAtRangeFrom: 
+  ~expiresAtRangeTo: 
+  ~lastActiveAtSearchType: 
+  ~lastActiveAtUom: 
+  ~lastActiveAtValue: 
+  ~lastActiveAtFrom: 
+  ~lastActiveAtTo: 
+  ~lastActiveAtRangeFrom: 
+  ~lastActiveAtRangeTo: 
+}
+
+params:path {
+  orgId: 
+}
+
+headers {
+  Authorization: 
+}

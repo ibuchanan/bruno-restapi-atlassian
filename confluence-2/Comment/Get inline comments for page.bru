@@ -1,0 +1,29 @@
+meta {
+  name: Get inline comments for page
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{baseUrl}}/pages/:id/inline-comments
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~body-format: 
+  ~status: 
+  ~resolution-status: 
+  ~sort: 
+  ~cursor: 
+  ~limit: 
+}
+
+params:path {
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

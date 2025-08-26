@@ -1,0 +1,15 @@
+meta {
+  name: List comments on an issue
+  type: http
+  seq: 19
+}
+
+get {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/issues/:issue_id/comments
+  body: none
+  auth: none
+}
+
+params:query {
+  ~q: 
+}

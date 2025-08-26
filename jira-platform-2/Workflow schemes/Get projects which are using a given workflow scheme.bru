@@ -1,0 +1,25 @@
+meta {
+  name: Get projects which are using a given workflow scheme
+  type: http
+  seq: 18
+}
+
+get {
+  url: {{baseUrl}}/rest/api/2/workflowscheme/:workflowSchemeId/projectUsages
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~nextPageToken: 
+  ~maxResults: 
+}
+
+params:path {
+  workflowSchemeId: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

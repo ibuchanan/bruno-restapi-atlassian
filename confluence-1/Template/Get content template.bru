@@ -1,0 +1,24 @@
+meta {
+  name: Get content template
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{baseUrl}}/wiki/rest/api/template/:contentTemplateId
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~expand: 
+}
+
+params:path {
+  contentTemplateId: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

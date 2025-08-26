@@ -1,0 +1,23 @@
+meta {
+  name: Get inline comments
+  type: http
+  seq: 13
+}
+
+get {
+  url: {{baseUrl}}/inline-comments
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~body-format: 
+  ~sort: 
+  ~cursor: 
+  ~limit: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

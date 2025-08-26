@@ -1,0 +1,11 @@
+meta {
+  name: Upload a download artifact
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/downloads
+  body: none
+  auth: none
+}

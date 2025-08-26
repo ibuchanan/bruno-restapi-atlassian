@@ -1,0 +1,23 @@
+meta {
+  name: Add users to organization
+  type: http
+  seq: 11
+}
+
+post {
+  url: {{baseUrl}}/rest/servicedeskapi/organization/:organizationId/user
+  body: json
+  auth: inherit
+}
+
+params:path {
+  organizationId:
+}
+
+body:json {
+  {
+    "accountIds": [],
+    "organizationId": 0,
+    "usernames": []
+  }
+}

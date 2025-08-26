@@ -1,0 +1,17 @@
+meta {
+  name: Stop a pipeline
+  type: http
+  seq: 19
+}
+
+post {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/pipelines/:pipeline_uuid/stopPipeline
+  body: none
+  auth: none
+}
+
+params:path {
+  workspace: 
+  repo_slug: 
+  pipeline_uuid: 
+}

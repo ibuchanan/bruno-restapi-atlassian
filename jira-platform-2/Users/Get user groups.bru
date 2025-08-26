@@ -1,0 +1,22 @@
+meta {
+  name: Get user groups
+  type: http
+  seq: 11
+}
+
+get {
+  url: {{baseUrl}}/rest/api/2/user/groups
+  body: none
+  auth: basic
+}
+
+params:query {
+  accountId: 
+  ~username: 
+  ~key: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

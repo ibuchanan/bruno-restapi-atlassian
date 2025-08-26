@@ -1,0 +1,24 @@
+meta {
+  name: Add restrictions
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{baseUrl}}/wiki/rest/api/content/:id/restriction
+  body: json
+  auth: basic
+}
+
+params:query {
+  ~expand: 
+}
+
+params:path {
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

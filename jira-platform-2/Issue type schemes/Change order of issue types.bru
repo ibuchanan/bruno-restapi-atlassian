@@ -1,0 +1,28 @@
+meta {
+  name: Change order of issue types
+  type: http
+  seq: 9
+}
+
+put {
+  url: {{baseUrl}}/rest/api/2/issuetypescheme/:issueTypeSchemeId/issuetype/move
+  body: json
+  auth: basic
+}
+
+params:path {
+  issueTypeSchemeId: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "after": "",
+    "issueTypeIds": [],
+    "position": ""
+  }
+}

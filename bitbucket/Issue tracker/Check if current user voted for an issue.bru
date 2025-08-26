@@ -1,0 +1,11 @@
+meta {
+  name: Check if current user voted for an issue
+  type: http
+  seq: 25
+}
+
+get {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/issues/:issue_id/vote
+  body: none
+  auth: none
+}

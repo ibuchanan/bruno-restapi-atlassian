@@ -1,0 +1,16 @@
+meta {
+  name: Delete SSH key pair
+  type: http
+  seq: 31
+}
+
+delete {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/pipelines_config/ssh/key_pair
+  body: none
+  auth: none
+}
+
+params:path {
+  workspace: 
+  repo_slug: 
+}

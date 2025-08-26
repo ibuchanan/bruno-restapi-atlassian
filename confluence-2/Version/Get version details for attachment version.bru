@@ -1,0 +1,21 @@
+meta {
+  name: Get version details for attachment version
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/attachments/:attachment-id/versions/:version-number
+  body: none
+  auth: basic
+}
+
+params:path {
+  attachment-id: 
+  version-number: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

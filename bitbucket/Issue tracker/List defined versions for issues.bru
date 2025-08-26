@@ -1,0 +1,11 @@
+meta {
+  name: List defined versions for issues
+  type: http
+  seq: 32
+}
+
+get {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/versions
+  body: none
+  auth: none
+}

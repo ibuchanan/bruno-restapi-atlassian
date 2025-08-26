@@ -1,0 +1,19 @@
+meta {
+  name: Create or update an annotation
+  type: http
+  seq: 8
+}
+
+put {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/commit/:commit/reports/:reportId/annotations/:annotationId
+  body: json
+  auth: none
+}
+
+params:path {
+  workspace: 
+  repo_slug: 
+  commit: 
+  reportId: 
+  annotationId: 
+}

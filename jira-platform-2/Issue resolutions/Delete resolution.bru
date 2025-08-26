@@ -1,0 +1,24 @@
+meta {
+  name: Delete resolution
+  type: http
+  seq: 6
+}
+
+delete {
+  url: {{baseUrl}}/rest/api/2/resolution/:id
+  body: none
+  auth: basic
+}
+
+params:query {
+  replaceWith: 
+}
+
+params:path {
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

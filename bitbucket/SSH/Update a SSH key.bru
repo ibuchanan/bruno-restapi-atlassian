@@ -1,0 +1,11 @@
+meta {
+  name: Update a SSH key
+  type: http
+  seq: 5
+}
+
+put {
+  url: {{baseUrl}}/users/:selected_user/ssh-keys/:key_id
+  body: json
+  auth: none
+}

@@ -1,0 +1,11 @@
+meta {
+  name: Get a snippet
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{baseUrl}}/snippets/:workspace/:encoded_id
+  body: none
+  auth: none
+}

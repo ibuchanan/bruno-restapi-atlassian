@@ -1,0 +1,23 @@
+meta {
+  name: Update a user application property
+  type: http
+  seq: 10
+}
+
+put {
+  url: {{baseUrl}}/users/:selected_user/properties/:app_key/:property_name
+  body: json
+  auth: none
+}
+
+params:path {
+  selected_user: 
+  app_key: 
+  property_name: 
+}
+
+body:json {
+  {
+    "_attributes": []
+  }
+}

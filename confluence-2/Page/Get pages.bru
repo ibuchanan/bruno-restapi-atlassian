@@ -1,0 +1,28 @@
+meta {
+  name: Get pages
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/pages
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~id: 
+  ~space-id: 
+  ~sort: 
+  ~status: 
+  ~title: 
+  ~body-format: 
+  ~subtype: 
+  ~cursor: 
+  ~limit: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

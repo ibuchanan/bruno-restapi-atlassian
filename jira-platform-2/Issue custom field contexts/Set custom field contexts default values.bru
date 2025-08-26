@@ -1,0 +1,28 @@
+meta {
+  name: Set custom field contexts default values
+  type: http
+  seq: 4
+}
+
+put {
+  url: {{baseUrl}}/rest/api/2/field/:fieldId/context/defaultValue
+  body: json
+  auth: basic
+}
+
+params:path {
+  fieldId: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "defaultValues": [
+      {}
+    ]
+  }
+}

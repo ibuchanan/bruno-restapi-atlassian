@@ -1,0 +1,21 @@
+meta {
+  name: Get content property for comment by id
+  type: http
+  seq: 43
+}
+
+get {
+  url: {{baseUrl}}/comments/:comment-id/properties/:property-id
+  body: none
+  auth: basic
+}
+
+params:path {
+  comment-id: 
+  property-id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

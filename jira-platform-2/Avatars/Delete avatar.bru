@@ -1,0 +1,22 @@
+meta {
+  name: Delete avatar
+  type: http
+  seq: 4
+}
+
+delete {
+  url: {{baseUrl}}/rest/api/2/universal_avatar/type/:type/owner/:owningObjectId/avatar/:id
+  body: none
+  auth: basic
+}
+
+params:path {
+  type: 
+  owningObjectId: 
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

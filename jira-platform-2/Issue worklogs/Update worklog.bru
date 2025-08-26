@@ -1,0 +1,52 @@
+meta {
+  name: Update worklog
+  type: http
+  seq: 7
+}
+
+put {
+  url: {{baseUrl}}/rest/api/2/issue/:issueIdOrKey/worklog/:id
+  body: json
+  auth: basic
+}
+
+params:query {
+  ~notifyUsers: 
+  ~adjustEstimate: 
+  ~newEstimate: 
+  ~expand: 
+  ~overrideEditableFlag: 
+}
+
+params:path {
+  issueIdOrKey: 
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "author": "",
+    "comment": "",
+    "created": "",
+    "id": "",
+    "issueId": "",
+    "properties": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "self": "",
+    "started": "",
+    "timeSpent": "",
+    "timeSpentSeconds": 0,
+    "updateAuthor": "",
+    "updated": "",
+    "visibility": ""
+  }
+}

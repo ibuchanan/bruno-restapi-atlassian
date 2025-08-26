@@ -1,0 +1,29 @@
+meta {
+  name: Get space role assignments
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{baseUrl}}/spaces/:id/role-assignments
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~role-id: 
+  ~role-type: 
+  ~principal-id: 
+  ~principal-type: 
+  ~cursor: 
+  ~limit: 
+}
+
+params:path {
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

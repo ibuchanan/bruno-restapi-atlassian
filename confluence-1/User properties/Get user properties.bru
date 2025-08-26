@@ -1,0 +1,25 @@
+meta {
+  name: Get user properties
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/wiki/rest/api/user/:userId/property
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~start: 
+  ~limit: 
+}
+
+params:path {
+  userId: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

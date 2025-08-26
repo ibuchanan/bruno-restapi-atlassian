@@ -1,0 +1,15 @@
+meta {
+  name: Get OpenID configuration for OIDC in Pipelines
+  type: http
+  seq: 52
+}
+
+get {
+  url: {{baseUrl}}/workspaces/:workspace/pipelines-config/identity/oidc/.well-known/openid-configuration
+  body: none
+  auth: none
+}
+
+params:path {
+  workspace: 
+}

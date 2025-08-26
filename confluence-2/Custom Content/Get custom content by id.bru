@@ -1,0 +1,31 @@
+meta {
+  name: Get custom content by id
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{baseUrl}}/custom-content/:id
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~body-format: 
+  ~version: 
+  ~include-labels: 
+  ~include-properties: 
+  ~include-operations: 
+  ~include-versions: 
+  ~include-version: 
+  ~include-collaborators: 
+}
+
+params:path {
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

@@ -1,0 +1,35 @@
+meta {
+  name: Bulk create issue
+  type: http
+  seq: 6
+}
+
+post {
+  url: {{baseUrl}}/rest/api/2/issue/bulk
+  body: json
+  auth: basic
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "issueUpdates": [
+      {
+        "fields": {},
+        "historyMetadata": "",
+        "properties": [
+          {
+            "key": "",
+            "value": ""
+          }
+        ],
+        "transition": "",
+        "update": {}
+      }
+    ]
+  }
+}

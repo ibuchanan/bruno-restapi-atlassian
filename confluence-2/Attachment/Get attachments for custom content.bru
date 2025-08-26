@@ -1,0 +1,29 @@
+meta {
+  name: Get attachments for custom content
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{baseUrl}}/custom-content/:id/attachments
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~sort: 
+  ~cursor: 
+  ~status: 
+  ~mediaType: 
+  ~filename: 
+  ~limit: 
+}
+
+params:path {
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

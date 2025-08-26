@@ -1,0 +1,27 @@
+meta {
+  name: Get content properties for attachment
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/attachments/:attachment-id/properties
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~key: 
+  ~sort: 
+  ~cursor: 
+  ~limit: 
+}
+
+params:path {
+  attachment-id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

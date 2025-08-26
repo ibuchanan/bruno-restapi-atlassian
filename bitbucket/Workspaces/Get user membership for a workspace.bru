@@ -1,0 +1,11 @@
+meta {
+  name: Get user membership for a workspace
+  type: http
+  seq: 10
+}
+
+get {
+  url: {{baseUrl}}/workspaces/:workspace/members/:member
+  body: none
+  auth: none
+}

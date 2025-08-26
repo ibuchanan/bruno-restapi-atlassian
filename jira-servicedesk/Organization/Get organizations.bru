@@ -1,0 +1,21 @@
+meta {
+  name: Get organizations
+  type: http
+  seq: 13
+}
+
+get {
+  url: {{baseUrl}}/rest/servicedeskapi/servicedesk/:serviceDeskId/organization
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~start: 
+  ~limit: 
+  ~accountId: 
+}
+
+params:path {
+  serviceDeskId: {{serviceDeskId}}
+}

@@ -1,0 +1,16 @@
+meta {
+  name: List a commit's comments
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/commit/:commit/comments
+  body: none
+  auth: none
+}
+
+params:query {
+  ~q: 
+  ~sort: 
+}

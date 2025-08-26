@@ -1,0 +1,24 @@
+meta {
+  name: Add filter as favorite
+  type: http
+  seq: 12
+}
+
+put {
+  url: {{baseUrl}}/rest/api/2/filter/:id/favourite
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~expand: 
+}
+
+params:path {
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

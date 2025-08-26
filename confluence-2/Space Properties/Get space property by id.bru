@@ -1,0 +1,21 @@
+meta {
+  name: Get space property by id
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{baseUrl}}/spaces/:space-id/properties/:property-id
+  body: none
+  auth: basic
+}
+
+params:path {
+  space-id: 
+  property-id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

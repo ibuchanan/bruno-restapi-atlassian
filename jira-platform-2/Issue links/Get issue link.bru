@@ -1,0 +1,20 @@
+meta {
+  name: Get issue link
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{baseUrl}}/rest/api/2/issueLink/:linkId
+  body: none
+  auth: basic
+}
+
+params:path {
+  linkId: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

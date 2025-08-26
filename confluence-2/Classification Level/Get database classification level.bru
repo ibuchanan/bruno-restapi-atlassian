@@ -1,0 +1,20 @@
+meta {
+  name: Get database classification level
+  type: http
+  seq: 14
+}
+
+get {
+  url: {{baseUrl}}/databases/:id/classification-level
+  body: none
+  auth: basic
+}
+
+params:path {
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

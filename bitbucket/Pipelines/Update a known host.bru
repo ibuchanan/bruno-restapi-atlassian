@@ -1,0 +1,17 @@
+meta {
+  name: Update a known host
+  type: http
+  seq: 35
+}
+
+put {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/pipelines_config/ssh/known_hosts/:known_host_uuid
+  body: json
+  auth: none
+}
+
+params:path {
+  workspace: 
+  repo_slug: 
+  known_host_uuid: 
+}

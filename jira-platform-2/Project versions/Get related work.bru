@@ -1,0 +1,20 @@
+meta {
+  name: Get related work
+  type: http
+  seq: 10
+}
+
+get {
+  url: {{baseUrl}}/rest/api/2/version/:id/relatedwork
+  body: none
+  auth: basic
+}
+
+params:path {
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

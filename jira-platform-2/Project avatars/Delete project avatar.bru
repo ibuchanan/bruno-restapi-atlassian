@@ -1,0 +1,21 @@
+meta {
+  name: Delete project avatar
+  type: http
+  seq: 2
+}
+
+delete {
+  url: {{baseUrl}}/rest/api/2/project/:projectIdOrKey/avatar/:id
+  body: none
+  auth: basic
+}
+
+params:path {
+  projectIdOrKey: 
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

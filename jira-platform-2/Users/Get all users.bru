@@ -1,0 +1,21 @@
+meta {
+  name: Get all users
+  type: http
+  seq: 13
+}
+
+get {
+  url: {{baseUrl}}/rest/api/2/users/search
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~startAt: 
+  ~maxResults: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

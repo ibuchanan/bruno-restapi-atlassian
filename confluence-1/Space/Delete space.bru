@@ -1,0 +1,20 @@
+meta {
+  name: Delete space
+  type: http
+  seq: 4
+}
+
+delete {
+  url: {{baseUrl}}/wiki/rest/api/space/:spaceKey
+  body: none
+  auth: basic
+}
+
+params:path {
+  spaceKey: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

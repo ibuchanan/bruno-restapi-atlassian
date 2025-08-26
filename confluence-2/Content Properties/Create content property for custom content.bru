@@ -1,0 +1,27 @@
+meta {
+  name: Create content property for custom content
+  type: http
+  seq: 12
+}
+
+post {
+  url: {{baseUrl}}/custom-content/:custom-content-id/properties
+  body: json
+  auth: basic
+}
+
+params:path {
+  custom-content-id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "key": "",
+    "value": ""
+  }
+}

@@ -1,0 +1,32 @@
+meta {
+  name: List pipelines
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/pipelines
+  body: none
+  auth: none
+}
+
+params:query {
+  ~creator.uuid: 
+  ~target.ref_type: 
+  ~target.ref_name: 
+  ~target.branch: 
+  ~target.commit.hash: 
+  ~target.selector.pattern: 
+  ~target.selector.type: 
+  ~created_on: 
+  ~trigger_type: 
+  ~status: 
+  ~sort: 
+  ~page: 
+  ~pagelen: 
+}
+
+params:path {
+  workspace: 
+  repo_slug: 
+}

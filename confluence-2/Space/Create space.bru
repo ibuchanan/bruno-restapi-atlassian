@@ -1,0 +1,29 @@
+meta {
+  name: Create space
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/spaces
+  body: json
+  auth: basic
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "name": "",
+    "key": "",
+    "alias": "",
+    "description": {
+      "value": "",
+      "representation": ""
+    },
+    "roleAssignments": []
+  }
+}

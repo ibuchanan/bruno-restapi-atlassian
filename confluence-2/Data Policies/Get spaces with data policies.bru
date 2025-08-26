@@ -1,0 +1,24 @@
+meta {
+  name: Get spaces with data policies
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/data-policies/spaces
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~ids: 
+  ~keys: 
+  ~sort: 
+  ~cursor: 
+  ~limit: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

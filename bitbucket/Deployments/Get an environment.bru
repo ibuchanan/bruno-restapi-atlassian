@@ -1,0 +1,17 @@
+meta {
+  name: Get an environment
+  type: http
+  seq: 10
+}
+
+get {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/environments/:environment_uuid
+  body: none
+  auth: none
+}
+
+params:path {
+  workspace: 
+  repo_slug: 
+  environment_uuid: 
+}

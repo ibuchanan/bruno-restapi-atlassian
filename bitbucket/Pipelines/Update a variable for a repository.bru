@@ -1,0 +1,17 @@
+meta {
+  name: Update a variable for a repository
+  type: http
+  seq: 40
+}
+
+put {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/pipelines_config/variables/:variable_uuid
+  body: json
+  auth: none
+}
+
+params:path {
+  workspace: 
+  repo_slug: 
+  variable_uuid: 
+}

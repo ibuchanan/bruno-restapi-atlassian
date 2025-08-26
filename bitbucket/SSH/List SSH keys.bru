@@ -1,0 +1,11 @@
+meta {
+  name: List SSH keys
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/users/:selected_user/ssh-keys
+  body: none
+  auth: none
+}

@@ -1,0 +1,18 @@
+meta {
+  name: Get a summary of test reports for a given step of a pipeline.
+  type: http
+  seq: 16
+}
+
+get {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/pipelines/:pipeline_uuid/steps/:step_uuid/test_reports
+  body: none
+  auth: none
+}
+
+params:path {
+  workspace: 
+  repo_slug: 
+  pipeline_uuid: 
+  step_uuid: 
+}

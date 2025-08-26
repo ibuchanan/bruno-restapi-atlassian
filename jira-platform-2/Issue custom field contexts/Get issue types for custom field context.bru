@@ -1,0 +1,26 @@
+meta {
+  name: Get issue types for custom field context
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{baseUrl}}/rest/api/2/field/:fieldId/context/issuetypemapping
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~contextId: 
+  ~startAt: 
+  ~maxResults: 
+}
+
+params:path {
+  fieldId: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

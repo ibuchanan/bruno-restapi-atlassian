@@ -1,0 +1,11 @@
+meta {
+  name: Create comment for a commit
+  type: http
+  seq: 5
+}
+
+post {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/commit/:commit/comments
+  body: json
+  auth: none
+}

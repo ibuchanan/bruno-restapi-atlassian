@@ -1,0 +1,16 @@
+meta {
+  name: Set issue navigator default columns
+  type: http
+  seq: 2
+}
+
+put {
+  url: {{baseUrl}}/rest/api/2/settings/columns
+  body: none
+  auth: basic
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

@@ -1,0 +1,21 @@
+meta {
+  name: Delete plan-only team
+  type: http
+  seq: 7
+}
+
+delete {
+  url: {{baseUrl}}/rest/api/2/plans/plan/:planId/team/planonly/:planOnlyTeamId
+  body: none
+  auth: basic
+}
+
+params:path {
+  planId: 
+  planOnlyTeamId: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

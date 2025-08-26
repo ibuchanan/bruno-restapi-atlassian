@@ -1,0 +1,21 @@
+meta {
+  name: Create a task on a pull request
+  type: http
+  seq: 33
+}
+
+post {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/pullrequests/:pull_request_id/tasks
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "content": {
+      "raw": ""
+    },
+    "comment": "",
+    "pending": false
+  }
+}

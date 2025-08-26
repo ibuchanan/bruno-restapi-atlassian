@@ -1,0 +1,11 @@
+meta {
+  name: List repositories watchers
+  type: http
+  seq: 24
+}
+
+get {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/watchers
+  body: none
+  auth: none
+}

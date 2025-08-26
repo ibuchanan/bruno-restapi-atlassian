@@ -1,0 +1,24 @@
+meta {
+  name: Merge a pull request
+  type: http
+  seq: 26
+}
+
+post {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/pullrequests/:pull_request_id/merge
+  body: json
+  auth: none
+}
+
+params:query {
+  ~async: 
+}
+
+body:json {
+  {
+    "type": "",
+    "message": "",
+    "close_source_branch": false,
+    "merge_strategy": ""
+  }
+}

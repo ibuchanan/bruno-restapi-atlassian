@@ -1,0 +1,27 @@
+meta {
+  name: Update resolution
+  type: http
+  seq: 8
+}
+
+put {
+  url: {{baseUrl}}/rest/api/2/resolution/:id
+  body: json
+  auth: basic
+}
+
+params:path {
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "description": "",
+    "name": ""
+  }
+}

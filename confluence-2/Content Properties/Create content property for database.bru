@@ -1,0 +1,27 @@
+meta {
+  name: Create content property for database
+  type: http
+  seq: 27
+}
+
+post {
+  url: {{baseUrl}}/databases/:id/properties
+  body: json
+  auth: basic
+}
+
+params:path {
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "key": "",
+    "value": ""
+  }
+}

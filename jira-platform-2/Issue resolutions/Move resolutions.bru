@@ -1,0 +1,24 @@
+meta {
+  name: Move resolutions
+  type: http
+  seq: 4
+}
+
+put {
+  url: {{baseUrl}}/rest/api/2/resolution/move
+  body: json
+  auth: basic
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "after": "",
+    "ids": [],
+    "position": ""
+  }
+}

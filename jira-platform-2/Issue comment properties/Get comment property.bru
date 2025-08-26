@@ -1,0 +1,21 @@
+meta {
+  name: Get comment property
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{baseUrl}}/rest/api/2/comment/:commentId/properties/:propertyKey
+  body: none
+  auth: basic
+}
+
+params:path {
+  commentId: 
+  propertyKey: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

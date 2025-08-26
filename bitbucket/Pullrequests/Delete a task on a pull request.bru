@@ -1,0 +1,11 @@
+meta {
+  name: Delete a task on a pull request
+  type: http
+  seq: 34
+}
+
+delete {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/pullrequests/:pull_request_id/tasks/:task_id
+  body: none
+  auth: none
+}

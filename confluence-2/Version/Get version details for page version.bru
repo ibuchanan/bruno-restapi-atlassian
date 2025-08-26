@@ -1,0 +1,21 @@
+meta {
+  name: Get version details for page version
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{baseUrl}}/pages/:page-id/versions/:version-number
+  body: none
+  auth: basic
+}
+
+params:path {
+  page-id: 
+  version-number: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

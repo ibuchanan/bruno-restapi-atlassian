@@ -1,0 +1,24 @@
+meta {
+  name: Bulk get users
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{baseUrl}}/rest/api/2/user/bulk
+  body: none
+  auth: basic
+}
+
+params:query {
+  accountId: 
+  ~startAt: 
+  ~maxResults: 
+  ~username: 
+  ~key: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

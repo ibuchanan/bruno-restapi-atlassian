@@ -1,0 +1,24 @@
+meta {
+  name: Delete project role
+  type: http
+  seq: 6
+}
+
+delete {
+  url: {{baseUrl}}/rest/api/2/role/:id
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~swap: 
+}
+
+params:path {
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

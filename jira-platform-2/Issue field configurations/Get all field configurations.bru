@@ -1,0 +1,24 @@
+meta {
+  name: Get all field configurations
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/rest/api/2/fieldconfiguration
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~startAt: 
+  ~maxResults: 
+  ~id: 
+  ~isDefault: 
+  ~query: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

@@ -1,0 +1,16 @@
+meta {
+  name: Get time tracking settings
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{baseUrl}}/rest/api/2/configuration/timetracking/options
+  body: none
+  auth: basic
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

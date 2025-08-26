@@ -1,0 +1,11 @@
+meta {
+  name: Create a webhook for a workspace
+  type: http
+  seq: 5
+}
+
+post {
+  url: {{baseUrl}}/workspaces/:workspace/hooks
+  body: none
+  auth: none
+}

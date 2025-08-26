@@ -1,0 +1,19 @@
+meta {
+  name: Get test case reasons (output) for a given test case in a step of a pipeline.
+  type: http
+  seq: 18
+}
+
+get {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/pipelines/:pipeline_uuid/steps/:step_uuid/test_reports/test_cases/:test_case_uuid/test_case_reasons
+  body: none
+  auth: none
+}
+
+params:path {
+  workspace: 
+  repo_slug: 
+  pipeline_uuid: 
+  step_uuid: 
+  test_case_uuid: 
+}

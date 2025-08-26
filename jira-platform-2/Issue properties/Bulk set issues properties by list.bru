@@ -1,0 +1,23 @@
+meta {
+  name: Bulk set issues properties by list
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/rest/api/2/issue/properties
+  body: json
+  auth: basic
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "entitiesIds": [],
+    "properties": {}
+  }
+}

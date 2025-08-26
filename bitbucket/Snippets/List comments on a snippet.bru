@@ -1,0 +1,11 @@
+meta {
+  name: List comments on a snippet
+  type: http
+  seq: 8
+}
+
+get {
+  url: {{baseUrl}}/snippets/:workspace/:encoded_id/comments
+  body: none
+  auth: none
+}

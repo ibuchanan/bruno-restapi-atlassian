@@ -1,0 +1,30 @@
+meta {
+  name: Add label watcher
+  type: http
+  seq: 8
+}
+
+post {
+  url: {{baseUrl}}/wiki/rest/api/user/watch/label/:labelName
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~key: 
+  ~username: 
+  ~accountId: 
+}
+
+params:path {
+  labelName: 
+}
+
+headers {
+  X-Atlassian-Token: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

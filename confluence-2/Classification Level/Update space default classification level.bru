@@ -1,0 +1,26 @@
+meta {
+  name: Update space default classification level
+  type: http
+  seq: 3
+}
+
+put {
+  url: {{baseUrl}}/spaces/:id/classification-level/default
+  body: json
+  auth: basic
+}
+
+params:path {
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "id": ""
+  }
+}

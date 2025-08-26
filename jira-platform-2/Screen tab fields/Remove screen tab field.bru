@@ -1,0 +1,22 @@
+meta {
+  name: Remove screen tab field
+  type: http
+  seq: 3
+}
+
+delete {
+  url: {{baseUrl}}/rest/api/2/screens/:screenId/tabs/:tabId/fields/:id
+  body: none
+  auth: basic
+}
+
+params:path {
+  screenId: 
+  tabId: 
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

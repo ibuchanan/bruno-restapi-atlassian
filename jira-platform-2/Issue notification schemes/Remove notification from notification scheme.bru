@@ -1,0 +1,21 @@
+meta {
+  name: Remove notification from notification scheme
+  type: http
+  seq: 8
+}
+
+delete {
+  url: {{baseUrl}}/rest/api/2/notificationscheme/:notificationSchemeId/notification/:notificationId
+  body: none
+  auth: basic
+}
+
+params:path {
+  notificationSchemeId: 
+  notificationId: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

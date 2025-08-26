@@ -1,0 +1,16 @@
+meta {
+  name: Delete a variable for a workspace
+  type: http
+  seq: 58
+}
+
+delete {
+  url: {{baseUrl}}/workspaces/:workspace/pipelines-config/variables/:variable_uuid
+  body: none
+  auth: none
+}
+
+params:path {
+  workspace: 
+  variable_uuid: 
+}

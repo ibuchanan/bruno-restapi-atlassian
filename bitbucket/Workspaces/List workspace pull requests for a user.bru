@@ -1,0 +1,15 @@
+meta {
+  name: List workspace pull requests for a user
+  type: http
+  seq: 15
+}
+
+get {
+  url: {{baseUrl}}/workspaces/:workspace/pullrequests/:selected_user
+  body: none
+  auth: none
+}
+
+params:query {
+  ~state: 
+}

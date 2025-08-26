@@ -1,0 +1,28 @@
+meta {
+  name: Find users and groups
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/rest/api/2/groupuserpicker
+  body: none
+  auth: basic
+}
+
+params:query {
+  query: 
+  ~maxResults: 
+  ~showAvatar: 
+  ~fieldId: 
+  ~projectId: 
+  ~issueTypeId: 
+  ~avatarSize: 
+  ~caseInsensitive: 
+  ~excludeConnectAddons: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

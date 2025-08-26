@@ -1,0 +1,27 @@
+meta {
+  name: Create priority scheme
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/rest/api/2/priorityscheme
+  body: json
+  auth: basic
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "defaultPriorityId": 0,
+    "description": "",
+    "mappings": "",
+    "name": "",
+    "priorityIds": [],
+    "projectIds": []
+  }
+}

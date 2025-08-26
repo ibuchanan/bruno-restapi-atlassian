@@ -1,0 +1,20 @@
+meta {
+  name: Update a task on a pull request
+  type: http
+  seq: 36
+}
+
+put {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/pullrequests/:pull_request_id/tasks/:task_id
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "content": {
+      "raw": ""
+    },
+    "state": ""
+  }
+}

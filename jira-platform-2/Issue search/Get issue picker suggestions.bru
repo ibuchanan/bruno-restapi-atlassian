@@ -1,0 +1,25 @@
+meta {
+  name: Get issue picker suggestions
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/rest/api/2/issue/picker
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~query: 
+  ~currentJQL: 
+  ~currentIssueKey: 
+  ~currentProjectId: 
+  ~showSubTasks: 
+  ~showSubTaskParent: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

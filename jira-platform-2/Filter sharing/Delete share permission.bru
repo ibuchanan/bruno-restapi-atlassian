@@ -1,0 +1,21 @@
+meta {
+  name: Delete share permission
+  type: http
+  seq: 5
+}
+
+delete {
+  url: {{baseUrl}}/rest/api/2/filter/:id/permission/:permissionId
+  body: none
+  auth: basic
+}
+
+params:path {
+  id: 
+  permissionId: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

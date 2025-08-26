@@ -1,0 +1,24 @@
+meta {
+  name: Get all ancestors of Smart Link in content tree
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{baseUrl}}/embeds/:id/ancestors
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~limit: 
+}
+
+params:path {
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

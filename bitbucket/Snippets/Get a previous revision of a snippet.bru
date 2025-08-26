@@ -1,0 +1,11 @@
+meta {
+  name: Get a previous revision of a snippet
+  type: http
+  seq: 21
+}
+
+get {
+  url: {{baseUrl}}/snippets/:workspace/:encoded_id/:node_id
+  body: none
+  auth: none
+}

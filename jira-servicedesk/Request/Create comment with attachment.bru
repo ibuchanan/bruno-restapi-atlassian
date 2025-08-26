@@ -1,0 +1,23 @@
+meta {
+  name: Create comment with attachment
+  type: http
+  seq: 8
+}
+
+post {
+  url: {{baseUrl}}/rest/servicedeskapi/request/:issueIdOrKey/attachment
+  body: json
+  auth: inherit
+}
+
+params:path {
+  issueIdOrKey:
+}
+
+body:json {
+  {
+    "additionalComment": "",
+    "public": false,
+    "temporaryAttachmentIds": []
+  }
+}

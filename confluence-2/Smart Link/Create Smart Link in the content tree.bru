@@ -1,0 +1,25 @@
+meta {
+  name: Create Smart Link in the content tree
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/embeds
+  body: json
+  auth: basic
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "spaceId": "",
+    "title": "",
+    "parentId": "",
+    "embedUrl": ""
+  }
+}

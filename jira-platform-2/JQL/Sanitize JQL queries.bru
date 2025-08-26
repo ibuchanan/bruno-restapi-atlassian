@@ -1,0 +1,27 @@
+meta {
+  name: Sanitize JQL queries
+  type: http
+  seq: 6
+}
+
+post {
+  url: {{baseUrl}}/rest/api/2/jql/sanitize
+  body: json
+  auth: basic
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "queries": [
+      {
+        "accountId": "",
+        "query": ""
+      }
+    ]
+  }
+}

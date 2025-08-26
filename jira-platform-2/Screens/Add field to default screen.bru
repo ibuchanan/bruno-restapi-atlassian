@@ -1,0 +1,20 @@
+meta {
+  name: Add field to default screen
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{baseUrl}}/rest/api/2/screens/addToDefault/:fieldId
+  body: none
+  auth: basic
+}
+
+params:path {
+  fieldId: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

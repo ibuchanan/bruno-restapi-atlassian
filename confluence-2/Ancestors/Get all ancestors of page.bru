@@ -1,0 +1,24 @@
+meta {
+  name: Get all ancestors of page
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{baseUrl}}/pages/:id/ancestors
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~limit: 
+}
+
+params:path {
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

@@ -1,0 +1,30 @@
+meta {
+  name: Check content permissions
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/wiki/rest/api/content/:id/permission/check
+  body: json
+  auth: basic
+}
+
+params:path {
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "subject": {
+      "type": "",
+      "identifier": ""
+    },
+    "operation": ""
+  }
+}

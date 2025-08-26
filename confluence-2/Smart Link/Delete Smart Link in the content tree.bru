@@ -1,0 +1,20 @@
+meta {
+  name: Delete Smart Link in the content tree
+  type: http
+  seq: 3
+}
+
+delete {
+  url: {{baseUrl}}/embeds/:id
+  body: none
+  auth: basic
+}
+
+params:path {
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

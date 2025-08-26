@@ -1,0 +1,21 @@
+meta {
+  name: Get version details for footer comment version
+  type: http
+  seq: 10
+}
+
+get {
+  url: {{baseUrl}}/footer-comments/:id/versions/:version-number
+  body: none
+  auth: basic
+}
+
+params:path {
+  id: 
+  version-number: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

@@ -1,0 +1,22 @@
+meta {
+  name: List pull requests that contain a commit
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/commit/:commit/pullrequests
+  body: none
+  auth: none
+}
+
+params:query {
+  ~page: 
+  ~pagelen: 
+}
+
+params:path {
+  workspace: 
+  repo_slug: 
+  commit: 
+}

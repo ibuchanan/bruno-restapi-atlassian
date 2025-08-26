@@ -1,0 +1,53 @@
+meta {
+  name: Create plan
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/rest/api/2/plans/plan
+  body: json
+  auth: basic
+}
+
+params:query {
+  ~useGroupId: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "crossProjectReleases": [
+      {
+        "name": "",
+        "releaseIds": []
+      }
+    ],
+    "customFields": [
+      {
+        "customFieldId": 0,
+        "filter": false
+      }
+    ],
+    "exclusionRules": "",
+    "issueSources": [
+      {
+        "type": "",
+        "value": 0
+      }
+    ],
+    "leadAccountId": "",
+    "name": "",
+    "permissions": [
+      {
+        "holder": "",
+        "type": ""
+      }
+    ],
+    "scheduling": ""
+  }
+}

@@ -1,0 +1,20 @@
+meta {
+  name: Get request type groups
+  type: http
+  seq: 21
+}
+
+get {
+  url: {{baseUrl}}/rest/servicedeskapi/servicedesk/:serviceDeskId/requesttypegroup
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~start:
+  ~limit:
+}
+
+params:path {
+  serviceDeskId:
+}

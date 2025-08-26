@@ -1,0 +1,11 @@
+meta {
+  name: Get a snippet's raw file
+  type: http
+  seq: 23
+}
+
+get {
+  url: {{baseUrl}}/snippets/:workspace/:encoded_id/:node_id/files/:path
+  body: none
+  auth: none
+}

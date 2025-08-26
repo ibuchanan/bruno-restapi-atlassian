@@ -1,0 +1,11 @@
+meta {
+  name: Get modules
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/atlassian-connect/1/app/module/dynamic
+  body: none
+  auth: inherit
+}

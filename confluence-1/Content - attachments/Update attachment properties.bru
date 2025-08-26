@@ -1,0 +1,105 @@
+meta {
+  name: Update attachment properties
+  type: http
+  seq: 3
+}
+
+put {
+  url: {{baseUrl}}/wiki/rest/api/content/:id/child/attachment/:attachmentId
+  body: json
+  auth: basic
+}
+
+params:path {
+  id: 
+  attachmentId: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "id": "",
+    "type": "",
+    "status": "",
+    "title": "",
+    "container": {},
+    "metadata": {
+      "mediaType": ""
+    },
+    "extensions": {},
+    "version": {
+      "by": {
+        "type": "",
+        "username": "",
+        "userKey": "",
+        "accountId": "",
+        "accountType": "",
+        "email": "",
+        "publicName": "",
+        "profilePicture": {
+          "path": "",
+          "width": 0,
+          "height": 0,
+          "isDefault": false
+        },
+        "displayName": "",
+        "timeZone": "",
+        "externalCollaborator": false,
+        "isExternalCollaborator": false,
+        "isGuest": false,
+        "operations": [
+          {
+            "operation": "",
+            "targetType": ""
+          }
+        ],
+        "details": {
+          "business": {
+            "position": "",
+            "department": "",
+            "location": ""
+          },
+          "personal": {
+            "phone": "",
+            "im": "",
+            "website": "",
+            "email": ""
+          }
+        },
+        "personalSpace": "",
+        "_expandable": {
+          "operations": "",
+          "details": "",
+          "personalSpace": ""
+        },
+        "_links": {}
+      },
+      "when": "",
+      "friendlyWhen": "",
+      "message": "",
+      "number": 0,
+      "minorEdit": false,
+      "content": "",
+      "collaborators": {
+        "users": [
+          {}
+        ],
+        "userKeys": [],
+        "_links": {}
+      },
+      "_expandable": {
+        "content": "",
+        "collaborators": ""
+      },
+      "_links": {},
+      "contentTypeModified": false,
+      "confRev": "",
+      "syncRev": "",
+      "syncRevSource": ""
+    }
+  }
+}

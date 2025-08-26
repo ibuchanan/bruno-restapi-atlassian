@@ -1,0 +1,15 @@
+meta {
+  name: Bulk revoke API tokens in an organization
+  type: http
+  seq: 2
+}
+
+delete {
+  url: {{baseUrl}}/orgs/:orgId/api-tokens
+  body: none
+  auth: none
+}
+
+params:path {
+  orgId: 
+}

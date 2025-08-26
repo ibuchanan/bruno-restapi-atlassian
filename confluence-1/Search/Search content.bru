@@ -1,0 +1,32 @@
+meta {
+  name: Search content
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/wiki/rest/api/search
+  body: none
+  auth: basic
+}
+
+params:query {
+  cql: 
+  ~cqlcontext: 
+  ~cursor: 
+  ~next: 
+  ~prev: 
+  ~limit: 
+  ~start: 
+  ~includeArchivedSpaces: 
+  ~excludeCurrentSpaces: 
+  ~excerpt: 
+  ~sitePermissionTypeFilter: 
+  ~_: 
+  ~expand: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

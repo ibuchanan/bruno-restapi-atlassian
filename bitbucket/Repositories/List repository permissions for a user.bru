@@ -1,0 +1,16 @@
+meta {
+  name: List repository permissions for a user
+  type: http
+  seq: 25
+}
+
+get {
+  url: {{baseUrl}}/user/permissions/repositories
+  body: none
+  auth: none
+}
+
+params:query {
+  ~q: 
+  ~sort: 
+}

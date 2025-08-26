@@ -1,0 +1,29 @@
+meta {
+  name: Reorder custom field options (context)
+  type: http
+  seq: 5
+}
+
+put {
+  url: {{baseUrl}}/rest/api/2/field/:fieldId/context/:contextId/option/move
+  body: json
+  auth: basic
+}
+
+params:path {
+  fieldId: 
+  contextId: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "after": "",
+    "customFieldOptionIds": [],
+    "position": ""
+  }
+}

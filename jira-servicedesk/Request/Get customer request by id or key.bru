@@ -1,0 +1,19 @@
+meta {
+  name: Get customer request by id or key
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{baseUrl}}/rest/servicedeskapi/request/:issueIdOrKey
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~expand:
+}
+
+params:path {
+  issueIdOrKey:
+}

@@ -1,0 +1,20 @@
+meta {
+  name: Delete filter
+  type: http
+  seq: 5
+}
+
+delete {
+  url: {{baseUrl}}/rest/api/2/filter/:id
+  body: none
+  auth: basic
+}
+
+params:path {
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

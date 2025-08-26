@@ -1,0 +1,20 @@
+meta {
+  name: Get app properties
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/rest/atlassian-connect/1/addons/:addonKey/properties
+  body: none
+  auth: basic
+}
+
+params:path {
+  addonKey: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

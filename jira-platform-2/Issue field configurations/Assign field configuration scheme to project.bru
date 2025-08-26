@@ -1,0 +1,23 @@
+meta {
+  name: Assign field configuration scheme to project
+  type: http
+  seq: 11
+}
+
+put {
+  url: {{baseUrl}}/rest/api/2/fieldconfigurationscheme/project
+  body: json
+  auth: basic
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "fieldConfigurationSchemeId": "",
+    "projectId": ""
+  }
+}

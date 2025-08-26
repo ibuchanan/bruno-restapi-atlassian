@@ -1,0 +1,28 @@
+meta {
+  name: Search for issues using JQL enhanced search (GET)
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{baseUrl}}/rest/api/2/search/jql
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~jql: 
+  ~nextPageToken: 
+  ~maxResults: 
+  ~fields: 
+  ~expand: 
+  ~properties: 
+  ~fieldsByKeys: 
+  ~failFast: 
+  ~reconcileIssues: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

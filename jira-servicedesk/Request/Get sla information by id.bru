@@ -1,0 +1,16 @@
+meta {
+  name: Get sla information by id
+  type: http
+  seq: 22
+}
+
+get {
+  url: {{baseUrl}}/rest/servicedeskapi/request/:issueIdOrKey/sla/:slaMetricId
+  body: none
+  auth: inherit
+}
+
+params:path {
+  issueIdOrKey:
+  slaMetricId:
+}

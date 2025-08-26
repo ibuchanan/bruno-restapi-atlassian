@@ -1,0 +1,33 @@
+meta {
+  name: Delete and replace version
+  type: http
+  seq: 13
+}
+
+post {
+  url: {{baseUrl}}/rest/api/2/version/:id/removeAndSwap
+  body: json
+  auth: basic
+}
+
+params:path {
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "customFieldReplacementList": [
+      {
+        "customFieldId": 0,
+        "moveTo": 0
+      }
+    ],
+    "moveAffectedIssuesTo": 0,
+    "moveFixIssuesTo": 0
+  }
+}

@@ -1,0 +1,17 @@
+meta {
+  name: Create a variable for an environment
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/deployments_config/environments/:environment_uuid/variables
+  body: json
+  auth: none
+}
+
+params:path {
+  workspace: 
+  repo_slug: 
+  environment_uuid: 
+}

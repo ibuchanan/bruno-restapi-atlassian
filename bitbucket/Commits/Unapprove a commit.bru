@@ -1,0 +1,11 @@
+meta {
+  name: Unapprove a commit
+  type: http
+  seq: 2
+}
+
+delete {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/commit/:commit/approve
+  body: none
+  auth: none
+}

@@ -1,0 +1,28 @@
+meta {
+  name: Create database
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/databases
+  body: json
+  auth: basic
+}
+
+params:query {
+  ~private: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "spaceId": "",
+    "title": "",
+    "parentId": ""
+  }
+}

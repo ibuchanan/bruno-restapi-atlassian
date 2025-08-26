@@ -1,0 +1,11 @@
+meta {
+  name: Delete a SSH key
+  type: http
+  seq: 3
+}
+
+delete {
+  url: {{baseUrl}}/users/:selected_user/ssh-keys/:key_id
+  body: none
+  auth: none
+}

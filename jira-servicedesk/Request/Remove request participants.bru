@@ -1,0 +1,22 @@
+meta {
+  name: Remove request participants
+  type: http
+  seq: 18
+}
+
+delete {
+  url: {{baseUrl}}/rest/servicedeskapi/request/:issueIdOrKey/participant
+  body: json
+  auth: inherit
+}
+
+params:path {
+  issueIdOrKey:
+}
+
+body:json {
+  {
+    "accountIds": [],
+    "usernames": []
+  }
+}

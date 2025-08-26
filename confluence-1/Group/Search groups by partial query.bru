@@ -1,0 +1,23 @@
+meta {
+  name: Search groups by partial query
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{baseUrl}}/wiki/rest/api/group/picker
+  body: none
+  auth: basic
+}
+
+params:query {
+  query: 
+  ~start: 
+  ~limit: 
+  ~shouldReturnTotalSize: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

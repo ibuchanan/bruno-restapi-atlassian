@@ -1,0 +1,25 @@
+meta {
+  name: Delete blog post
+  type: http
+  seq: 5
+}
+
+delete {
+  url: {{baseUrl}}/blogposts/:id
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~purge: 
+  ~draft: 
+}
+
+params:path {
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

@@ -1,0 +1,23 @@
+meta {
+  name: Get plans paginated
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/rest/api/2/plans/plan
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~includeTrashed: 
+  ~includeArchived: 
+  ~cursor: 
+  ~maxResults: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

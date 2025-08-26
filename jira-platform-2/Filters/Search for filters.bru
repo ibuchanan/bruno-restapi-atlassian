@@ -1,0 +1,32 @@
+meta {
+  name: Search for filters
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{baseUrl}}/rest/api/2/filter/search
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~filterName: 
+  ~accountId: 
+  ~owner: 
+  ~groupname: 
+  ~groupId: 
+  ~projectId: 
+  ~id: 
+  ~orderBy: 
+  ~startAt: 
+  ~maxResults: 
+  ~expand: 
+  ~overrideSharePermissions: 
+  ~isSubstringMatch: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

@@ -1,0 +1,24 @@
+meta {
+  name: Get attachment content
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/rest/api/2/attachment/content/:id
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~redirect: 
+}
+
+params:path {
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

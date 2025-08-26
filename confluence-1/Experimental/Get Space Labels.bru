@@ -1,0 +1,26 @@
+meta {
+  name: Get Space Labels
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/wiki/rest/api/space/:spaceKey/label
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~prefix: 
+  ~start: 
+  ~limit: 
+}
+
+params:path {
+  spaceKey: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

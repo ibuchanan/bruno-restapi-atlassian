@@ -1,0 +1,28 @@
+meta {
+  name: Update issue security level
+  type: http
+  seq: 14
+}
+
+put {
+  url: {{baseUrl}}/rest/api/2/issuesecurityschemes/:schemeId/level/:levelId
+  body: json
+  auth: basic
+}
+
+params:path {
+  schemeId: 
+  levelId: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "description": "",
+    "name": ""
+  }
+}

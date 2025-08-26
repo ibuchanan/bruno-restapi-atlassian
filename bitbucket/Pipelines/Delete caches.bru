@@ -1,0 +1,20 @@
+meta {
+  name: Delete caches
+  type: http
+  seq: 8
+}
+
+delete {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/pipelines-config/caches
+  body: none
+  auth: none
+}
+
+params:query {
+  name: 
+}
+
+params:path {
+  workspace: 
+  repo_slug: 
+}

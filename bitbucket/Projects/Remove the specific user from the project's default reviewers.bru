@@ -1,0 +1,11 @@
+meta {
+  name: Remove the specific user from the project's default reviewers
+  type: http
+  seq: 6
+}
+
+delete {
+  url: {{baseUrl}}/workspaces/:workspace/projects/:project_key/default-reviewers/:selected_user
+  body: none
+  auth: none
+}

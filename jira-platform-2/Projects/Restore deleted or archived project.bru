@@ -1,0 +1,20 @@
+meta {
+  name: Restore deleted or archived project
+  type: http
+  seq: 10
+}
+
+post {
+  url: {{baseUrl}}/rest/api/2/project/:projectIdOrKey/restore
+  body: none
+  auth: basic
+}
+
+params:path {
+  projectIdOrKey: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

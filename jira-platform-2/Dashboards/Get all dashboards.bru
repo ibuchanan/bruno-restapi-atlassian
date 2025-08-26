@@ -1,0 +1,22 @@
+meta {
+  name: Get all dashboards
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/rest/api/2/dashboard
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~filter: 
+  ~startAt: 
+  ~maxResults: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

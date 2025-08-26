@@ -1,0 +1,22 @@
+meta {
+  name: Perform customer transition
+  type: http
+  seq: 25
+}
+
+post {
+  url: {{baseUrl}}/rest/servicedeskapi/request/:issueIdOrKey/transition
+  body: json
+  auth: inherit
+}
+
+params:path {
+  issueIdOrKey:
+}
+
+body:json {
+  {
+    "additionalComment": "",
+    "id": ""
+  }
+}

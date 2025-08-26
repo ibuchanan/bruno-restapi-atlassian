@@ -1,0 +1,11 @@
+meta {
+  name: Add a new GPG key
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/users/:selected_user/gpg-keys
+  body: json
+  auth: none
+}

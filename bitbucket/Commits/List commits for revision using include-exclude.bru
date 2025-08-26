@@ -1,0 +1,11 @@
+meta {
+  name: List commits for revision using include/exclude
+  type: http
+  seq: 12
+}
+
+post {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/commits/:revision
+  body: none
+  auth: none
+}

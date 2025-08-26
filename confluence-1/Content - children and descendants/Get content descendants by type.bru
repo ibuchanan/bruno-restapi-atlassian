@@ -1,0 +1,28 @@
+meta {
+  name: Get content descendants by type
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{baseUrl}}/wiki/rest/api/content/:id/descendant/:type
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~depth: 
+  ~expand: 
+  ~start: 
+  ~limit: 
+}
+
+params:path {
+  id: 
+  type: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

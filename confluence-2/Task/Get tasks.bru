@@ -1,0 +1,37 @@
+meta {
+  name: Get tasks
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/tasks
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~body-format: 
+  ~include-blank-tasks: 
+  ~status: 
+  ~task-id: 
+  ~space-id: 
+  ~page-id: 
+  ~blogpost-id: 
+  ~created-by: 
+  ~assigned-to: 
+  ~completed-by: 
+  ~created-at-from: 
+  ~created-at-to: 
+  ~due-at-from: 
+  ~due-at-to: 
+  ~completed-at-from: 
+  ~completed-at-to: 
+  ~cursor: 
+  ~limit: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

@@ -1,0 +1,21 @@
+meta {
+  name: Get issue types for project
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{baseUrl}}/rest/api/2/issuetype/project
+  body: none
+  auth: basic
+}
+
+params:query {
+  projectId: 
+  ~level: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

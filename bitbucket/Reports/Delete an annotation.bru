@@ -1,0 +1,19 @@
+meta {
+  name: Delete an annotation
+  type: http
+  seq: 9
+}
+
+delete {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/commit/:commit/reports/:reportId/annotations/:annotationId
+  body: none
+  auth: none
+}
+
+params:path {
+  workspace: 
+  repo_slug: 
+  commit: 
+  reportId: 
+  annotationId: 
+}

@@ -1,0 +1,35 @@
+meta {
+  name: Update space
+  type: http
+  seq: 3
+}
+
+put {
+  url: {{baseUrl}}/wiki/rest/api/space/:spaceKey
+  body: json
+  auth: basic
+}
+
+params:path {
+  spaceKey: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "name": "",
+    "description": {
+      "plain": {
+        "value": "",
+        "representation": ""
+      }
+    },
+    "homepage": {},
+    "type": "",
+    "status": ""
+  }
+}

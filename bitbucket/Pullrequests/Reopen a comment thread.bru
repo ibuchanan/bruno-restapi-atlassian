@@ -1,0 +1,11 @@
+meta {
+  name: Reopen a comment thread
+  type: http
+  seq: 20
+}
+
+delete {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/pullrequests/:pull_request_id/comments/:comment_id/resolve
+  body: none
+  auth: none
+}

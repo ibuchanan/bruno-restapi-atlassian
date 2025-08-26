@@ -1,0 +1,30 @@
+meta {
+  name: Add Atlassian team to plan
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/rest/api/2/plans/plan/:planId/team/atlassian
+  body: json
+  auth: basic
+}
+
+params:path {
+  planId: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "capacity": "",
+    "id": "",
+    "issueSourceId": 0,
+    "planningStyle": "",
+    "sprintLength": 0
+  }
+}

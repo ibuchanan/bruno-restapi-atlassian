@@ -1,0 +1,21 @@
+meta {
+  name: Delete screen tab
+  type: http
+  seq: 4
+}
+
+delete {
+  url: {{baseUrl}}/rest/api/2/screens/:screenId/tabs/:tabId
+  body: none
+  auth: basic
+}
+
+params:path {
+  screenId: 
+  tabId: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

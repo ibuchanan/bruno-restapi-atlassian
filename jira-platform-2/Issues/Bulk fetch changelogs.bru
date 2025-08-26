@@ -1,0 +1,25 @@
+meta {
+  name: Bulk fetch changelogs
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/rest/api/2/changelog/bulkfetch
+  body: json
+  auth: basic
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "fieldIds": [],
+    "issueIdsOrKeys": [],
+    "maxResults": 0,
+    "nextPageToken": ""
+  }
+}

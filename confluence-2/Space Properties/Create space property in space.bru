@@ -1,0 +1,27 @@
+meta {
+  name: Create space property in space
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/spaces/:space-id/properties
+  body: json
+  auth: basic
+}
+
+params:path {
+  space-id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "key": "",
+    "value": ""
+  }
+}

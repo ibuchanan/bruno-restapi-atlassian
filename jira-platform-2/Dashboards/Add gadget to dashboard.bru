@@ -1,0 +1,31 @@
+meta {
+  name: Add gadget to dashboard
+  type: http
+  seq: 7
+}
+
+post {
+  url: {{baseUrl}}/rest/api/2/dashboard/:dashboardId/gadget
+  body: json
+  auth: basic
+}
+
+params:path {
+  dashboardId: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "color": "",
+    "ignoreUriAndModuleKeyValidation": false,
+    "moduleKey": "",
+    "position": "",
+    "title": "",
+    "uri": ""
+  }
+}

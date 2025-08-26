@@ -1,0 +1,29 @@
+meta {
+  name: Get project versions paginated
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/rest/api/2/project/:projectIdOrKey/version
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~startAt: 
+  ~maxResults: 
+  ~orderBy: 
+  ~query: 
+  ~status: 
+  ~expand: 
+}
+
+params:path {
+  projectIdOrKey: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

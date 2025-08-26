@@ -1,0 +1,28 @@
+meta {
+  name: Get blog posts for label
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{baseUrl}}/labels/:id/blogposts
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~space-id: 
+  ~body-format: 
+  ~sort: 
+  ~cursor: 
+  ~limit: 
+}
+
+params:path {
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

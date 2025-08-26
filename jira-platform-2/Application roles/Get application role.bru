@@ -1,0 +1,20 @@
+meta {
+  name: Get application role
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/rest/api/2/applicationrole/:key
+  body: none
+  auth: basic
+}
+
+params:path {
+  key: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

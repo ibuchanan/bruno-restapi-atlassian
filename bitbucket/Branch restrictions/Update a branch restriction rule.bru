@@ -1,0 +1,11 @@
+meta {
+  name: Update a branch restriction rule
+  type: http
+  seq: 5
+}
+
+put {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/branch-restrictions/:id
+  body: json
+  auth: none
+}

@@ -1,0 +1,27 @@
+meta {
+  name: Delete actors from project role
+  type: http
+  seq: 1
+}
+
+delete {
+  url: {{baseUrl}}/rest/api/2/project/:projectIdOrKey/role/:id
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~user: 
+  ~group: 
+  ~groupId: 
+}
+
+params:path {
+  projectIdOrKey: 
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

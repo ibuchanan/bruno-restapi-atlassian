@@ -1,0 +1,32 @@
+meta {
+  name: Add share permission
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{baseUrl}}/rest/api/2/filter/:id/permission
+  body: json
+  auth: basic
+}
+
+params:path {
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "accountId": "",
+    "groupId": "",
+    "groupname": "",
+    "projectId": "",
+    "projectRoleId": "",
+    "rights": 0,
+    "type": ""
+  }
+}

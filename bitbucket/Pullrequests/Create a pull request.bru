@@ -1,0 +1,11 @@
+meta {
+  name: Create a pull request
+  type: http
+  seq: 8
+}
+
+post {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/pullrequests
+  body: json
+  auth: none
+}

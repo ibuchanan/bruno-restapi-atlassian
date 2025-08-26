@@ -1,0 +1,17 @@
+meta {
+  name: Delete a schedule
+  type: http
+  seq: 27
+}
+
+delete {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/pipelines_config/schedules/:schedule_uuid
+  body: none
+  auth: none
+}
+
+params:path {
+  workspace: 
+  repo_slug: 
+  schedule_uuid: 
+}

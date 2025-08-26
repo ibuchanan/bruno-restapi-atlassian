@@ -1,0 +1,20 @@
+meta {
+  name: Get request participants
+  type: http
+  seq: 19
+}
+
+get {
+  url: {{baseUrl}}/rest/servicedeskapi/request/:issueIdOrKey/participant
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~start:
+  ~limit:
+}
+
+params:path {
+  issueIdOrKey:
+}

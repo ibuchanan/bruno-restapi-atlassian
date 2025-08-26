@@ -1,0 +1,31 @@
+meta {
+  name: Get spaces
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/spaces
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~ids: 
+  ~keys: 
+  ~type: 
+  ~status: 
+  ~labels: 
+  ~favorited-by: 
+  ~not-favorited-by: 
+  ~sort: 
+  ~description-format: 
+  ~include-icon: 
+  ~cursor: 
+  ~limit: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

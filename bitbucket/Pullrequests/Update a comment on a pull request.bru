@@ -1,0 +1,11 @@
+meta {
+  name: Update a comment on a pull request
+  type: http
+  seq: 19
+}
+
+put {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/pullrequests/:pull_request_id/comments/:comment_id
+  body: json
+  auth: none
+}

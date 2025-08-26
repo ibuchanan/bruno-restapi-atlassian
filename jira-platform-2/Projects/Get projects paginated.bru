@@ -1,0 +1,32 @@
+meta {
+  name: Get projects paginated
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{baseUrl}}/rest/api/2/project/search
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~startAt: 
+  ~maxResults: 
+  ~orderBy: 
+  ~id: 
+  ~keys: 
+  ~query: 
+  ~typeKey: 
+  ~categoryId: 
+  ~action: 
+  ~expand: 
+  ~status: 
+  ~properties: 
+  ~propertyQuery: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

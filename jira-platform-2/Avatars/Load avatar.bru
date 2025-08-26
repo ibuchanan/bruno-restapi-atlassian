@@ -1,0 +1,27 @@
+meta {
+  name: Load avatar
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{baseUrl}}/rest/api/2/universal_avatar/type/:type/owner/:entityId
+  body: none
+  auth: basic
+}
+
+params:query {
+  size: 
+  ~x: 
+  ~y: 
+}
+
+params:path {
+  type: 
+  entityId: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

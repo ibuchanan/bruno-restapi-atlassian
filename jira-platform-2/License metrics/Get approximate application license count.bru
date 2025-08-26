@@ -1,0 +1,20 @@
+meta {
+  name: Get approximate application license count
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{baseUrl}}/rest/api/2/license/approximateLicenseCount/product/:applicationKey
+  body: none
+  auth: basic
+}
+
+params:path {
+  applicationKey: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

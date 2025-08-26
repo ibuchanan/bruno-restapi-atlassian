@@ -1,0 +1,20 @@
+meta {
+  name: Delete space default classification level
+  type: http
+  seq: 4
+}
+
+delete {
+  url: {{baseUrl}}/spaces/:id/classification-level/default
+  body: none
+  auth: basic
+}
+
+params:path {
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

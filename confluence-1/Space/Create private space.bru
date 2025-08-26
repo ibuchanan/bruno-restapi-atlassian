@@ -1,0 +1,99 @@
+meta {
+  name: Create private space
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/wiki/rest/api/space/_private
+  body: json
+  auth: basic
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "name": "",
+    "key": "",
+    "alias": "",
+    "description": {
+      "plain": {
+        "value": "",
+        "representation": ""
+      }
+    },
+    "permissions": [
+      {
+        "subjects": {
+          "user": {
+            "results": [
+              {
+                "type": "",
+                "username": "",
+                "userKey": "",
+                "accountId": "",
+                "accountType": "",
+                "email": "",
+                "publicName": "",
+                "profilePicture": {
+                  "path": "",
+                  "width": 0,
+                  "height": 0,
+                  "isDefault": false
+                },
+                "displayName": "",
+                "timeZone": "",
+                "externalCollaborator": false,
+                "isExternalCollaborator": false,
+                "isGuest": false,
+                "operations": [
+                  {
+                    "operation": "",
+                    "targetType": ""
+                  }
+                ],
+                "details": {
+                  "business": {
+                    "position": "",
+                    "department": "",
+                    "location": ""
+                  },
+                  "personal": {
+                    "phone": "",
+                    "im": "",
+                    "website": "",
+                    "email": ""
+                  }
+                },
+                "personalSpace": "",
+                "_expandable": {
+                  "operations": "",
+                  "details": "",
+                  "personalSpace": ""
+                },
+                "_links": {}
+              }
+            ],
+            "size": 0
+          },
+          "group": {
+            "results": [
+              {
+                "type": "",
+                "id": ""
+              }
+            ],
+            "size": 0
+          }
+        },
+        "operation": {},
+        "anonymousAccess": false,
+        "unlicensedAccess": false
+      }
+    ]
+  }
+}

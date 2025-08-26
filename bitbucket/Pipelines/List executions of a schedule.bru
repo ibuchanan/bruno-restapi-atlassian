@@ -1,0 +1,17 @@
+meta {
+  name: List executions of a schedule
+  type: http
+  seq: 28
+}
+
+get {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/pipelines_config/schedules/:schedule_uuid/executions
+  body: none
+  auth: none
+}
+
+params:path {
+  workspace: 
+  repo_slug: 
+  schedule_uuid: 
+}

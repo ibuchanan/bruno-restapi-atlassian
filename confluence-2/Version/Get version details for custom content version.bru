@@ -1,0 +1,21 @@
+meta {
+  name: Get version details for custom content version
+  type: http
+  seq: 8
+}
+
+get {
+  url: {{baseUrl}}/custom-content/:custom-content-id/versions/:version-number
+  body: none
+  auth: basic
+}
+
+params:path {
+  custom-content-id: 
+  version-number: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

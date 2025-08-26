@@ -1,0 +1,17 @@
+meta {
+  name: Delete a user application property
+  type: http
+  seq: 11
+}
+
+delete {
+  url: {{baseUrl}}/users/:selected_user/properties/:app_key/:property_name
+  body: none
+  auth: none
+}
+
+params:path {
+  selected_user: 
+  app_key: 
+  property_name: 
+}

@@ -1,0 +1,20 @@
+meta {
+  name: Get project issue type hierarchy
+  type: http
+  seq: 12
+}
+
+get {
+  url: {{baseUrl}}/rest/api/2/project/:projectId/hierarchy
+  body: none
+  auth: basic
+}
+
+params:path {
+  projectId: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

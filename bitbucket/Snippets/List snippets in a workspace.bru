@@ -1,0 +1,15 @@
+meta {
+  name: List snippets in a workspace
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{baseUrl}}/snippets/:workspace
+  body: none
+  auth: none
+}
+
+params:query {
+  ~role: 
+}

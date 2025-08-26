@@ -1,0 +1,22 @@
+meta {
+  name: Move screen tab
+  type: http
+  seq: 6
+}
+
+post {
+  url: {{baseUrl}}/rest/api/2/screens/:screenId/tabs/:tabId/move/:pos
+  body: none
+  auth: basic
+}
+
+params:path {
+  screenId: 
+  tabId: 
+  pos: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

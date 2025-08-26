@@ -1,0 +1,16 @@
+meta {
+  name: Delete a variable for a team
+  type: http
+  seq: 46
+}
+
+delete {
+  url: {{baseUrl}}/teams/:username/pipelines_config/variables/:variable_uuid
+  body: none
+  auth: none
+}
+
+params:path {
+  username: 
+  variable_uuid: 
+}

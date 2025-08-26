@@ -1,0 +1,26 @@
+meta {
+  name: Get attachments for label
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{baseUrl}}/labels/:id/attachments
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~sort: 
+  ~cursor: 
+  ~limit: 
+}
+
+params:path {
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

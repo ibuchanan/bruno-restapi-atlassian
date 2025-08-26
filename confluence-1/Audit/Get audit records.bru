@@ -1,0 +1,24 @@
+meta {
+  name: Get audit records
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/wiki/rest/api/audit
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~startDate: 
+  ~endDate: 
+  ~searchString: 
+  ~start: 
+  ~limit: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

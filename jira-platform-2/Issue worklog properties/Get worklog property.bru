@@ -1,0 +1,22 @@
+meta {
+  name: Get worklog property
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{baseUrl}}/rest/api/2/issue/:issueIdOrKey/worklog/:worklogId/properties/:propertyKey
+  body: none
+  auth: basic
+}
+
+params:path {
+  issueIdOrKey: 
+  worklogId: 
+  propertyKey: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

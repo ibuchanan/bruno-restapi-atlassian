@@ -1,0 +1,24 @@
+meta {
+  name: Get project components
+  type: http
+  seq: 8
+}
+
+get {
+  url: {{baseUrl}}/rest/api/2/project/:projectIdOrKey/components
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~componentSource: 
+}
+
+params:path {
+  projectIdOrKey: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

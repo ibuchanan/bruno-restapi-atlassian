@@ -1,0 +1,16 @@
+meta {
+  name: List changes on an issue
+  type: http
+  seq: 16
+}
+
+get {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/issues/:issue_id/changes
+  body: none
+  auth: none
+}
+
+params:query {
+  ~q: 
+  ~sort: 
+}

@@ -1,0 +1,21 @@
+meta {
+  name: Delete content property for attachment by id
+  type: http
+  seq: 5
+}
+
+delete {
+  url: {{baseUrl}}/attachments/:attachment-id/properties/:property-id
+  body: none
+  auth: basic
+}
+
+params:path {
+  attachment-id: 
+  property-id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

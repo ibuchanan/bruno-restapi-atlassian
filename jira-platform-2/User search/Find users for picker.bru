@@ -1,0 +1,26 @@
+meta {
+  name: Find users for picker
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{baseUrl}}/rest/api/2/user/picker
+  body: none
+  auth: basic
+}
+
+params:query {
+  query: 
+  ~maxResults: 
+  ~showAvatar: 
+  ~exclude: 
+  ~excludeAccountIds: 
+  ~avatarSize: 
+  ~excludeConnectUsers: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

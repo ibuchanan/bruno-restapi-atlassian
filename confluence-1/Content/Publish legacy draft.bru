@@ -1,0 +1,44 @@
+meta {
+  name: Publish legacy draft
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{baseUrl}}/wiki/rest/api/content/blueprint/instance/:draftId
+  body: json
+  auth: basic
+}
+
+params:query {
+  ~status: 
+  ~expand: 
+}
+
+params:path {
+  draftId: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "version": {
+      "number": 0
+    },
+    "title": "",
+    "type": "",
+    "status": "",
+    "space": {
+      "key": ""
+    },
+    "ancestors": [
+      {
+        "id": ""
+      }
+    ]
+  }
+}

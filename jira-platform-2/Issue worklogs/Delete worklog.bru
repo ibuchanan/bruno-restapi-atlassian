@@ -1,0 +1,29 @@
+meta {
+  name: Delete worklog
+  type: http
+  seq: 5
+}
+
+delete {
+  url: {{baseUrl}}/rest/api/2/issue/:issueIdOrKey/worklog/:id
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~notifyUsers: 
+  ~adjustEstimate: 
+  ~newEstimate: 
+  ~increaseBy: 
+  ~overrideEditableFlag: 
+}
+
+params:path {
+  issueIdOrKey: 
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

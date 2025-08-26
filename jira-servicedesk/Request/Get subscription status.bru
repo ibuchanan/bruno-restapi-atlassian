@@ -1,0 +1,15 @@
+meta {
+  name: Get subscription status
+  type: http
+  seq: 16
+}
+
+get {
+  url: {{baseUrl}}/rest/servicedeskapi/request/:issueIdOrKey/notification
+  body: none
+  auth: inherit
+}
+
+params:path {
+  issueIdOrKey:
+}

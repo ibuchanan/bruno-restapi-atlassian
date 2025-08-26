@@ -1,0 +1,21 @@
+meta {
+  name: Get content property for custom content by id
+  type: http
+  seq: 13
+}
+
+get {
+  url: {{baseUrl}}/custom-content/:custom-content-id/properties/:property-id
+  body: none
+  auth: basic
+}
+
+params:path {
+  custom-content-id: 
+  property-id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

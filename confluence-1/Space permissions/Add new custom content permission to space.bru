@@ -1,0 +1,36 @@
+meta {
+  name: Add new custom content permission to space
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/wiki/rest/api/space/:spaceKey/permission/custom-content
+  body: json
+  auth: basic
+}
+
+params:path {
+  spaceKey: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "subject": {
+      "type": "",
+      "identifier": ""
+    },
+    "operations": [
+      {
+        "key": "",
+        "target": "",
+        "access": false
+      }
+    ]
+  }
+}

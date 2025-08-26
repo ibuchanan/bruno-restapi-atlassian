@@ -1,0 +1,28 @@
+meta {
+  name: Get attachment comments
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/attachments/:id/footer-comments
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~body-format: 
+  ~cursor: 
+  ~limit: 
+  ~sort: 
+  ~version: 
+}
+
+params:path {
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

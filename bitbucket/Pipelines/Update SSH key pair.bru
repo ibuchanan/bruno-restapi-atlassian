@@ -1,0 +1,16 @@
+meta {
+  name: Update SSH key pair
+  type: http
+  seq: 30
+}
+
+put {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/pipelines_config/ssh/key_pair
+  body: json
+  auth: none
+}
+
+params:path {
+  workspace: 
+  repo_slug: 
+}

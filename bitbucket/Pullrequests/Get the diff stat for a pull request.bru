@@ -1,0 +1,11 @@
+meta {
+  name: Get the diff stat for a pull request
+  type: http
+  seq: 25
+}
+
+get {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/pullrequests/:pull_request_id/diffstat
+  body: none
+  auth: none
+}

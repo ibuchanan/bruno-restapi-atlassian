@@ -1,0 +1,32 @@
+meta {
+  name: Update content property for comment by id
+  type: http
+  seq: 44
+}
+
+put {
+  url: {{baseUrl}}/comments/:comment-id/properties/:property-id
+  body: json
+  auth: basic
+}
+
+params:path {
+  comment-id: 
+  property-id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "key": "",
+    "value": "",
+    "version": {
+      "number": 0,
+      "message": ""
+    }
+  }
+}

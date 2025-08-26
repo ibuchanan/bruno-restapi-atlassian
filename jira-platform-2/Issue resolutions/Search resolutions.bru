@@ -1,0 +1,23 @@
+meta {
+  name: Search resolutions
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{baseUrl}}/rest/api/2/resolution/search
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~startAt: 
+  ~maxResults: 
+  ~id: 
+  ~onlyDefault: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

@@ -1,0 +1,16 @@
+meta {
+  name: Get service desks
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/rest/servicedeskapi/servicedesk
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~start:
+  ~limit:
+}

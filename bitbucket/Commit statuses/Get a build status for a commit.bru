@@ -1,0 +1,11 @@
+meta {
+  name: Get a build status for a commit
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/commit/:commit/statuses/build/:key
+  body: none
+  auth: none
+}

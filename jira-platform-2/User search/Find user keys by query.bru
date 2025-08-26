@@ -1,0 +1,22 @@
+meta {
+  name: Find user keys by query
+  type: http
+  seq: 7
+}
+
+get {
+  url: {{baseUrl}}/rest/api/2/user/search/query/key
+  body: none
+  auth: basic
+}
+
+params:query {
+  query: 
+  ~startAt: 
+  ~maxResult: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

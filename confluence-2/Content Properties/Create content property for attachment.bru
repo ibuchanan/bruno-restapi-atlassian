@@ -1,0 +1,27 @@
+meta {
+  name: Create content property for attachment
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/attachments/:attachment-id/properties
+  body: json
+  auth: basic
+}
+
+params:path {
+  attachment-id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "key": "",
+    "value": ""
+  }
+}

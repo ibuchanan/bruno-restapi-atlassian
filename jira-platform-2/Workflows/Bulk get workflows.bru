@@ -1,0 +1,33 @@
+meta {
+  name: Bulk get workflows
+  type: http
+  seq: 8
+}
+
+post {
+  url: {{baseUrl}}/rest/api/2/workflows
+  body: json
+  auth: basic
+}
+
+params:query {
+  ~useApprovalConfiguration: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "projectAndIssueTypes": [
+      {
+        "issueTypeId": "",
+        "projectId": ""
+      }
+    ],
+    "workflowIds": [],
+    "workflowNames": []
+  }
+}

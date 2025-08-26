@@ -1,0 +1,22 @@
+meta {
+  name: Get application property
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/rest/api/2/application-properties
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~key: 
+  ~permissionLevel: 
+  ~keyFilter: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

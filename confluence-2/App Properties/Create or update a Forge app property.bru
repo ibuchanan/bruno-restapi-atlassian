@@ -1,0 +1,19 @@
+meta {
+  name: Create or update a Forge app property.
+  type: http
+  seq: 1
+}
+
+put {
+  url: {{baseUrl}}/app/properties/:propertyKey
+  body: json
+  auth: inherit
+}
+
+params:path {
+  propertyKey:
+}
+
+body:json {
+  {}
+}

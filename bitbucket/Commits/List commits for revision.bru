@@ -1,0 +1,11 @@
+meta {
+  name: List commits for revision
+  type: http
+  seq: 11
+}
+
+get {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/commits/:revision
+  body: none
+  auth: none
+}

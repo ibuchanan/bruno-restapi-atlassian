@@ -1,0 +1,24 @@
+meta {
+  name: Get default workflow
+  type: http
+  seq: 10
+}
+
+get {
+  url: {{baseUrl}}/rest/api/2/workflowscheme/:id/default
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~returnDraftIfExists: 
+}
+
+params:path {
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

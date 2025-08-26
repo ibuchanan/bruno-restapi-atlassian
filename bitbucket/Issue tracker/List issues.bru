@@ -1,0 +1,11 @@
+meta {
+  name: List issues
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/issues
+  body: none
+  auth: none
+}

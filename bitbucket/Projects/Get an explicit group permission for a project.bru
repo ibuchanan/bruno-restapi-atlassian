@@ -1,0 +1,11 @@
+meta {
+  name: Get an explicit group permission for a project
+  type: http
+  seq: 11
+}
+
+get {
+  url: {{baseUrl}}/workspaces/:workspace/projects/:project_key/permissions-config/groups/:group_slug
+  body: none
+  auth: none
+}

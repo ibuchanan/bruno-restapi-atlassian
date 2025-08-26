@@ -1,0 +1,28 @@
+meta {
+  name: Get custom content by type in blog post
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/blogposts/:id/custom-content
+  body: none
+  auth: basic
+}
+
+params:query {
+  type: 
+  ~sort: 
+  ~cursor: 
+  ~limit: 
+  ~body-format: 
+}
+
+params:path {
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

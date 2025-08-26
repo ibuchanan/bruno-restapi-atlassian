@@ -1,0 +1,30 @@
+meta {
+  name: Find users assignable to issues
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/rest/api/2/user/assignable/search
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~query: 
+  ~sessionId: 
+  ~username: 
+  ~accountId: 
+  ~project: 
+  ~issueKey: 
+  ~issueId: 
+  ~startAt: 
+  ~maxResults: 
+  ~actionDescriptorId: 
+  ~recommend: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

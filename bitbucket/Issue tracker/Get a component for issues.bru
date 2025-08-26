@@ -1,0 +1,11 @@
+meta {
+  name: Get a component for issues
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/components/:component_id
+  body: none
+  auth: none
+}

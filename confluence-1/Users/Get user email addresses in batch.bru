@@ -1,0 +1,15 @@
+meta {
+  name: Get user email addresses in batch
+  type: http
+  seq: 7
+}
+
+get {
+  url: {{baseUrl}}/wiki/rest/api/user/email/bulk
+  body: none
+  auth: inherit
+}
+
+params:query {
+  accountId:
+}

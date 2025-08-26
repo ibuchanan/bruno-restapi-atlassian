@@ -1,0 +1,11 @@
+meta {
+  name: Get attachment for an issue
+  type: http
+  seq: 15
+}
+
+get {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/issues/:issue_id/attachments/:path
+  body: none
+  auth: none
+}

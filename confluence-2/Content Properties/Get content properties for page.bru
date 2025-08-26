@@ -1,0 +1,27 @@
+meta {
+  name: Get content properties for page
+  type: http
+  seq: 16
+}
+
+get {
+  url: {{baseUrl}}/pages/:page-id/properties
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~key: 
+  ~sort: 
+  ~cursor: 
+  ~limit: 
+}
+
+params:path {
+  page-id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

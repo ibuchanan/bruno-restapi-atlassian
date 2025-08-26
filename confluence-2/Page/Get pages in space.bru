@@ -1,0 +1,30 @@
+meta {
+  name: Get pages in space
+  type: http
+  seq: 8
+}
+
+get {
+  url: {{baseUrl}}/spaces/:id/pages
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~depth: 
+  ~sort: 
+  ~status: 
+  ~title: 
+  ~body-format: 
+  ~cursor: 
+  ~limit: 
+}
+
+params:path {
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

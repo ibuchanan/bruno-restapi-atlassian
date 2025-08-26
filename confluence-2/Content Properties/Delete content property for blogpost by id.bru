@@ -1,0 +1,21 @@
+meta {
+  name: Delete content property for blogpost by id
+  type: http
+  seq: 10
+}
+
+delete {
+  url: {{baseUrl}}/blogposts/:blogpost-id/properties/:property-id
+  body: none
+  auth: basic
+}
+
+params:path {
+  blogpost-id: 
+  property-id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

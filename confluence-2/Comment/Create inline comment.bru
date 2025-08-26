@@ -1,0 +1,30 @@
+meta {
+  name: Create inline comment
+  type: http
+  seq: 14
+}
+
+post {
+  url: {{baseUrl}}/inline-comments
+  body: json
+  auth: basic
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "blogPostId": "",
+    "pageId": "",
+    "parentCommentId": "",
+    "body": "",
+    "inlineCommentProperties": {
+      "textSelection": "",
+      "textSelectionMatchCount": 0,
+      "textSelectionMatchIndex": 0
+    }
+  }
+}

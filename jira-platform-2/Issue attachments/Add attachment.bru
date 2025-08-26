@@ -1,0 +1,20 @@
+meta {
+  name: Add attachment
+  type: http
+  seq: 8
+}
+
+post {
+  url: {{baseUrl}}/rest/api/2/issue/:issueIdOrKey/attachments
+  body: multipartForm
+  auth: basic
+}
+
+params:path {
+  issueIdOrKey: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

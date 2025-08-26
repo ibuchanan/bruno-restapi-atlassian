@@ -1,0 +1,41 @@
+meta {
+  name: Update component
+  type: http
+  seq: 5
+}
+
+put {
+  url: {{baseUrl}}/rest/api/2/component/:id
+  body: json
+  auth: basic
+}
+
+params:path {
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "ari": "",
+    "assignee": "",
+    "assigneeType": "",
+    "description": "",
+    "id": "",
+    "isAssigneeTypeValid": false,
+    "lead": "",
+    "leadAccountId": "",
+    "leadUserName": "",
+    "metadata": {},
+    "name": "",
+    "project": "",
+    "projectId": 0,
+    "realAssignee": "",
+    "realAssigneeType": "",
+    "self": ""
+  }
+}

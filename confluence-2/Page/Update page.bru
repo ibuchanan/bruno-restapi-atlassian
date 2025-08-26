@@ -1,0 +1,36 @@
+meta {
+  name: Update page
+  type: http
+  seq: 5
+}
+
+put {
+  url: {{baseUrl}}/pages/:id
+  body: json
+  auth: basic
+}
+
+params:path {
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "id": "",
+    "status": "",
+    "title": "",
+    "spaceId": "",
+    "parentId": "",
+    "ownerId": "",
+    "body": "",
+    "version": {
+      "number": 0,
+      "message": ""
+    }
+  }
+}

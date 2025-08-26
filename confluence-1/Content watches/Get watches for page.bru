@@ -1,0 +1,25 @@
+meta {
+  name: Get watches for page
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/wiki/rest/api/content/:id/notification/child-created
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~start: 
+  ~limit: 
+}
+
+params:path {
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

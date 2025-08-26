@@ -1,0 +1,11 @@
+meta {
+  name: Get the branching model for a repository
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/branching-model
+  body: none
+  auth: none
+}

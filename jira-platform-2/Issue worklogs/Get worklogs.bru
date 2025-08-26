@@ -1,0 +1,26 @@
+meta {
+  name: Get worklogs
+  type: http
+  seq: 9
+}
+
+post {
+  url: {{baseUrl}}/rest/api/2/worklog/list
+  body: json
+  auth: basic
+}
+
+params:query {
+  ~expand: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "ids": []
+  }
+}

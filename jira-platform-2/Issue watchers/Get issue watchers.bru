@@ -1,0 +1,20 @@
+meta {
+  name: Get issue watchers
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{baseUrl}}/rest/api/2/issue/:issueIdOrKey/watchers
+  body: none
+  auth: basic
+}
+
+params:path {
+  issueIdOrKey: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

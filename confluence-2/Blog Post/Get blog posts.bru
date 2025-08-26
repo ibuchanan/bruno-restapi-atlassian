@@ -1,0 +1,27 @@
+meta {
+  name: Get blog posts
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/blogposts
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~id: 
+  ~space-id: 
+  ~sort: 
+  ~status: 
+  ~title: 
+  ~body-format: 
+  ~cursor: 
+  ~limit: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

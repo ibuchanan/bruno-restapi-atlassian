@@ -1,0 +1,27 @@
+meta {
+  name: Get labels for space content
+  type: http
+  seq: 7
+}
+
+get {
+  url: {{baseUrl}}/spaces/:id/content/labels
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~prefix: 
+  ~sort: 
+  ~cursor: 
+  ~limit: 
+}
+
+params:path {
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

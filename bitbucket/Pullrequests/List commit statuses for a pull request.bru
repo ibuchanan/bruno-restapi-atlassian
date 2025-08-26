@@ -1,0 +1,16 @@
+meta {
+  name: List commit statuses for a pull request
+  type: http
+  seq: 31
+}
+
+get {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/pullrequests/:pull_request_id/statuses
+  body: none
+  auth: none
+}
+
+params:query {
+  ~q: 
+  ~sort: 
+}

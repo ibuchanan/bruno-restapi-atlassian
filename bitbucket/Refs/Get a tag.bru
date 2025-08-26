@@ -1,0 +1,11 @@
+meta {
+  name: Get a tag
+  type: http
+  seq: 9
+}
+
+get {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/refs/tags/:name
+  body: none
+  auth: none
+}

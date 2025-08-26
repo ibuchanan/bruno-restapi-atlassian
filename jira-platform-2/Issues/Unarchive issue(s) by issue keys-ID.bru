@@ -1,0 +1,22 @@
+meta {
+  name: Unarchive issue(s) by issue keys/ID
+  type: http
+  seq: 12
+}
+
+put {
+  url: {{baseUrl}}/rest/api/2/issue/unarchive
+  body: json
+  auth: basic
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "issueIdsOrKeys": []
+  }
+}

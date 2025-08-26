@@ -1,0 +1,21 @@
+meta {
+  name: Get customers
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{baseUrl}}/rest/servicedeskapi/servicedesk/:serviceDeskId/customer
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~query:
+  ~start:
+  ~limit:
+}
+
+params:path {
+  serviceDeskId:
+}

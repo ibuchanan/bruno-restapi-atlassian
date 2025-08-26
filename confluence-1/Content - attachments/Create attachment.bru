@@ -1,0 +1,24 @@
+meta {
+  name: Create attachment
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/wiki/rest/api/content/:id/child/attachment
+  body: multipartForm
+  auth: basic
+}
+
+params:query {
+  ~status: 
+}
+
+params:path {
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

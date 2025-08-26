@@ -1,0 +1,11 @@
+meta {
+  name: Retrieve the inheritance state for repository settings
+  type: http
+  seq: 14
+}
+
+get {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/override-settings
+  body: none
+  auth: none
+}

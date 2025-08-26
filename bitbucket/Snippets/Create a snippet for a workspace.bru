@@ -1,0 +1,11 @@
+meta {
+  name: Create a snippet for a workspace
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{baseUrl}}/snippets/:workspace
+  body: json
+  auth: none
+}

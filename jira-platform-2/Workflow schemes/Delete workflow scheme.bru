@@ -1,0 +1,20 @@
+meta {
+  name: Delete workflow scheme
+  type: http
+  seq: 6
+}
+
+delete {
+  url: {{baseUrl}}/rest/api/2/workflowscheme/:id
+  body: none
+  auth: basic
+}
+
+params:path {
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

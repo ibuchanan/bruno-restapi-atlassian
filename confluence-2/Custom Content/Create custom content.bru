@@ -1,0 +1,29 @@
+meta {
+  name: Create custom content
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{baseUrl}}/custom-content
+  body: json
+  auth: basic
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "type": "",
+    "status": "",
+    "spaceId": "",
+    "pageId": "",
+    "blogPostId": "",
+    "customContentId": "",
+    "title": "",
+    "body": ""
+  }
+}

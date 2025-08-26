@@ -1,0 +1,33 @@
+meta {
+  name: Update custom field options (context)
+  type: http
+  seq: 4
+}
+
+put {
+  url: {{baseUrl}}/rest/api/2/field/:fieldId/context/:contextId/option
+  body: json
+  auth: basic
+}
+
+params:path {
+  fieldId: 
+  contextId: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "options": [
+      {
+        "disabled": false,
+        "id": "",
+        "value": ""
+      }
+    ]
+  }
+}

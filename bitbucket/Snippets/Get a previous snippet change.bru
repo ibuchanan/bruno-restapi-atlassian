@@ -1,0 +1,11 @@
+meta {
+  name: Get a previous snippet change
+  type: http
+  seq: 14
+}
+
+get {
+  url: {{baseUrl}}/snippets/:workspace/:encoded_id/commits/:revision
+  body: none
+  auth: none
+}

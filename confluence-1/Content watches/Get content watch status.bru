@@ -1,0 +1,26 @@
+meta {
+  name: Get content watch status
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{baseUrl}}/wiki/rest/api/user/watch/content/:contentId
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~key: 
+  ~username: 
+  ~accountId: 
+}
+
+params:path {
+  contentId: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

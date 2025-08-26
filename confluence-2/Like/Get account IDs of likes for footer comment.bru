@@ -1,0 +1,25 @@
+meta {
+  name: Get account IDs of likes for footer comment
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{baseUrl}}/footer-comments/:id/likes/users
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~cursor: 
+  ~limit: 
+}
+
+params:path {
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

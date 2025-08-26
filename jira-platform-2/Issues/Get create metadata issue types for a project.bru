@@ -1,0 +1,25 @@
+meta {
+  name: Get create metadata issue types for a project
+  type: http
+  seq: 9
+}
+
+get {
+  url: {{baseUrl}}/rest/api/2/issue/createmeta/:projectIdOrKey/issuetypes
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~startAt: 
+  ~maxResults: 
+}
+
+params:path {
+  projectIdOrKey: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

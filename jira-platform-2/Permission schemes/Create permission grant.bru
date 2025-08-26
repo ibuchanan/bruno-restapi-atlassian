@@ -1,0 +1,33 @@
+meta {
+  name: Create permission grant
+  type: http
+  seq: 7
+}
+
+post {
+  url: {{baseUrl}}/rest/api/2/permissionscheme/:schemeId/permission
+  body: json
+  auth: basic
+}
+
+params:query {
+  ~expand: 
+}
+
+params:path {
+  schemeId: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "holder": "",
+    "id": 0,
+    "permission": "",
+    "self": ""
+  }
+}

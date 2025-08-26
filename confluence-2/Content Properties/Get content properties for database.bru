@@ -1,0 +1,27 @@
+meta {
+  name: Get content properties for database
+  type: http
+  seq: 26
+}
+
+get {
+  url: {{baseUrl}}/databases/:id/properties
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~key: 
+  ~sort: 
+  ~cursor: 
+  ~limit: 
+}
+
+params:path {
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

@@ -1,0 +1,11 @@
+meta {
+  name: Update a webhook for a workspace
+  type: http
+  seq: 8
+}
+
+put {
+  url: {{baseUrl}}/workspaces/:workspace/hooks/:uid
+  body: none
+  auth: none
+}

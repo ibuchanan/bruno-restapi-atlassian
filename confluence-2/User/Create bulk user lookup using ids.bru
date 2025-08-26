@@ -1,0 +1,22 @@
+meta {
+  name: Create bulk user lookup using ids
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/users-bulk
+  body: json
+  auth: basic
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "accountIds": []
+  }
+}

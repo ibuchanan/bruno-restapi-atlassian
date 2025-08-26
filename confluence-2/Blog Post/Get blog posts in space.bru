@@ -1,0 +1,29 @@
+meta {
+  name: Get blog posts in space
+  type: http
+  seq: 7
+}
+
+get {
+  url: {{baseUrl}}/spaces/:id/blogposts
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~sort: 
+  ~status: 
+  ~title: 
+  ~body-format: 
+  ~cursor: 
+  ~limit: 
+}
+
+params:path {
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

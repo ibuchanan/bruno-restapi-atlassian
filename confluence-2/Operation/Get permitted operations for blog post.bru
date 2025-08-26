@@ -1,0 +1,20 @@
+meta {
+  name: Get permitted operations for blog post
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/blogposts/:id/operations
+  body: none
+  auth: basic
+}
+
+params:path {
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

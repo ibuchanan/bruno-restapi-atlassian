@@ -1,0 +1,22 @@
+meta {
+  name: Answer approval
+  type: http
+  seq: 6
+}
+
+post {
+  url: {{baseUrl}}/rest/servicedeskapi/request/:issueIdOrKey/approval/:approvalId
+  body: json
+  auth: inherit
+}
+
+params:path {
+  issueIdOrKey:
+  approvalId:
+}
+
+body:json {
+  {
+    "decision": ""
+  }
+}

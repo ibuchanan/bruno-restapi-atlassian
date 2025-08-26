@@ -1,0 +1,21 @@
+meta {
+  name: Get themes
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/wiki/rest/api/settings/theme
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~start: 
+  ~limit: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

@@ -1,0 +1,22 @@
+meta {
+  name: Get issue type screen scheme items
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{baseUrl}}/rest/api/2/issuetypescreenscheme/mapping
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~startAt: 
+  ~maxResults: 
+  ~issueTypeScreenSchemeId: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

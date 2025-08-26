@@ -1,0 +1,17 @@
+meta {
+  name: Update an explicit user permission for a project
+  type: http
+  seq: 16
+}
+
+put {
+  url: {{baseUrl}}/workspaces/:workspace/projects/:project_key/permissions-config/users/:selected_user_id
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "permission": ""
+  }
+}

@@ -1,0 +1,11 @@
+meta {
+  name: Delete a previous revision of a snippet
+  type: http
+  seq: 20
+}
+
+delete {
+  url: {{baseUrl}}/snippets/:workspace/:encoded_id/:node_id
+  body: none
+  auth: none
+}

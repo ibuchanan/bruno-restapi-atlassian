@@ -1,0 +1,11 @@
+meta {
+  name: Request changes for a pull request
+  type: http
+  seq: 30
+}
+
+post {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/pullrequests/:pull_request_id/request-changes
+  body: none
+  auth: none
+}

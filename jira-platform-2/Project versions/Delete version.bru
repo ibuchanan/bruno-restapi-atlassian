@@ -1,0 +1,25 @@
+meta {
+  name: Delete version
+  type: http
+  seq: 4
+}
+
+delete {
+  url: {{baseUrl}}/rest/api/2/version/:id
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~moveFixIssuesTo: 
+  ~moveAffectedIssuesTo: 
+}
+
+params:path {
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

@@ -1,0 +1,28 @@
+meta {
+  name: Replace issue field option
+  type: http
+  seq: 8
+}
+
+delete {
+  url: {{baseUrl}}/rest/api/2/field/:fieldKey/option/:optionId/issue
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~replaceWith: 
+  ~jql: 
+  ~overrideScreenSecurity: 
+  ~overrideEditableFlag: 
+}
+
+params:path {
+  fieldKey: 
+  optionId: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

@@ -1,0 +1,16 @@
+meta {
+  name: Set property
+  type: http
+  seq: 8
+}
+
+put {
+  url: {{baseUrl}}/rest/servicedeskapi/organization/:organizationId/property/:propertyKey
+  body: json
+  auth: inherit
+}
+
+params:path {
+  organizationId:
+  propertyKey:
+}

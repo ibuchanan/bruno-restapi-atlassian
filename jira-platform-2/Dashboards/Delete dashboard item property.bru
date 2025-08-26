@@ -1,0 +1,22 @@
+meta {
+  name: Delete dashboard item property
+  type: http
+  seq: 11
+}
+
+delete {
+  url: {{baseUrl}}/rest/api/2/dashboard/:dashboardId/items/:itemId/properties/:propertyKey
+  body: none
+  auth: basic
+}
+
+params:path {
+  dashboardId: 
+  itemId: 
+  propertyKey: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

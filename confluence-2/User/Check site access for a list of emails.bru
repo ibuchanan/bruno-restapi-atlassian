@@ -1,0 +1,22 @@
+meta {
+  name: Check site access for a list of emails
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/user/access/check-access-by-email
+  body: json
+  auth: basic
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "emails": []
+  }
+}

@@ -1,0 +1,28 @@
+meta {
+  name: Get custom content by type in page
+  type: http
+  seq: 7
+}
+
+get {
+  url: {{baseUrl}}/pages/:id/custom-content
+  body: none
+  auth: basic
+}
+
+params:query {
+  type: 
+  ~sort: 
+  ~cursor: 
+  ~limit: 
+  ~body-format: 
+}
+
+params:path {
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

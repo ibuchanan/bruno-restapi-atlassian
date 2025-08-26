@@ -1,0 +1,11 @@
+meta {
+  name: List changes in a pull request
+  type: http
+  seq: 24
+}
+
+get {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/pullrequests/:pull_request_id/diff
+  body: none
+  auth: none
+}

@@ -1,0 +1,22 @@
+meta {
+  name: Find users by query
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{baseUrl}}/rest/api/2/user/search/query
+  body: none
+  auth: basic
+}
+
+params:query {
+  query: 
+  ~startAt: 
+  ~maxResults: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

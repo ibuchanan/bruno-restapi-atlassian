@@ -1,0 +1,27 @@
+meta {
+  name: Fully update project role
+  type: http
+  seq: 9
+}
+
+put {
+  url: {{baseUrl}}/rest/api/2/role/:id
+  body: json
+  auth: basic
+}
+
+params:path {
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "description": "",
+    "name": ""
+  }
+}

@@ -1,0 +1,26 @@
+meta {
+  name: Get custom field contexts default values
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{baseUrl}}/rest/api/2/field/:fieldId/context/defaultValue
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~contextId: 
+  ~startAt: 
+  ~maxResults: 
+}
+
+params:path {
+  fieldId: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

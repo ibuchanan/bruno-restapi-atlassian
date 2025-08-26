@@ -1,0 +1,114 @@
+meta {
+  name: Validate create workflows
+  type: http
+  seq: 11
+}
+
+post {
+  url: {{baseUrl}}/rest/api/2/workflows/create/validation
+  body: json
+  auth: basic
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "payload": {
+      "scope": {
+        "project": {
+          "id": ""
+        },
+        "type": ""
+      },
+      "statuses": [
+        {
+          "description": "",
+          "id": "",
+          "name": "",
+          "statusCategory": "",
+          "statusReference": ""
+        }
+      ],
+      "workflows": [
+        {
+          "description": "",
+          "loopedTransitionContainerLayout": {
+            "x": "",
+            "y": ""
+          },
+          "name": "",
+          "startPointLayout": {},
+          "statuses": [
+            {
+              "approvalConfiguration": {
+                "active": "",
+                "conditionType": "",
+                "conditionValue": "",
+                "exclude": [],
+                "fieldId": "",
+                "prePopulatedFieldId": "",
+                "transitionApproved": "",
+                "transitionRejected": ""
+              },
+              "layout": {},
+              "properties": {},
+              "statusReference": ""
+            }
+          ],
+          "transitions": [
+            {
+              "actions": [
+                {
+                  "id": "",
+                  "parameters": {},
+                  "ruleKey": ""
+                }
+              ],
+              "conditions": {
+                "conditionGroups": [
+                  {}
+                ],
+                "conditions": [
+                  {}
+                ],
+                "operation": ""
+              },
+              "customIssueEventId": "",
+              "description": "",
+              "id": "",
+              "links": [
+                {
+                  "fromPort": 0,
+                  "fromStatusReference": "",
+                  "toPort": 0
+                }
+              ],
+              "name": "",
+              "properties": {},
+              "toStatusReference": "",
+              "transitionScreen": {},
+              "triggers": [
+                {
+                  "id": "",
+                  "parameters": {},
+                  "ruleKey": ""
+                }
+              ],
+              "type": "",
+              "validators": [
+                {}
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "validationOptions": {
+      "levels": []
+    }
+  }
+}

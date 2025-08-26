@@ -1,0 +1,35 @@
+meta {
+  name: Update blog post
+  type: http
+  seq: 4
+}
+
+put {
+  url: {{baseUrl}}/blogposts/:id
+  body: json
+  auth: basic
+}
+
+params:path {
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "id": "",
+    "status": "",
+    "title": "",
+    "spaceId": "",
+    "body": "",
+    "version": {
+      "number": 0,
+      "message": ""
+    },
+    "createdAt": ""
+  }
+}

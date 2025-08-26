@@ -1,0 +1,49 @@
+meta {
+  name: Update comment
+  type: http
+  seq: 6
+}
+
+put {
+  url: {{baseUrl}}/rest/api/2/issue/:issueIdOrKey/comment/:id
+  body: json
+  auth: basic
+}
+
+params:query {
+  ~notifyUsers: 
+  ~overrideEditableFlag: 
+  ~expand: 
+}
+
+params:path {
+  issueIdOrKey: 
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "author": "",
+    "body": "",
+    "created": "",
+    "id": "",
+    "jsdAuthorCanSeeRequest": false,
+    "jsdPublic": false,
+    "properties": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "renderedBody": "",
+    "self": "",
+    "updateAuthor": "",
+    "updated": "",
+    "visibility": ""
+  }
+}

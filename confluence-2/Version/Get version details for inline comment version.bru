@@ -1,0 +1,21 @@
+meta {
+  name: Get version details for inline comment version
+  type: http
+  seq: 12
+}
+
+get {
+  url: {{baseUrl}}/inline-comments/:id/versions/:version-number
+  body: none
+  auth: basic
+}
+
+params:path {
+  id: 
+  version-number: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

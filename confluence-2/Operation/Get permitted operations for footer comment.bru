@@ -1,0 +1,20 @@
+meta {
+  name: Get permitted operations for footer comment
+  type: http
+  seq: 10
+}
+
+get {
+  url: {{baseUrl}}/footer-comments/:id/operations
+  body: none
+  auth: basic
+}
+
+params:path {
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

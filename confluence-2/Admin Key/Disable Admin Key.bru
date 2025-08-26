@@ -1,0 +1,11 @@
+meta {
+  name: Disable Admin Key
+  type: http
+  seq: 3
+}
+
+delete {
+  url: {{baseUrl}}/admin-key
+  body: none
+  auth: inherit
+}

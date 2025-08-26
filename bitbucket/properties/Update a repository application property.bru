@@ -1,0 +1,24 @@
+meta {
+  name: Update a repository application property
+  type: http
+  seq: 4
+}
+
+put {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/properties/:app_key/:property_name
+  body: json
+  auth: none
+}
+
+params:path {
+  workspace: 
+  repo_slug: 
+  app_key: 
+  property_name: 
+}
+
+body:json {
+  {
+    "_attributes": []
+  }
+}

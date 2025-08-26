@@ -1,0 +1,21 @@
+meta {
+  name: Delete related work
+  type: http
+  seq: 15
+}
+
+delete {
+  url: {{baseUrl}}/rest/api/2/version/:versionId/relatedwork/:relatedWorkId
+  body: none
+  auth: basic
+}
+
+params:path {
+  versionId: 
+  relatedWorkId: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

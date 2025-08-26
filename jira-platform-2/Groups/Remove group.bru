@@ -1,0 +1,23 @@
+meta {
+  name: Remove group
+  type: http
+  seq: 1
+}
+
+delete {
+  url: {{baseUrl}}/rest/api/2/group
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~groupname: 
+  ~groupId: 
+  ~swapGroup: 
+  ~swapGroupId: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

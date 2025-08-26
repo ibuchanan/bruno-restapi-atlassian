@@ -1,0 +1,11 @@
+meta {
+  name: Delete an explicit group permission for a repository
+  type: http
+  seq: 17
+}
+
+delete {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/permissions-config/groups/:group_slug
+  body: none
+  auth: none
+}

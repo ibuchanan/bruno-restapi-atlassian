@@ -1,0 +1,24 @@
+meta {
+  name: Get all ancestors of whiteboard
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/whiteboards/:id/ancestors
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~limit: 
+}
+
+params:path {
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

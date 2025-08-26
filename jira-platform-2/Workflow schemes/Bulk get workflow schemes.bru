@@ -1,0 +1,23 @@
+meta {
+  name: Bulk get workflow schemes
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{baseUrl}}/rest/api/2/workflowscheme/read
+  body: json
+  auth: basic
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "projectIds": [],
+    "workflowSchemeIds": []
+  }
+}

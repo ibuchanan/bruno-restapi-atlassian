@@ -1,0 +1,24 @@
+meta {
+  name: Get labels
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{baseUrl}}/labels
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~label-id: 
+  ~prefix: 
+  ~cursor: 
+  ~sort: 
+  ~limit: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

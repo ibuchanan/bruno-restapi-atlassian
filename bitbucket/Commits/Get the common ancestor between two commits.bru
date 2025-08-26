@@ -1,0 +1,11 @@
+meta {
+  name: Get the common ancestor between two commits
+  type: http
+  seq: 15
+}
+
+get {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/merge-base/:revspec
+  body: none
+  auth: none
+}

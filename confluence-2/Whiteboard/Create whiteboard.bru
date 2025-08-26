@@ -1,0 +1,30 @@
+meta {
+  name: Create whiteboard
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/whiteboards
+  body: json
+  auth: basic
+}
+
+params:query {
+  ~private: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "spaceId": "",
+    "title": "",
+    "parentId": "",
+    "templateKey": "",
+    "locale": ""
+  }
+}

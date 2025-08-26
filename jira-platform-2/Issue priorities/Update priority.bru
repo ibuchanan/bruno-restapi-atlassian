@@ -1,0 +1,30 @@
+meta {
+  name: Update priority
+  type: http
+  seq: 8
+}
+
+put {
+  url: {{baseUrl}}/rest/api/2/priority/:id
+  body: json
+  auth: basic
+}
+
+params:path {
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "avatarId": 0,
+    "description": "",
+    "iconUrl": "",
+    "name": "",
+    "statusColor": ""
+  }
+}

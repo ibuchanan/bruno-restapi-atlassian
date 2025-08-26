@@ -1,0 +1,11 @@
+meta {
+  name: List snippet changes
+  type: http
+  seq: 13
+}
+
+get {
+  url: {{baseUrl}}/snippets/:workspace/:encoded_id/commits
+  body: none
+  auth: none
+}

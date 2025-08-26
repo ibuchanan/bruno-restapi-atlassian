@@ -1,0 +1,25 @@
+meta {
+  name: Get account IDs of likes for blog post
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/blogposts/:id/likes/users
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~cursor: 
+  ~limit: 
+}
+
+params:path {
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

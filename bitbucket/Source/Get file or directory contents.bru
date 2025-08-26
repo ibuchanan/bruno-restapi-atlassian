@@ -1,0 +1,18 @@
+meta {
+  name: Get file or directory contents
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/src/:commit/:path
+  body: none
+  auth: none
+}
+
+params:query {
+  ~format: 
+  ~q: 
+  ~sort: 
+  ~max_depth: 
+}

@@ -1,0 +1,24 @@
+meta {
+  name: Get blog post classification level
+  type: http
+  seq: 8
+}
+
+get {
+  url: {{baseUrl}}/blogposts/:id/classification-level
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~status: 
+}
+
+params:path {
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

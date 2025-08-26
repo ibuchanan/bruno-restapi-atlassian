@@ -1,0 +1,26 @@
+meta {
+  name: Duplicate plan
+  type: http
+  seq: 6
+}
+
+post {
+  url: {{baseUrl}}/rest/api/2/plans/plan/:planId/duplicate
+  body: json
+  auth: basic
+}
+
+params:path {
+  planId: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "name": ""
+  }
+}

@@ -1,0 +1,24 @@
+meta {
+  name: Get all ancestors of database
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/databases/:id/ancestors
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~limit: 
+}
+
+params:path {
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

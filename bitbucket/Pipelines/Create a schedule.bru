@@ -1,0 +1,16 @@
+meta {
+  name: Create a schedule
+  type: http
+  seq: 23
+}
+
+post {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/pipelines_config/schedules
+  body: json
+  auth: none
+}
+
+params:path {
+  workspace: 
+  repo_slug: 
+}

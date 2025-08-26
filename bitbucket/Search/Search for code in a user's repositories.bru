@@ -1,0 +1,21 @@
+meta {
+  name: Search for code in a user's repositories
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/users/:selected_user/search/code
+  body: none
+  auth: none
+}
+
+params:query {
+  search_query: 
+  ~page: 
+  ~pagelen: 
+}
+
+params:path {
+  selected_user: 
+}

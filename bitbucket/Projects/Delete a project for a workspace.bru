@@ -1,0 +1,11 @@
+meta {
+  name: Delete a project for a workspace
+  type: http
+  seq: 2
+}
+
+delete {
+  url: {{baseUrl}}/workspaces/:workspace/projects/:project_key
+  body: none
+  auth: none
+}

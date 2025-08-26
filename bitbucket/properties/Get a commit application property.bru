@@ -1,0 +1,19 @@
+meta {
+  name: Get a commit application property
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/commit/:commit/properties/:app_key/:property_name
+  body: none
+  auth: none
+}
+
+params:path {
+  workspace: 
+  repo_slug: 
+  commit: 
+  app_key: 
+  property_name: 
+}

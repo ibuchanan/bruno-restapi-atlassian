@@ -1,0 +1,23 @@
+meta {
+  name: Create field configuration scheme
+  type: http
+  seq: 8
+}
+
+post {
+  url: {{baseUrl}}/rest/api/2/fieldconfigurationscheme
+  body: json
+  auth: basic
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "description": "",
+    "name": ""
+  }
+}

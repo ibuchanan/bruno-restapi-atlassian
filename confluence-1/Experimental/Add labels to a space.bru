@@ -1,0 +1,29 @@
+meta {
+  name: Add labels to a space
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{baseUrl}}/wiki/rest/api/space/:spaceKey/label
+  body: json
+  auth: basic
+}
+
+params:path {
+  spaceKey: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  [
+    {
+      "prefix": "",
+      "name": ""
+    }
+  ]
+}

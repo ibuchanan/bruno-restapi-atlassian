@@ -1,0 +1,16 @@
+meta {
+  name: List tags
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/refs/tags
+  body: none
+  auth: none
+}
+
+params:query {
+  ~q: 
+  ~sort: 
+}

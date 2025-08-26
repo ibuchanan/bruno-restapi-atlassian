@@ -1,0 +1,11 @@
+meta {
+  name: List effective default reviewers
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/effective-default-reviewers
+  body: none
+  auth: none
+}

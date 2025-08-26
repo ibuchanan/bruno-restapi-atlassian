@@ -1,0 +1,11 @@
+meta {
+  name: Delete an explicit user permission for a project
+  type: http
+  seq: 14
+}
+
+delete {
+  url: {{baseUrl}}/workspaces/:workspace/projects/:project_key/permissions-config/users/:selected_user_id
+  body: none
+  auth: none
+}

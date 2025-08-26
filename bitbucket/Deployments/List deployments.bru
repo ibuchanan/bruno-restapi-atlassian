@@ -1,0 +1,16 @@
+meta {
+  name: List deployments
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/deployments
+  body: none
+  auth: none
+}
+
+params:path {
+  workspace: 
+  repo_slug: 
+}

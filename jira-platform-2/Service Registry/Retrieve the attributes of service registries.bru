@@ -1,0 +1,15 @@
+meta {
+  name: Retrieve the attributes of service registries
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/rest/atlassian-connect/1/service-registry
+  body: none
+  auth: inherit
+}
+
+params:query {
+  serviceIds:
+}

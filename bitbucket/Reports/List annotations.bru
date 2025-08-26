@@ -1,0 +1,18 @@
+meta {
+  name: List annotations
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/commit/:commit/reports/:reportId/annotations
+  body: none
+  auth: none
+}
+
+params:path {
+  workspace: 
+  repo_slug: 
+  commit: 
+  reportId: 
+}

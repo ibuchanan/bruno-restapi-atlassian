@@ -1,0 +1,20 @@
+meta {
+  name: Delete app property (Forge)
+  type: http
+  seq: 5
+}
+
+delete {
+  url: {{baseUrl}}/rest/forge/1/app/properties/:propertyKey
+  body: none
+  auth: basic
+}
+
+params:path {
+  propertyKey: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

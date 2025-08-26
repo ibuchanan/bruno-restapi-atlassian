@@ -1,0 +1,24 @@
+meta {
+  name: Bulk create or update annotations
+  type: http
+  seq: 6
+}
+
+post {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/commit/:commit/reports/:reportId/annotations
+  body: json
+  auth: none
+}
+
+params:path {
+  workspace: 
+  repo_slug: 
+  commit: 
+  reportId: 
+}
+
+body:json {
+  [
+    {}
+  ]
+}

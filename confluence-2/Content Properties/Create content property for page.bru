@@ -1,0 +1,27 @@
+meta {
+  name: Create content property for page
+  type: http
+  seq: 17
+}
+
+post {
+  url: {{baseUrl}}/pages/:page-id/properties
+  body: json
+  auth: basic
+}
+
+params:path {
+  page-id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "key": "",
+    "value": ""
+  }
+}

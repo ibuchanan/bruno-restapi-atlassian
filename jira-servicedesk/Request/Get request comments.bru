@@ -1,0 +1,23 @@
+meta {
+  name: Get request comments
+  type: http
+  seq: 11
+}
+
+get {
+  url: {{baseUrl}}/rest/servicedeskapi/request/:issueIdOrKey/comment
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~public:
+  ~internal:
+  ~expand:
+  ~start:
+  ~limit:
+}
+
+params:path {
+  issueIdOrKey:
+}

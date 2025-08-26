@@ -1,0 +1,42 @@
+meta {
+  name: Update task
+  type: http
+  seq: 3
+}
+
+put {
+  url: {{baseUrl}}/tasks/:id
+  body: json
+  auth: basic
+}
+
+params:query {
+  ~body-format: 
+}
+
+params:path {
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "id": "",
+    "localId": "",
+    "spaceId": "",
+    "pageId": "",
+    "blogPostId": "",
+    "status": "",
+    "createdBy": "",
+    "assignedTo": "",
+    "completedBy": "",
+    "createdAt": "",
+    "updatedAt": "",
+    "dueAt": "",
+    "completedAt": ""
+  }
+}

@@ -1,0 +1,17 @@
+meta {
+  name: List repositories in a workspace
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/repositories/:workspace
+  body: none
+  auth: none
+}
+
+params:query {
+  ~role: 
+  ~q: 
+  ~sort: 
+}

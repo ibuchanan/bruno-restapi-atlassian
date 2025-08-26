@@ -1,0 +1,11 @@
+meta {
+  name: Add a repository deploy key
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/deploy-keys
+  body: none
+  auth: none
+}

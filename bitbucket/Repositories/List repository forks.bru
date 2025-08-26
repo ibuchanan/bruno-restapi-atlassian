@@ -1,0 +1,17 @@
+meta {
+  name: List repository forks
+  type: http
+  seq: 7
+}
+
+get {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/forks
+  body: none
+  auth: none
+}
+
+params:query {
+  ~role: 
+  ~q: 
+  ~sort: 
+}

@@ -1,0 +1,27 @@
+meta {
+  name: Remove issue types from context
+  type: http
+  seq: 11
+}
+
+post {
+  url: {{baseUrl}}/rest/api/2/field/:fieldId/context/:contextId/issuetype/remove
+  body: json
+  auth: basic
+}
+
+params:path {
+  fieldId: 
+  contextId: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "issueTypeIds": []
+  }
+}

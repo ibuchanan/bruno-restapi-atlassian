@@ -1,0 +1,11 @@
+meta {
+  name: Approve a commit
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/commit/:commit/approve
+  body: none
+  auth: none
+}

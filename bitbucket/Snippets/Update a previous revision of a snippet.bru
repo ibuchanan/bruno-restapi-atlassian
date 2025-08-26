@@ -1,0 +1,11 @@
+meta {
+  name: Update a previous revision of a snippet
+  type: http
+  seq: 22
+}
+
+put {
+  url: {{baseUrl}}/snippets/:workspace/:encoded_id/:node_id
+  body: none
+  auth: none
+}

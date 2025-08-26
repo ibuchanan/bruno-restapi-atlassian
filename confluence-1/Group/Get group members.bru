@@ -1,0 +1,27 @@
+meta {
+  name: Get group members
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{baseUrl}}/wiki/rest/api/group/:groupId/membersByGroupId
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~start: 
+  ~limit: 
+  ~shouldReturnTotalSize: 
+  ~expand: 
+}
+
+params:path {
+  groupId: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

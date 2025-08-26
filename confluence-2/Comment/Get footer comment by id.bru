@@ -1,0 +1,30 @@
+meta {
+  name: Get footer comment by id
+  type: http
+  seq: 9
+}
+
+get {
+  url: {{baseUrl}}/footer-comments/:comment-id
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~body-format: 
+  ~version: 
+  ~include-properties: 
+  ~include-operations: 
+  ~include-likes: 
+  ~include-versions: 
+  ~include-version: 
+}
+
+params:path {
+  comment-id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

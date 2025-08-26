@@ -1,0 +1,20 @@
+meta {
+  name: Get space default classification level
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/spaces/:id/classification-level/default
+  body: none
+  auth: basic
+}
+
+params:path {
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

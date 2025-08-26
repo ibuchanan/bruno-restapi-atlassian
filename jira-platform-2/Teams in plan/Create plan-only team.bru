@@ -1,0 +1,31 @@
+meta {
+  name: Create plan-only team
+  type: http
+  seq: 6
+}
+
+post {
+  url: {{baseUrl}}/rest/api/2/plans/plan/:planId/team/planonly
+  body: json
+  auth: basic
+}
+
+params:path {
+  planId: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "capacity": "",
+    "issueSourceId": 0,
+    "memberAccountIds": [],
+    "name": "",
+    "planningStyle": "",
+    "sprintLength": 0
+  }
+}

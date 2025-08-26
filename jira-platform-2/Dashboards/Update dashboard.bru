@@ -1,0 +1,44 @@
+meta {
+  name: Update dashboard
+  type: http
+  seq: 16
+}
+
+put {
+  url: {{baseUrl}}/rest/api/2/dashboard/:id
+  body: json
+  auth: basic
+}
+
+params:query {
+  ~extendAdminPermissions: 
+}
+
+params:path {
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "description": "",
+    "editPermissions": [
+      {
+        "group": "",
+        "id": 0,
+        "project": "",
+        "role": "",
+        "type": "",
+        "user": ""
+      }
+    ],
+    "name": "",
+    "sharePermissions": [
+      {}
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+meta {
+  name: Get queues
+  type: http
+  seq: 8
+}
+
+get {
+  url: {{baseUrl}}/rest/servicedeskapi/servicedesk/:serviceDeskId/queue
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~includeCount:
+  ~start:
+  ~limit:
+}
+
+params:path {
+  serviceDeskId:
+}

@@ -1,0 +1,25 @@
+meta {
+  name: Get attachments
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/attachments
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~sort: 
+  ~cursor: 
+  ~status: 
+  ~mediaType: 
+  ~filename: 
+  ~limit: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

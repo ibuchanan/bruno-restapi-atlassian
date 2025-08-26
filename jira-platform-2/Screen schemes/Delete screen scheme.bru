@@ -1,0 +1,20 @@
+meta {
+  name: Delete screen scheme
+  type: http
+  seq: 3
+}
+
+delete {
+  url: {{baseUrl}}/rest/api/2/screenscheme/:screenSchemeId
+  body: none
+  auth: basic
+}
+
+params:path {
+  screenSchemeId: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

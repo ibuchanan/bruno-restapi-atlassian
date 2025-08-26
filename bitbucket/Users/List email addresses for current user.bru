@@ -1,0 +1,11 @@
+meta {
+  name: List email addresses for current user
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/user/emails
+  body: none
+  auth: none
+}

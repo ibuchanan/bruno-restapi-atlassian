@@ -1,0 +1,11 @@
+meta {
+  name: Create a comment on a snippet
+  type: http
+  seq: 9
+}
+
+post {
+  url: {{baseUrl}}/snippets/:workspace/:encoded_id/comments
+  body: json
+  auth: none
+}

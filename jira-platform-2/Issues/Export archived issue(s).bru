@@ -1,0 +1,29 @@
+meta {
+  name: Export archived issue(s)
+  type: http
+  seq: 23
+}
+
+put {
+  url: {{baseUrl}}/rest/api/2/issues/archive/export
+  body: json
+  auth: basic
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "archivedBy": [],
+    "archivedDateRange": {
+      "dateAfter": "",
+      "dateBefore": ""
+    },
+    "issueTypes": [],
+    "projects": [],
+    "reporters": []
+  }
+}

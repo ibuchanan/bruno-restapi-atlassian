@@ -1,0 +1,26 @@
+meta {
+  name: Get descendants of folder
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{baseUrl}}/folders/:id/descendants
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~limit: 
+  ~depth: 
+  ~cursor: 
+}
+
+params:path {
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

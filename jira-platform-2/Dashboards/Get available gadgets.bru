@@ -1,0 +1,16 @@
+meta {
+  name: Get available gadgets
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{baseUrl}}/rest/api/2/dashboard/gadgets
+  body: none
+  auth: basic
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

@@ -1,0 +1,17 @@
+meta {
+  name: Delete a known host
+  type: http
+  seq: 36
+}
+
+delete {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/pipelines_config/ssh/known_hosts/:known_host_uuid
+  body: none
+  auth: none
+}
+
+params:path {
+  workspace: 
+  repo_slug: 
+  known_host_uuid: 
+}

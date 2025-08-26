@@ -1,0 +1,16 @@
+meta {
+  name: List caches
+  type: http
+  seq: 7
+}
+
+get {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/pipelines-config/caches
+  body: none
+  auth: none
+}
+
+params:path {
+  workspace: 
+  repo_slug: 
+}

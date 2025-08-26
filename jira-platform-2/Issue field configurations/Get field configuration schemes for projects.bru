@@ -1,0 +1,22 @@
+meta {
+  name: Get field configuration schemes for projects
+  type: http
+  seq: 10
+}
+
+get {
+  url: {{baseUrl}}/rest/api/2/fieldconfigurationscheme/project
+  body: none
+  auth: basic
+}
+
+params:query {
+  projectId: 
+  ~startAt: 
+  ~maxResults: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

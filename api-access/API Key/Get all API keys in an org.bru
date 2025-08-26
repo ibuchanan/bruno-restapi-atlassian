@@ -1,0 +1,41 @@
+meta {
+  name: Get all API keys in an org
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/orgs/:orgId/api-keys
+  body: none
+  auth: none
+}
+
+params:query {
+  ~q: 
+  ~keyType: 
+  ~expiresAtSearchType: 
+  ~expiresAtUom: 
+  ~expiresAtValue: 
+  ~expiresAtFrom: 
+  ~expiresAtTo: 
+  ~expiresAtRangeFrom: 
+  ~expiresAtRangeTo: 
+  ~lastActiveAtSearchType: 
+  ~lastActiveAtUom: 
+  ~lastActiveAtValue: 
+  ~lastActiveAtFrom: 
+  ~lastActiveAtTo: 
+  ~lastActiveAtRangeFrom: 
+  ~lastActiveAtRangeTo: 
+  ~sort: 
+  ~pageSize: 
+  ~cursor: 
+}
+
+params:path {
+  orgId: 
+}
+
+headers {
+  Authorization: 
+}

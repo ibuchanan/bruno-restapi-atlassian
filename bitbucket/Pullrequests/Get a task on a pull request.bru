@@ -1,0 +1,11 @@
+meta {
+  name: Get a task on a pull request
+  type: http
+  seq: 35
+}
+
+get {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/pullrequests/:pull_request_id/tasks/:task_id
+  body: none
+  auth: none
+}

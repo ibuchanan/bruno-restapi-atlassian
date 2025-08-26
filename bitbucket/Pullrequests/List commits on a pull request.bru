@@ -1,0 +1,11 @@
+meta {
+  name: List commits on a pull request
+  type: http
+  seq: 22
+}
+
+get {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/pullrequests/:pull_request_id/commits
+  body: none
+  auth: none
+}

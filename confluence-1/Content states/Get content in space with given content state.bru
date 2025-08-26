@@ -1,0 +1,22 @@
+meta {
+  name: Get content in space with given content state
+  type: http
+  seq: 8
+}
+
+get {
+  url: {{baseUrl}}/wiki/rest/api/space/:spaceKey/state/content
+  body: none
+  auth: inherit
+}
+
+params:query {
+  state-id:
+  ~expand:
+  ~limit:
+  ~start:
+}
+
+params:path {
+  spaceKey:
+}

@@ -1,0 +1,27 @@
+meta {
+  name: Get folder by id
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/folders/:id
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~include-collaborators: 
+  ~include-direct-children: 
+  ~include-operations: 
+  ~include-properties: 
+}
+
+params:path {
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

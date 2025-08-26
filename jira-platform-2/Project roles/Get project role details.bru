@@ -1,0 +1,25 @@
+meta {
+  name: Get project role details
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{baseUrl}}/rest/api/2/project/:projectIdOrKey/roledetails
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~currentMember: 
+  ~excludeConnectAddons: 
+}
+
+params:path {
+  projectIdOrKey: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

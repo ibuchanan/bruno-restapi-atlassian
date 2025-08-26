@@ -1,0 +1,17 @@
+meta {
+  name: Update an explicit group permission for a repository
+  type: http
+  seq: 19
+}
+
+put {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/permissions-config/groups/:group_slug
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "permission": ""
+  }
+}

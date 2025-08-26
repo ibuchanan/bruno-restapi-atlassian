@@ -1,0 +1,15 @@
+meta {
+  name: Subscribe
+  type: http
+  seq: 17
+}
+
+put {
+  url: {{baseUrl}}/rest/servicedeskapi/request/:issueIdOrKey/notification
+  body: none
+  auth: inherit
+}
+
+params:path {
+  issueIdOrKey:
+}

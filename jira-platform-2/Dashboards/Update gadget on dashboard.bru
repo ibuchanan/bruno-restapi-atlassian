@@ -1,0 +1,29 @@
+meta {
+  name: Update gadget on dashboard
+  type: http
+  seq: 9
+}
+
+put {
+  url: {{baseUrl}}/rest/api/2/dashboard/:dashboardId/gadget/:gadgetId
+  body: json
+  auth: basic
+}
+
+params:path {
+  dashboardId: 
+  gadgetId: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "color": "",
+    "position": "",
+    "title": ""
+  }
+}

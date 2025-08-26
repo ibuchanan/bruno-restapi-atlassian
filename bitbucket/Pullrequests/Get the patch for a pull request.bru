@@ -1,0 +1,11 @@
+meta {
+  name: Get the patch for a pull request
+  type: http
+  seq: 28
+}
+
+get {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/pullrequests/:pull_request_id/patch
+  body: none
+  auth: none
+}

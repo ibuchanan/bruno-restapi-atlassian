@@ -1,0 +1,11 @@
+meta {
+  name: List milestones
+  type: http
+  seq: 30
+}
+
+get {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/milestones
+  body: none
+  auth: none
+}

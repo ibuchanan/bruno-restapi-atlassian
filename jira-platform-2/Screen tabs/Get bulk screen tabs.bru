@@ -1,0 +1,23 @@
+meta {
+  name: Get bulk screen tabs
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/rest/api/2/screens/tabs
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~screenId: 
+  ~tabId: 
+  ~startAt: 
+  ~maxResult: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

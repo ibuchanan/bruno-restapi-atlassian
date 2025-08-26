@@ -1,0 +1,28 @@
+meta {
+  name: Get footer comments for page
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{baseUrl}}/pages/:id/footer-comments
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~body-format: 
+  ~status: 
+  ~sort: 
+  ~cursor: 
+  ~limit: 
+}
+
+params:path {
+  id: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

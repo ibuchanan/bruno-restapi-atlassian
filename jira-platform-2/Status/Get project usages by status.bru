@@ -1,0 +1,25 @@
+meta {
+  name: Get project usages by status
+  type: http
+  seq: 7
+}
+
+get {
+  url: {{baseUrl}}/rest/api/2/statuses/:statusId/projectUsages
+  body: none
+  auth: basic
+}
+
+params:query {
+  ~nextPageToken: 
+  ~maxResults: 
+}
+
+params:path {
+  statusId: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

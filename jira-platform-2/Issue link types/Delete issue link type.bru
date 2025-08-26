@@ -1,0 +1,20 @@
+meta {
+  name: Delete issue link type
+  type: http
+  seq: 3
+}
+
+delete {
+  url: {{baseUrl}}/rest/api/2/issueLinkType/:issueLinkTypeId
+  body: none
+  auth: basic
+}
+
+params:path {
+  issueLinkTypeId: 
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}

@@ -1,0 +1,11 @@
+meta {
+  name: Update a commit comment
+  type: http
+  seq: 8
+}
+
+put {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/commit/:commit/comments/:comment_id
+  body: json
+  auth: none
+}

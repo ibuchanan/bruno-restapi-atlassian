@@ -1,0 +1,11 @@
+meta {
+  name: Update a repository
+  type: http
+  seq: 6
+}
+
+put {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug
+  body: json
+  auth: none
+}

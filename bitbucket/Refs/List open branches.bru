@@ -1,0 +1,16 @@
+meta {
+  name: List open branches
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/repositories/:workspace/:repo_slug/refs/branches
+  body: none
+  auth: none
+}
+
+params:query {
+  ~q: 
+  ~sort: 
+}
