@@ -12,7 +12,11 @@
 ## Atlassian Cloud APIs
 
 * [Atlassian OAuth 2.0](https://developer.atlassian.com/cloud/oauth/)
-* [Jira platform v3](https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/#version)
+* [Confluence v1](https://developer.atlassian.com/cloud/confluence/rest/v1/intro)
+* [Confluence v2](https://developer.atlassian.com/cloud/confluence/rest/v2/intro)
+* [Jira platform v2](https://developer.atlassian.com/cloud/jira/platform/rest/v2/intro)
+* [Jira platform v3](https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro)
+* [Jira Service Management](https://developer.atlassian.com/cloud/jira/service-desk/rest/intro)
 * [Jira Software](https://developer.atlassian.com/cloud/jira/software/rest)
 (Jira Software's API covers Software-specific features of Jira
 like Sprints, Epics, and developer tooling integrations.
@@ -32,7 +36,7 @@ However, once imported,
 those API specs still require a bit of configuration.
 This repo solves the following:
 * All the APIs in 1 quick Git clone.
-(TODO: currently only Jira platform & Jira Software; import the rest)
+* Preconfigured defaults matching One Atlassian.
 * APIs have been configured to use OAuth 2.0.
 (Unfortunately, that doesn't mean every path works with OAuth tokens.
 Substitution for basic auth may be required.)
@@ -46,8 +50,12 @@ Because of Atlassian's recommendation to limit clients to 50 scopes,
 create 1 client (called an App in the console)
 for each Bruno collection:
 1. OAuth (This is required, others are optional)
-2. Jira Platform
-3. Jira Software
+1. Confluence v1
+1. Confluence v2
+1. Jira Platform v2
+1. Jira Platform v3
+1. Jira Service Management
+1. Jira Software
 
 For each collection,
 copy the `.env.example` to `.env`,
