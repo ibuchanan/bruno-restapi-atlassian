@@ -5,8 +5,8 @@
 1. Install [Bruno](https://www.usebruno.com/)
 2. Clone this repo
 3. Import each subdirectory as a [Collection](https://docs.usebruno.com/get-started/import-export-data/import-collections)
-4. Configure an OAuth 2.0 client in the Atlassian developer console and in each `.env` file
-5. Run `Accessible Resources` to run through the authorization flow
+4. For each collection, configure an OAuth 2.0 client in the Atlassian developer console and in each `.env` file
+5. Run `Accessible Resources` to run through the authorization flow and bind to the site you've specified in `.env`
 6. Explore!
 
 ## Atlassian Cloud APIs
@@ -36,7 +36,7 @@ However, once imported,
 those API specs still require a bit of configuration.
 This repo solves the following:
 * All the APIs in 1 quick Git clone.
-* Preconfigured defaults matching One Atlassian.
+* Preconfigured environments matching One Atlassian.
 * APIs have been configured to use OAuth 2.0.
 (Unfortunately, that doesn't mean every path works with OAuth tokens.
 Substitution for basic auth may be required.)
@@ -110,7 +110,7 @@ click it.
 You should see a list of Scopes.
 9. Click **Edit scopes**.
 You should see a modal for editing the selected scopes.
-10. Select all the scopes
+10. Select all the scopes to match what is in each collection's `.env.example`
 and click **Save**.
 You should see confirmation that the scopes have changed.
 Scopes should now be checked
@@ -124,3 +124,21 @@ You should see the "General settings" for your client.
 For example, if your site's URL is `https://one-atlas-example.atlassian.net/`
 then use `one-atlas-example` in the `.env` file.
 14. Repeat for each Bruno collection.
+
+Note: Bruno's OAuth authorization flow is performed by Bruno itself,
+not your default browser.
+For me, that create frequent errors when obtaining a new authorization.
+Specifically, I see "too many 429s".
+The auth flow succeeds on the 2nd try.
+Although Bruno is smart enough to trigger the OAuth 2.0 flow
+when the access token has expired,
+Atlassian's implementation requires a `cloudid` in the request URLs;
+hence, always obtain the token with `Accessible Resources`
+before making other requests.
+
+## Exploring requests using One Atlassian environments
+
+One Atlassian is a demo environment with all Atlassian apps.
+The Bruno features for Environments & Variables
+help make it convenient to run requests
+with little or no configuration against known data.
