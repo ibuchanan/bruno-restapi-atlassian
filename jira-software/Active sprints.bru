@@ -1,0 +1,21 @@
+meta {
+  name: Active sprints
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/rest/agile/1.0/board/:boardId/sprint?state=active
+  body: none
+  auth: inherit
+}
+
+params:query {
+  state: active
+  ~startAt: 
+  ~maxResults: 
+}
+
+params:path {
+  boardId: {{boardId}}
+}
