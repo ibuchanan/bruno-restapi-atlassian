@@ -1,0 +1,22 @@
+meta {
+  name: Reply on request
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{baseUrl}}/rest/servicedeskapi/request/:issueIdOrKey/comment
+  body: json
+  auth: inherit
+}
+
+params:path {
+  issueIdOrKey: {{issueKey}}
+}
+
+body:json {
+  {
+    "body": "{{$randomLoremParagraphs}}",
+    "public": false
+  }
+}
